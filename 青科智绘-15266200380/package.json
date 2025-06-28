@@ -1,0 +1,56 @@
+{
+  "name": "CrownCADPlugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --env dev --config webpack.config.js",
+    "dev-crowncad": "bash -c 'source ~/miniconda3/envs/CrownCAD/bin/activate && export PYTHONPATH=\"${PYTHONPATH}:$(pwd)/NeurCADRecon-main/NeurCADRecon-main\" && webpack-dev-server --env dev --config webpack.config.js'",
+    "build-prod": "webpack --env prod --config webpack.config.prod.js"
+  },
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "@vue/babel-helper-vue-jsx-merge-props": "^1.2.1",
+    "@vue/babel-preset-jsx": "^1.2.4",
+    "element-ui": "^2.15.14",
+    "terser-webpack-plugin": "^5.3.9",
+    "vue": "2.6.10",
+    "vue-json-excel": "^0.3.0",
+    "vue-qr": "^2.5.0",
+    "vue-quill-editor": "^3.0.6"
+  },
+  "devDependencies": {
+    "@babel/core": "7.16.7",
+    "@babel/plugin-proposal-decorators": "^7.17.8",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/preset-env": "^7.16.7",
+    "babel-jest": "^24.9.0",
+    "babel-loader": "8.2.3",
+    "clean-webpack-plugin": "^3.0.0",
+    "core-js": "^3.3.4",
+    "css-loader": "^3.2.0",
+    "eslint": "^6.8.0",
+    "hard-source-webpack-plugin": ">=0.13.1",
+    "html-webpack-plugin": "^4.4.1",
+    "less": "^4.1.2",
+    "less-loader": "^11.0.0",
+    "postcss": "^8.4.12",
+    "postcss-loader": "^4.2.0",
+    "regenerator-runtime": "^0.13.3",
+    "terser-webpack-plugin": "5.3.1",
+    "three": "0.153.0",
+    "url-loader": "^4.1.1",
+    "vue-loader": "^15.7.1",
+    "vue-template-compiler": "2.6.10",
+    "webpack": "^5.70.0",
+    "webpack-bundle-analyzer": "^3.7.0",
+    "webpack-cli": "4.10.0",
+    "webpack-dev-server": "4.7.3"
+  },
+  "babel": {
+    "presets": [
+      "@babel/env"
+    ]
+  }
+}

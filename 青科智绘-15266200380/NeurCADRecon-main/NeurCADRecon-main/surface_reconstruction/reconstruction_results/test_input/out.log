@@ -1,0 +1,43 @@
+input params: 
+Namespace(logdir='./reconstruction_results', model_name='model', seed=3627473, data_path='/home/baixiao/CrownCAD/CrownCAD二次开发插件示例/plugin-sdk-demo/test_input.ply', mesh_dir='../data/fandisk/gt', n_samples=100, n_points=10000, grid_res=32, nonmnfld_sample_type='gaussian', num_epochs=1, lr=5e-05, grad_clip_norm=10.0, batch_size=1, load_path=None, init_type='siren', decoder_hidden_dim=128, decoder_n_hidden_layers=2, latent_size=0, nl='sine', sphere_init_params=[1.6, 0.1], udf=False, output_any=True, loss_type='siren_wo_n_w_morse', decay_params=[10, 0.2, 10, 0.5, 0.001, 0], morse_type='l1', morse_decay='linear', loss_weights=[7000.0, 600.0, 100.0, 50.0, 0.0, 10.0], bidirectional_morse=False, morse_near=True, weight_for_morse=False, use_morse_nonmnfld_grad=False, use_relax_eikonal=False)
+Number of parameters in the current model:33665
+Weights: [7000.0, 600.0, 0, 50.0, 0.0, 10.0], lr=5.000e-05
+Epoch: 0 [   0/100 (0%)] Loss: nan = L_Mnfld: 193.16953 + L_NonMnfld: 163.06593 + L_Nrml: 0.00000 + L_Eknl: nan + L_Div: 0.00000 + L_Morse: nan
+Epoch: 0 [   0/100 (0%)] Unweighted L_s : L_Mnfld: 0.02760,  L_NonMnfld: 0.27178,  L_Nrml: 0.00000,  L_Eknl: nan, L_Morse: nan
+
+Weights: [7000.0, 600.0, 0, 50.0, 0.0, 10.0], lr=5.000e-05
+Epoch: 0 [  10/100 (10%)] Loss: nan = L_Mnfld: nan + L_NonMnfld: nan + L_Nrml: 0.00000 + L_Eknl: nan + L_Div: 0.00000 + L_Morse: nan
+Epoch: 0 [  10/100 (10%)] Unweighted L_s : L_Mnfld: nan,  L_NonMnfld: nan,  L_Nrml: 0.00000,  L_Eknl: nan, L_Morse: nan
+
+Weights: [7000.0, 600.0, 0, 50.0, 0.0, 10.0], lr=5.000e-05
+Epoch: 0 [  20/100 (20%)] Loss: nan = L_Mnfld: nan + L_NonMnfld: nan + L_Nrml: 0.00000 + L_Eknl: nan + L_Div: 0.00000 + L_Morse: nan
+Epoch: 0 [  20/100 (20%)] Unweighted L_s : L_Mnfld: nan,  L_NonMnfld: nan,  L_Nrml: 0.00000,  L_Eknl: nan, L_Morse: nan
+
+Weights: [7000.0, 600.0, 0, 50.0, 0.0, 7.000300000000001], lr=5.000e-05
+Epoch: 0 [  30/100 (30%)] Loss: nan = L_Mnfld: nan + L_NonMnfld: nan + L_Nrml: 0.00000 + L_Eknl: nan + L_Div: 0.00000 + L_Morse: nan
+Epoch: 0 [  30/100 (30%)] Unweighted L_s : L_Mnfld: nan,  L_NonMnfld: nan,  L_Nrml: 0.00000,  L_Eknl: nan, L_Morse: nan
+
+Weights: [7000.0, 600.0, 0, 50.0, 0.0, 3.667299999999999], lr=5.000e-05
+Epoch: 0 [  40/100 (40%)] Loss: nan = L_Mnfld: nan + L_NonMnfld: nan + L_Nrml: 0.00000 + L_Eknl: nan + L_Div: 0.00000 + L_Morse: nan
+Epoch: 0 [  40/100 (40%)] Unweighted L_s : L_Mnfld: nan,  L_NonMnfld: nan,  L_Nrml: 0.00000,  L_Eknl: nan, L_Morse: nan
+
+Weights: [7000.0, 600.0, 0, 50.0, 0.0, 0.3343000000000007], lr=5.000e-05
+Epoch: 0 [  50/100 (50%)] Loss: nan = L_Mnfld: nan + L_NonMnfld: nan + L_Nrml: 0.00000 + L_Eknl: nan + L_Div: 0.00000 + L_Morse: nan
+Epoch: 0 [  50/100 (50%)] Unweighted L_s : L_Mnfld: nan,  L_NonMnfld: nan,  L_Nrml: 0.00000,  L_Eknl: nan, L_Morse: nan
+
+Weights: [7000.0, 600.0, 0, 50.0, 0.0, 0.0008200000000000001], lr=5.000e-05
+Epoch: 0 [  60/100 (60%)] Loss: nan = L_Mnfld: nan + L_NonMnfld: nan + L_Nrml: 0.00000 + L_Eknl: nan + L_Div: 0.00000 + L_Morse: nan
+Epoch: 0 [  60/100 (60%)] Unweighted L_s : L_Mnfld: nan,  L_NonMnfld: nan,  L_Nrml: 0.00000,  L_Eknl: nan, L_Morse: nan
+
+Weights: [7000.0, 600.0, 0, 50.0, 0.0, 0.0006200000000000001], lr=5.000e-05
+Epoch: 0 [  70/100 (70%)] Loss: nan = L_Mnfld: nan + L_NonMnfld: nan + L_Nrml: 0.00000 + L_Eknl: nan + L_Div: 0.00000 + L_Morse: nan
+Epoch: 0 [  70/100 (70%)] Unweighted L_s : L_Mnfld: nan,  L_NonMnfld: nan,  L_Nrml: 0.00000,  L_Eknl: nan, L_Morse: nan
+
+Weights: [7000.0, 600.0, 0, 50.0, 0.0, 0.0004199999999999999], lr=5.000e-05
+Epoch: 0 [  80/100 (80%)] Loss: nan = L_Mnfld: nan + L_NonMnfld: nan + L_Nrml: 0.00000 + L_Eknl: nan + L_Div: 0.00000 + L_Morse: nan
+Epoch: 0 [  80/100 (80%)] Unweighted L_s : L_Mnfld: nan,  L_NonMnfld: nan,  L_Nrml: 0.00000,  L_Eknl: nan, L_Morse: nan
+
+Weights: [7000.0, 600.0, 0, 50.0, 0.0, 0.00021999999999999993], lr=5.000e-05
+Epoch: 0 [  90/100 (90%)] Loss: nan = L_Mnfld: nan + L_NonMnfld: nan + L_Nrml: 0.00000 + L_Eknl: nan + L_Div: 0.00000 + L_Morse: nan
+Epoch: 0 [  90/100 (90%)] Unweighted L_s : L_Mnfld: nan,  L_NonMnfld: nan,  L_Nrml: 0.00000,  L_Eknl: nan, L_Morse: nan
+

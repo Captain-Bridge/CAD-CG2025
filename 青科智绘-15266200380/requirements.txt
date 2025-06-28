@@ -1,0 +1,40 @@
+# CrownCAD NeurCADRecon 插件依赖
+# 适用于CrownCAD虚拟环境 (PyTorch 2.2.0+cu118)
+
+# 深度学习核心
+torch==2.2.0+cu118
+torchvision==0.17.0+cu118
+torchaudio==2.2.0+cu118
+kaolin==0.17.0
+
+# 科学计算
+numpy==1.21.6
+scipy==1.7.3
+scikit-learn==1.0.2
+
+# 3D处理
+trimesh==3.9.29
+open3d==0.13.0
+plyfile==0.7.4
+pypcd4==0.1.0
+
+# Web服务
+flask==2.0.3
+flask-cors==3.0.10
+asyncio==3.4.3
+
+# 可视化
+matplotlib==3.5.3
+plotly==5.3.1
+
+# 工具库
+tqdm==4.62.3
+requests==2.27.1
+pillow==8.4.0
+
+# 神经网络信息工具
+torchinfo==1.7.1
+
+# 其他工具
+h5py==3.7.0
+PyMCubes==0.1.2 

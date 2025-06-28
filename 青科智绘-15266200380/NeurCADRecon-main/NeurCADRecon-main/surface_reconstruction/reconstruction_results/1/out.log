@@ -1,0 +1,1383 @@
+input params: 
+Namespace(logdir='./reconstruction_results', model_name='model', seed=3627473, data_path='../../../converted_ply/1.ply', mesh_dir='../data/fandisk/gt', n_samples=10000, n_points=10000, grid_res=128, nonmnfld_sample_type='gaussian', num_epochs=1, lr=5e-05, grad_clip_norm=10.0, batch_size=1, load_path=None, init_type='siren', decoder_hidden_dim=128, decoder_n_hidden_layers=4, latent_size=0, nl='sine', sphere_init_params=[1.6, 0.1], udf=False, output_any=True, loss_type='siren_wo_n_w_morse', decay_params=[10, 0.2, 10, 0.5, 0.001, 0], morse_type='l1', morse_decay='linear', loss_weights=[7000.0, 600.0, 100.0, 50.0, 0, 10], bidirectional_morse=False, morse_near=True, weight_for_morse=False, use_morse_nonmnfld_grad=False, use_relax_eikonal=False)
+Number of parameters in the current model:66689
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10], lr=5.000e-05
+Epoch: 0 [   0/10000 (0%)] Loss: 398.58817 = L_Mnfld: 135.46773 + L_NonMnfld: 176.21180 + L_Nrml: 0.00000 + L_Eknl: 36.25661 + L_Div: 0.00000 + L_Morse: 50.65207
+Epoch: 0 [   0/10000 (0%)] Unweighted L_s : L_Mnfld: 0.01935,  L_NonMnfld: 0.29369,  L_Nrml: 0.00000,  L_Eknl: 0.72513, L_Morse: 5.06521
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [  10/10000 (0%)] Loss: 178.75491 = L_Mnfld: 53.76582 + L_NonMnfld: 59.54045 + L_Nrml: 0.00000 + L_Eknl: 40.04978 + L_Div: 0.00000 + L_Morse: 25.39886
+Epoch: 0 [  10/10000 (0%)] Unweighted L_s : L_Mnfld: 0.00768,  L_NonMnfld: 0.09923,  L_Nrml: 0.00000,  L_Eknl: 0.80100, L_Morse: 2.53989
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [  20/10000 (0%)] Loss: 133.65102 = L_Mnfld: 48.79813 + L_NonMnfld: 27.28890 + L_Nrml: 0.00000 + L_Eknl: 40.12868 + L_Div: 0.00000 + L_Morse: 17.43531
+Epoch: 0 [  20/10000 (0%)] Unweighted L_s : L_Mnfld: 0.00697,  L_NonMnfld: 0.04548,  L_Nrml: 0.00000,  L_Eknl: 0.80257, L_Morse: 1.74353
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [  30/10000 (0%)] Loss: 112.71075 = L_Mnfld: 27.81638 + L_NonMnfld: 32.80427 + L_Nrml: 0.00000 + L_Eknl: 40.26291 + L_Div: 0.00000 + L_Morse: 11.82719
+Epoch: 0 [  30/10000 (0%)] Unweighted L_s : L_Mnfld: 0.00397,  L_NonMnfld: 0.05467,  L_Nrml: 0.00000,  L_Eknl: 0.80526, L_Morse: 1.18272
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [  40/10000 (0%)] Loss: 112.16613 = L_Mnfld: 33.07482 + L_NonMnfld: 30.78544 + L_Nrml: 0.00000 + L_Eknl: 39.78713 + L_Div: 0.00000 + L_Morse: 8.51874
+Epoch: 0 [  40/10000 (0%)] Unweighted L_s : L_Mnfld: 0.00472,  L_NonMnfld: 0.05131,  L_Nrml: 0.00000,  L_Eknl: 0.79574, L_Morse: 0.85187
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [  50/10000 (0%)] Loss: 104.22644 = L_Mnfld: 36.05229 + L_NonMnfld: 21.74846 + L_Nrml: 0.00000 + L_Eknl: 38.92791 + L_Div: 0.00000 + L_Morse: 7.49779
+Epoch: 0 [  50/10000 (0%)] Unweighted L_s : L_Mnfld: 0.00515,  L_NonMnfld: 0.03625,  L_Nrml: 0.00000,  L_Eknl: 0.77856, L_Morse: 0.74978
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [  60/10000 (1%)] Loss: 96.21565 = L_Mnfld: 23.01505 + L_NonMnfld: 28.05222 + L_Nrml: 0.00000 + L_Eknl: 38.57133 + L_Div: 0.00000 + L_Morse: 6.57706
+Epoch: 0 [  60/10000 (1%)] Unweighted L_s : L_Mnfld: 0.00329,  L_NonMnfld: 0.04675,  L_Nrml: 0.00000,  L_Eknl: 0.77143, L_Morse: 0.65771
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [  70/10000 (1%)] Loss: 98.93365 = L_Mnfld: 30.38514 + L_NonMnfld: 24.47798 + L_Nrml: 0.00000 + L_Eknl: 37.91738 + L_Div: 0.00000 + L_Morse: 6.15316
+Epoch: 0 [  70/10000 (1%)] Unweighted L_s : L_Mnfld: 0.00434,  L_NonMnfld: 0.04080,  L_Nrml: 0.00000,  L_Eknl: 0.75835, L_Morse: 0.61532
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [  80/10000 (1%)] Loss: 104.07581 = L_Mnfld: 42.24410 + L_NonMnfld: 17.83717 + L_Nrml: 0.00000 + L_Eknl: 35.80870 + L_Div: 0.00000 + L_Morse: 8.18584
+Epoch: 0 [  80/10000 (1%)] Unweighted L_s : L_Mnfld: 0.00603,  L_NonMnfld: 0.02973,  L_Nrml: 0.00000,  L_Eknl: 0.71617, L_Morse: 0.81858
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [  90/10000 (1%)] Loss: 89.44018 = L_Mnfld: 22.49676 + L_NonMnfld: 24.14442 + L_Nrml: 0.00000 + L_Eknl: 35.71538 + L_Div: 0.00000 + L_Morse: 7.08361
+Epoch: 0 [  90/10000 (1%)] Unweighted L_s : L_Mnfld: 0.00321,  L_NonMnfld: 0.04024,  L_Nrml: 0.00000,  L_Eknl: 0.71431, L_Morse: 0.70836
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 100/10000 (1%)] Loss: 90.19962 = L_Mnfld: 26.57824 + L_NonMnfld: 22.24241 + L_Nrml: 0.00000 + L_Eknl: 35.40995 + L_Div: 0.00000 + L_Morse: 5.96903
+Epoch: 0 [ 100/10000 (1%)] Unweighted L_s : L_Mnfld: 0.00380,  L_NonMnfld: 0.03707,  L_Nrml: 0.00000,  L_Eknl: 0.70820, L_Morse: 0.59690
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 110/10000 (1%)] Loss: 91.47904 = L_Mnfld: 31.29933 + L_NonMnfld: 19.25535 + L_Nrml: 0.00000 + L_Eknl: 34.34843 + L_Div: 0.00000 + L_Morse: 6.57594
+Epoch: 0 [ 110/10000 (1%)] Unweighted L_s : L_Mnfld: 0.00447,  L_NonMnfld: 0.03209,  L_Nrml: 0.00000,  L_Eknl: 0.68697, L_Morse: 0.65759
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 120/10000 (1%)] Loss: 85.01469 = L_Mnfld: 21.72850 + L_NonMnfld: 22.87966 + L_Nrml: 0.00000 + L_Eknl: 34.05076 + L_Div: 0.00000 + L_Morse: 6.35577
+Epoch: 0 [ 120/10000 (1%)] Unweighted L_s : L_Mnfld: 0.00310,  L_NonMnfld: 0.03813,  L_Nrml: 0.00000,  L_Eknl: 0.68102, L_Morse: 0.63558
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 130/10000 (1%)] Loss: 83.11629 = L_Mnfld: 23.88815 + L_NonMnfld: 20.29639 + L_Nrml: 0.00000 + L_Eknl: 32.70549 + L_Div: 0.00000 + L_Morse: 6.22626
+Epoch: 0 [ 130/10000 (1%)] Unweighted L_s : L_Mnfld: 0.00341,  L_NonMnfld: 0.03383,  L_Nrml: 0.00000,  L_Eknl: 0.65411, L_Morse: 0.62263
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 140/10000 (1%)] Loss: 87.73674 = L_Mnfld: 31.31648 + L_NonMnfld: 18.90073 + L_Nrml: 0.00000 + L_Eknl: 30.91227 + L_Div: 0.00000 + L_Morse: 6.60727
+Epoch: 0 [ 140/10000 (1%)] Unweighted L_s : L_Mnfld: 0.00447,  L_NonMnfld: 0.03150,  L_Nrml: 0.00000,  L_Eknl: 0.61825, L_Morse: 0.66073
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 150/10000 (2%)] Loss: 79.33415 = L_Mnfld: 22.76364 + L_NonMnfld: 19.51918 + L_Nrml: 0.00000 + L_Eknl: 30.68806 + L_Div: 0.00000 + L_Morse: 6.36327
+Epoch: 0 [ 150/10000 (2%)] Unweighted L_s : L_Mnfld: 0.00325,  L_NonMnfld: 0.03253,  L_Nrml: 0.00000,  L_Eknl: 0.61376, L_Morse: 0.63633
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 160/10000 (2%)] Loss: 80.42695 = L_Mnfld: 25.75108 + L_NonMnfld: 18.86685 + L_Nrml: 0.00000 + L_Eknl: 29.70853 + L_Div: 0.00000 + L_Morse: 6.10050
+Epoch: 0 [ 160/10000 (2%)] Unweighted L_s : L_Mnfld: 0.00368,  L_NonMnfld: 0.03144,  L_Nrml: 0.00000,  L_Eknl: 0.59417, L_Morse: 0.61005
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 170/10000 (2%)] Loss: 80.42620 = L_Mnfld: 26.72230 + L_NonMnfld: 18.61892 + L_Nrml: 0.00000 + L_Eknl: 28.44779 + L_Div: 0.00000 + L_Morse: 6.63719
+Epoch: 0 [ 170/10000 (2%)] Unweighted L_s : L_Mnfld: 0.00382,  L_NonMnfld: 0.03103,  L_Nrml: 0.00000,  L_Eknl: 0.56896, L_Morse: 0.66372
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 180/10000 (2%)] Loss: 76.42864 = L_Mnfld: 23.08496 + L_NonMnfld: 17.82926 + L_Nrml: 0.00000 + L_Eknl: 28.26693 + L_Div: 0.00000 + L_Morse: 7.24750
+Epoch: 0 [ 180/10000 (2%)] Unweighted L_s : L_Mnfld: 0.00330,  L_NonMnfld: 0.02972,  L_Nrml: 0.00000,  L_Eknl: 0.56534, L_Morse: 0.72475
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 190/10000 (2%)] Loss: 73.48750 = L_Mnfld: 20.24018 + L_NonMnfld: 18.88228 + L_Nrml: 0.00000 + L_Eknl: 27.04328 + L_Div: 0.00000 + L_Morse: 7.32176
+Epoch: 0 [ 190/10000 (2%)] Unweighted L_s : L_Mnfld: 0.00289,  L_NonMnfld: 0.03147,  L_Nrml: 0.00000,  L_Eknl: 0.54087, L_Morse: 0.73218
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 200/10000 (2%)] Loss: 79.59705 = L_Mnfld: 26.34939 + L_NonMnfld: 18.74981 + L_Nrml: 0.00000 + L_Eknl: 25.98506 + L_Div: 0.00000 + L_Morse: 8.51279
+Epoch: 0 [ 200/10000 (2%)] Unweighted L_s : L_Mnfld: 0.00376,  L_NonMnfld: 0.03125,  L_Nrml: 0.00000,  L_Eknl: 0.51970, L_Morse: 0.85128
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 210/10000 (2%)] Loss: 75.50149 = L_Mnfld: 23.69459 + L_NonMnfld: 16.52565 + L_Nrml: 0.00000 + L_Eknl: 25.64529 + L_Div: 0.00000 + L_Morse: 9.63596
+Epoch: 0 [ 210/10000 (2%)] Unweighted L_s : L_Mnfld: 0.00338,  L_NonMnfld: 0.02754,  L_Nrml: 0.00000,  L_Eknl: 0.51291, L_Morse: 0.96360
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 220/10000 (2%)] Loss: 69.22901 = L_Mnfld: 19.65214 + L_NonMnfld: 16.87066 + L_Nrml: 0.00000 + L_Eknl: 24.82479 + L_Div: 0.00000 + L_Morse: 7.88142
+Epoch: 0 [ 220/10000 (2%)] Unweighted L_s : L_Mnfld: 0.00281,  L_NonMnfld: 0.02812,  L_Nrml: 0.00000,  L_Eknl: 0.49650, L_Morse: 0.78814
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 230/10000 (2%)] Loss: 69.98247 = L_Mnfld: 20.91534 + L_NonMnfld: 17.20826 + L_Nrml: 0.00000 + L_Eknl: 23.75980 + L_Div: 0.00000 + L_Morse: 8.09907
+Epoch: 0 [ 230/10000 (2%)] Unweighted L_s : L_Mnfld: 0.00299,  L_NonMnfld: 0.02868,  L_Nrml: 0.00000,  L_Eknl: 0.47520, L_Morse: 0.80991
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 240/10000 (2%)] Loss: 68.60208 = L_Mnfld: 21.70554 + L_NonMnfld: 16.33049 + L_Nrml: 0.00000 + L_Eknl: 22.64528 + L_Div: 0.00000 + L_Morse: 7.92077
+Epoch: 0 [ 240/10000 (2%)] Unweighted L_s : L_Mnfld: 0.00310,  L_NonMnfld: 0.02722,  L_Nrml: 0.00000,  L_Eknl: 0.45291, L_Morse: 0.79208
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 250/10000 (2%)] Loss: 62.37760 = L_Mnfld: 17.07834 + L_NonMnfld: 15.55566 + L_Nrml: 0.00000 + L_Eknl: 22.57381 + L_Div: 0.00000 + L_Morse: 7.16979
+Epoch: 0 [ 250/10000 (2%)] Unweighted L_s : L_Mnfld: 0.00244,  L_NonMnfld: 0.02593,  L_Nrml: 0.00000,  L_Eknl: 0.45148, L_Morse: 0.71698
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 260/10000 (3%)] Loss: 64.87093 = L_Mnfld: 19.46828 + L_NonMnfld: 15.77969 + L_Nrml: 0.00000 + L_Eknl: 22.03927 + L_Div: 0.00000 + L_Morse: 7.58370
+Epoch: 0 [ 260/10000 (3%)] Unweighted L_s : L_Mnfld: 0.00278,  L_NonMnfld: 0.02630,  L_Nrml: 0.00000,  L_Eknl: 0.44079, L_Morse: 0.75837
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 270/10000 (3%)] Loss: 67.20688 = L_Mnfld: 20.74596 + L_NonMnfld: 16.59970 + L_Nrml: 0.00000 + L_Eknl: 21.90353 + L_Div: 0.00000 + L_Morse: 7.95769
+Epoch: 0 [ 270/10000 (3%)] Unweighted L_s : L_Mnfld: 0.00296,  L_NonMnfld: 0.02767,  L_Nrml: 0.00000,  L_Eknl: 0.43807, L_Morse: 0.79577
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 280/10000 (3%)] Loss: 66.59170 = L_Mnfld: 21.53890 + L_NonMnfld: 16.48756 + L_Nrml: 0.00000 + L_Eknl: 21.39581 + L_Div: 0.00000 + L_Morse: 7.16943
+Epoch: 0 [ 280/10000 (3%)] Unweighted L_s : L_Mnfld: 0.00308,  L_NonMnfld: 0.02748,  L_Nrml: 0.00000,  L_Eknl: 0.42792, L_Morse: 0.71694
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 290/10000 (3%)] Loss: 61.80648 = L_Mnfld: 18.10054 + L_NonMnfld: 15.99102 + L_Nrml: 0.00000 + L_Eknl: 20.78180 + L_Div: 0.00000 + L_Morse: 6.93313
+Epoch: 0 [ 290/10000 (3%)] Unweighted L_s : L_Mnfld: 0.00259,  L_NonMnfld: 0.02665,  L_Nrml: 0.00000,  L_Eknl: 0.41564, L_Morse: 0.69331
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 300/10000 (3%)] Loss: 62.70104 = L_Mnfld: 18.96555 + L_NonMnfld: 15.74306 + L_Nrml: 0.00000 + L_Eknl: 21.15736 + L_Div: 0.00000 + L_Morse: 6.83508
+Epoch: 0 [ 300/10000 (3%)] Unweighted L_s : L_Mnfld: 0.00271,  L_NonMnfld: 0.02624,  L_Nrml: 0.00000,  L_Eknl: 0.42315, L_Morse: 0.68351
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 310/10000 (3%)] Loss: 61.14498 = L_Mnfld: 18.58512 + L_NonMnfld: 15.71010 + L_Nrml: 0.00000 + L_Eknl: 20.30709 + L_Div: 0.00000 + L_Morse: 6.54267
+Epoch: 0 [ 310/10000 (3%)] Unweighted L_s : L_Mnfld: 0.00266,  L_NonMnfld: 0.02618,  L_Nrml: 0.00000,  L_Eknl: 0.40614, L_Morse: 0.65427
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 320/10000 (3%)] Loss: 60.16880 = L_Mnfld: 17.96796 + L_NonMnfld: 15.77654 + L_Nrml: 0.00000 + L_Eknl: 20.13395 + L_Div: 0.00000 + L_Morse: 6.29036
+Epoch: 0 [ 320/10000 (3%)] Unweighted L_s : L_Mnfld: 0.00257,  L_NonMnfld: 0.02629,  L_Nrml: 0.00000,  L_Eknl: 0.40268, L_Morse: 0.62904
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 330/10000 (3%)] Loss: 59.01279 = L_Mnfld: 17.17560 + L_NonMnfld: 15.94922 + L_Nrml: 0.00000 + L_Eknl: 19.68017 + L_Div: 0.00000 + L_Morse: 6.20780
+Epoch: 0 [ 330/10000 (3%)] Unweighted L_s : L_Mnfld: 0.00245,  L_NonMnfld: 0.02658,  L_Nrml: 0.00000,  L_Eknl: 0.39360, L_Morse: 0.62078
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 340/10000 (3%)] Loss: 57.22925 = L_Mnfld: 15.66472 + L_NonMnfld: 15.64825 + L_Nrml: 0.00000 + L_Eknl: 19.79880 + L_Div: 0.00000 + L_Morse: 6.11748
+Epoch: 0 [ 340/10000 (3%)] Unweighted L_s : L_Mnfld: 0.00224,  L_NonMnfld: 0.02608,  L_Nrml: 0.00000,  L_Eknl: 0.39598, L_Morse: 0.61175
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 350/10000 (4%)] Loss: 58.23517 = L_Mnfld: 17.19786 + L_NonMnfld: 15.70663 + L_Nrml: 0.00000 + L_Eknl: 19.08439 + L_Div: 0.00000 + L_Morse: 6.24630
+Epoch: 0 [ 350/10000 (4%)] Unweighted L_s : L_Mnfld: 0.00246,  L_NonMnfld: 0.02618,  L_Nrml: 0.00000,  L_Eknl: 0.38169, L_Morse: 0.62463
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 360/10000 (4%)] Loss: 57.64992 = L_Mnfld: 16.75488 + L_NonMnfld: 15.53719 + L_Nrml: 0.00000 + L_Eknl: 19.56766 + L_Div: 0.00000 + L_Morse: 5.79019
+Epoch: 0 [ 360/10000 (4%)] Unweighted L_s : L_Mnfld: 0.00239,  L_NonMnfld: 0.02590,  L_Nrml: 0.00000,  L_Eknl: 0.39135, L_Morse: 0.57902
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 370/10000 (4%)] Loss: 55.31088 = L_Mnfld: 15.59121 + L_NonMnfld: 14.76887 + L_Nrml: 0.00000 + L_Eknl: 19.17733 + L_Div: 0.00000 + L_Morse: 5.77347
+Epoch: 0 [ 370/10000 (4%)] Unweighted L_s : L_Mnfld: 0.00223,  L_NonMnfld: 0.02461,  L_Nrml: 0.00000,  L_Eknl: 0.38355, L_Morse: 0.57735
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 380/10000 (4%)] Loss: 54.90402 = L_Mnfld: 13.97924 + L_NonMnfld: 16.14466 + L_Nrml: 0.00000 + L_Eknl: 18.94594 + L_Div: 0.00000 + L_Morse: 5.83418
+Epoch: 0 [ 380/10000 (4%)] Unweighted L_s : L_Mnfld: 0.00200,  L_NonMnfld: 0.02691,  L_Nrml: 0.00000,  L_Eknl: 0.37892, L_Morse: 0.58342
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 390/10000 (4%)] Loss: 53.42476 = L_Mnfld: 15.12824 + L_NonMnfld: 13.75811 + L_Nrml: 0.00000 + L_Eknl: 18.72154 + L_Div: 0.00000 + L_Morse: 5.81686
+Epoch: 0 [ 390/10000 (4%)] Unweighted L_s : L_Mnfld: 0.00216,  L_NonMnfld: 0.02293,  L_Nrml: 0.00000,  L_Eknl: 0.37443, L_Morse: 0.58169
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 400/10000 (4%)] Loss: 54.32291 = L_Mnfld: 15.56079 + L_NonMnfld: 14.18711 + L_Nrml: 0.00000 + L_Eknl: 18.84833 + L_Div: 0.00000 + L_Morse: 5.72667
+Epoch: 0 [ 400/10000 (4%)] Unweighted L_s : L_Mnfld: 0.00222,  L_NonMnfld: 0.02365,  L_Nrml: 0.00000,  L_Eknl: 0.37697, L_Morse: 0.57267
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 410/10000 (4%)] Loss: 54.48983 = L_Mnfld: 15.53587 + L_NonMnfld: 14.72807 + L_Nrml: 0.00000 + L_Eknl: 18.42674 + L_Div: 0.00000 + L_Morse: 5.79914
+Epoch: 0 [ 410/10000 (4%)] Unweighted L_s : L_Mnfld: 0.00222,  L_NonMnfld: 0.02455,  L_Nrml: 0.00000,  L_Eknl: 0.36853, L_Morse: 0.57991
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 420/10000 (4%)] Loss: 53.97198 = L_Mnfld: 15.09137 + L_NonMnfld: 14.86263 + L_Nrml: 0.00000 + L_Eknl: 18.43949 + L_Div: 0.00000 + L_Morse: 5.57850
+Epoch: 0 [ 420/10000 (4%)] Unweighted L_s : L_Mnfld: 0.00216,  L_NonMnfld: 0.02477,  L_Nrml: 0.00000,  L_Eknl: 0.36879, L_Morse: 0.55785
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 430/10000 (4%)] Loss: 53.81361 = L_Mnfld: 15.69260 + L_NonMnfld: 14.14386 + L_Nrml: 0.00000 + L_Eknl: 18.08351 + L_Div: 0.00000 + L_Morse: 5.89365
+Epoch: 0 [ 430/10000 (4%)] Unweighted L_s : L_Mnfld: 0.00224,  L_NonMnfld: 0.02357,  L_Nrml: 0.00000,  L_Eknl: 0.36167, L_Morse: 0.58936
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 440/10000 (4%)] Loss: 54.84042 = L_Mnfld: 15.45144 + L_NonMnfld: 15.08615 + L_Nrml: 0.00000 + L_Eknl: 18.38902 + L_Div: 0.00000 + L_Morse: 5.91381
+Epoch: 0 [ 440/10000 (4%)] Unweighted L_s : L_Mnfld: 0.00221,  L_NonMnfld: 0.02514,  L_Nrml: 0.00000,  L_Eknl: 0.36778, L_Morse: 0.59138
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 450/10000 (4%)] Loss: 53.03874 = L_Mnfld: 15.14521 + L_NonMnfld: 14.28949 + L_Nrml: 0.00000 + L_Eknl: 17.94380 + L_Div: 0.00000 + L_Morse: 5.66025
+Epoch: 0 [ 450/10000 (4%)] Unweighted L_s : L_Mnfld: 0.00216,  L_NonMnfld: 0.02382,  L_Nrml: 0.00000,  L_Eknl: 0.35888, L_Morse: 0.56602
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 460/10000 (5%)] Loss: 53.42424 = L_Mnfld: 14.63429 + L_NonMnfld: 14.76477 + L_Nrml: 0.00000 + L_Eknl: 18.18482 + L_Div: 0.00000 + L_Morse: 5.84036
+Epoch: 0 [ 460/10000 (5%)] Unweighted L_s : L_Mnfld: 0.00209,  L_NonMnfld: 0.02461,  L_Nrml: 0.00000,  L_Eknl: 0.36370, L_Morse: 0.58404
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 470/10000 (5%)] Loss: 52.63158 = L_Mnfld: 15.22358 + L_NonMnfld: 14.13694 + L_Nrml: 0.00000 + L_Eknl: 17.60536 + L_Div: 0.00000 + L_Morse: 5.66569
+Epoch: 0 [ 470/10000 (5%)] Unweighted L_s : L_Mnfld: 0.00217,  L_NonMnfld: 0.02356,  L_Nrml: 0.00000,  L_Eknl: 0.35211, L_Morse: 0.56657
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 480/10000 (5%)] Loss: 55.62989 = L_Mnfld: 15.33765 + L_NonMnfld: 16.33975 + L_Nrml: 0.00000 + L_Eknl: 17.87677 + L_Div: 0.00000 + L_Morse: 6.07573
+Epoch: 0 [ 480/10000 (5%)] Unweighted L_s : L_Mnfld: 0.00219,  L_NonMnfld: 0.02723,  L_Nrml: 0.00000,  L_Eknl: 0.35754, L_Morse: 0.60757
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 490/10000 (5%)] Loss: 52.35197 = L_Mnfld: 15.60445 + L_NonMnfld: 13.58308 + L_Nrml: 0.00000 + L_Eknl: 17.23491 + L_Div: 0.00000 + L_Morse: 5.92953
+Epoch: 0 [ 490/10000 (5%)] Unweighted L_s : L_Mnfld: 0.00223,  L_NonMnfld: 0.02264,  L_Nrml: 0.00000,  L_Eknl: 0.34470, L_Morse: 0.59295
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 500/10000 (5%)] Loss: 52.90807 = L_Mnfld: 15.01607 + L_NonMnfld: 14.63431 + L_Nrml: 0.00000 + L_Eknl: 17.45887 + L_Div: 0.00000 + L_Morse: 5.79882
+Epoch: 0 [ 500/10000 (5%)] Unweighted L_s : L_Mnfld: 0.00215,  L_NonMnfld: 0.02439,  L_Nrml: 0.00000,  L_Eknl: 0.34918, L_Morse: 0.57988
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 510/10000 (5%)] Loss: 53.19083 = L_Mnfld: 15.21625 + L_NonMnfld: 14.81843 + L_Nrml: 0.00000 + L_Eknl: 17.42973 + L_Div: 0.00000 + L_Morse: 5.72642
+Epoch: 0 [ 510/10000 (5%)] Unweighted L_s : L_Mnfld: 0.00217,  L_NonMnfld: 0.02470,  L_Nrml: 0.00000,  L_Eknl: 0.34859, L_Morse: 0.57264
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 520/10000 (5%)] Loss: 52.57082 = L_Mnfld: 14.81666 + L_NonMnfld: 14.33071 + L_Nrml: 0.00000 + L_Eknl: 17.36414 + L_Div: 0.00000 + L_Morse: 6.05931
+Epoch: 0 [ 520/10000 (5%)] Unweighted L_s : L_Mnfld: 0.00212,  L_NonMnfld: 0.02388,  L_Nrml: 0.00000,  L_Eknl: 0.34728, L_Morse: 0.60593
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 530/10000 (5%)] Loss: 51.91379 = L_Mnfld: 15.67926 + L_NonMnfld: 13.24120 + L_Nrml: 0.00000 + L_Eknl: 17.06553 + L_Div: 0.00000 + L_Morse: 5.92780
+Epoch: 0 [ 530/10000 (5%)] Unweighted L_s : L_Mnfld: 0.00224,  L_NonMnfld: 0.02207,  L_Nrml: 0.00000,  L_Eknl: 0.34131, L_Morse: 0.59278
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 540/10000 (5%)] Loss: 51.89684 = L_Mnfld: 14.52453 + L_NonMnfld: 14.43693 + L_Nrml: 0.00000 + L_Eknl: 17.08156 + L_Div: 0.00000 + L_Morse: 5.85381
+Epoch: 0 [ 540/10000 (5%)] Unweighted L_s : L_Mnfld: 0.00207,  L_NonMnfld: 0.02406,  L_Nrml: 0.00000,  L_Eknl: 0.34163, L_Morse: 0.58538
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 550/10000 (6%)] Loss: 51.05396 = L_Mnfld: 14.49414 + L_NonMnfld: 13.34647 + L_Nrml: 0.00000 + L_Eknl: 17.06982 + L_Div: 0.00000 + L_Morse: 6.14353
+Epoch: 0 [ 550/10000 (6%)] Unweighted L_s : L_Mnfld: 0.00207,  L_NonMnfld: 0.02224,  L_Nrml: 0.00000,  L_Eknl: 0.34140, L_Morse: 0.61435
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 560/10000 (6%)] Loss: 52.93301 = L_Mnfld: 15.31871 + L_NonMnfld: 14.76285 + L_Nrml: 0.00000 + L_Eknl: 16.87457 + L_Div: 0.00000 + L_Morse: 5.97687
+Epoch: 0 [ 560/10000 (6%)] Unweighted L_s : L_Mnfld: 0.00219,  L_NonMnfld: 0.02460,  L_Nrml: 0.00000,  L_Eknl: 0.33749, L_Morse: 0.59769
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 570/10000 (6%)] Loss: 52.07238 = L_Mnfld: 15.51359 + L_NonMnfld: 13.87924 + L_Nrml: 0.00000 + L_Eknl: 16.59043 + L_Div: 0.00000 + L_Morse: 6.08912
+Epoch: 0 [ 570/10000 (6%)] Unweighted L_s : L_Mnfld: 0.00222,  L_NonMnfld: 0.02313,  L_Nrml: 0.00000,  L_Eknl: 0.33181, L_Morse: 0.60891
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 580/10000 (6%)] Loss: 51.30122 = L_Mnfld: 15.22508 + L_NonMnfld: 13.12188 + L_Nrml: 0.00000 + L_Eknl: 16.97771 + L_Div: 0.00000 + L_Morse: 5.97656
+Epoch: 0 [ 580/10000 (6%)] Unweighted L_s : L_Mnfld: 0.00218,  L_NonMnfld: 0.02187,  L_Nrml: 0.00000,  L_Eknl: 0.33955, L_Morse: 0.59766
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 590/10000 (6%)] Loss: 52.42029 = L_Mnfld: 16.57149 + L_NonMnfld: 13.14475 + L_Nrml: 0.00000 + L_Eknl: 16.42412 + L_Div: 0.00000 + L_Morse: 6.27993
+Epoch: 0 [ 590/10000 (6%)] Unweighted L_s : L_Mnfld: 0.00237,  L_NonMnfld: 0.02191,  L_Nrml: 0.00000,  L_Eknl: 0.32848, L_Morse: 0.62799
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 600/10000 (6%)] Loss: 52.28249 = L_Mnfld: 15.64785 + L_NonMnfld: 13.24138 + L_Nrml: 0.00000 + L_Eknl: 17.02517 + L_Div: 0.00000 + L_Morse: 6.36809
+Epoch: 0 [ 600/10000 (6%)] Unweighted L_s : L_Mnfld: 0.00224,  L_NonMnfld: 0.02207,  L_Nrml: 0.00000,  L_Eknl: 0.34050, L_Morse: 0.63681
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 610/10000 (6%)] Loss: 52.25663 = L_Mnfld: 16.07293 + L_NonMnfld: 13.45799 + L_Nrml: 0.00000 + L_Eknl: 16.57638 + L_Div: 0.00000 + L_Morse: 6.14933
+Epoch: 0 [ 610/10000 (6%)] Unweighted L_s : L_Mnfld: 0.00230,  L_NonMnfld: 0.02243,  L_Nrml: 0.00000,  L_Eknl: 0.33153, L_Morse: 0.61493
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 620/10000 (6%)] Loss: 50.99186 = L_Mnfld: 14.39850 + L_NonMnfld: 13.91800 + L_Nrml: 0.00000 + L_Eknl: 16.58916 + L_Div: 0.00000 + L_Morse: 6.08620
+Epoch: 0 [ 620/10000 (6%)] Unweighted L_s : L_Mnfld: 0.00206,  L_NonMnfld: 0.02320,  L_Nrml: 0.00000,  L_Eknl: 0.33178, L_Morse: 0.60862
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 630/10000 (6%)] Loss: 50.65220 = L_Mnfld: 15.61235 + L_NonMnfld: 12.95834 + L_Nrml: 0.00000 + L_Eknl: 15.98520 + L_Div: 0.00000 + L_Morse: 6.09630
+Epoch: 0 [ 630/10000 (6%)] Unweighted L_s : L_Mnfld: 0.00223,  L_NonMnfld: 0.02160,  L_Nrml: 0.00000,  L_Eknl: 0.31970, L_Morse: 0.60963
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 640/10000 (6%)] Loss: 52.34623 = L_Mnfld: 14.83085 + L_NonMnfld: 14.76265 + L_Nrml: 0.00000 + L_Eknl: 16.58292 + L_Div: 0.00000 + L_Morse: 6.16981
+Epoch: 0 [ 640/10000 (6%)] Unweighted L_s : L_Mnfld: 0.00212,  L_NonMnfld: 0.02460,  L_Nrml: 0.00000,  L_Eknl: 0.33166, L_Morse: 0.61698
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 650/10000 (6%)] Loss: 50.65788 = L_Mnfld: 14.59228 + L_NonMnfld: 13.87555 + L_Nrml: 0.00000 + L_Eknl: 16.08944 + L_Div: 0.00000 + L_Morse: 6.10060
+Epoch: 0 [ 650/10000 (6%)] Unweighted L_s : L_Mnfld: 0.00208,  L_NonMnfld: 0.02313,  L_Nrml: 0.00000,  L_Eknl: 0.32179, L_Morse: 0.61006
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 660/10000 (7%)] Loss: 51.26268 = L_Mnfld: 14.24797 + L_NonMnfld: 14.55248 + L_Nrml: 0.00000 + L_Eknl: 16.31240 + L_Div: 0.00000 + L_Morse: 6.14982
+Epoch: 0 [ 660/10000 (7%)] Unweighted L_s : L_Mnfld: 0.00204,  L_NonMnfld: 0.02425,  L_Nrml: 0.00000,  L_Eknl: 0.32625, L_Morse: 0.61498
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 670/10000 (7%)] Loss: 50.10228 = L_Mnfld: 15.20789 + L_NonMnfld: 12.96142 + L_Nrml: 0.00000 + L_Eknl: 15.95351 + L_Div: 0.00000 + L_Morse: 5.97947
+Epoch: 0 [ 670/10000 (7%)] Unweighted L_s : L_Mnfld: 0.00217,  L_NonMnfld: 0.02160,  L_Nrml: 0.00000,  L_Eknl: 0.31907, L_Morse: 0.59795
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 680/10000 (7%)] Loss: 51.03993 = L_Mnfld: 14.80624 + L_NonMnfld: 14.13468 + L_Nrml: 0.00000 + L_Eknl: 15.97108 + L_Div: 0.00000 + L_Morse: 6.12793
+Epoch: 0 [ 680/10000 (7%)] Unweighted L_s : L_Mnfld: 0.00212,  L_NonMnfld: 0.02356,  L_Nrml: 0.00000,  L_Eknl: 0.31942, L_Morse: 0.61279
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 690/10000 (7%)] Loss: 50.12446 = L_Mnfld: 14.79863 + L_NonMnfld: 13.60079 + L_Nrml: 0.00000 + L_Eknl: 15.67484 + L_Div: 0.00000 + L_Morse: 6.05020
+Epoch: 0 [ 690/10000 (7%)] Unweighted L_s : L_Mnfld: 0.00211,  L_NonMnfld: 0.02267,  L_Nrml: 0.00000,  L_Eknl: 0.31350, L_Morse: 0.60502
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 700/10000 (7%)] Loss: 50.30479 = L_Mnfld: 15.30402 + L_NonMnfld: 13.13825 + L_Nrml: 0.00000 + L_Eknl: 15.91163 + L_Div: 0.00000 + L_Morse: 5.95089
+Epoch: 0 [ 700/10000 (7%)] Unweighted L_s : L_Mnfld: 0.00219,  L_NonMnfld: 0.02190,  L_Nrml: 0.00000,  L_Eknl: 0.31823, L_Morse: 0.59509
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 710/10000 (7%)] Loss: 49.42896 = L_Mnfld: 14.80240 + L_NonMnfld: 13.46835 + L_Nrml: 0.00000 + L_Eknl: 15.30043 + L_Div: 0.00000 + L_Morse: 5.85777
+Epoch: 0 [ 710/10000 (7%)] Unweighted L_s : L_Mnfld: 0.00211,  L_NonMnfld: 0.02245,  L_Nrml: 0.00000,  L_Eknl: 0.30601, L_Morse: 0.58578
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 720/10000 (7%)] Loss: 49.75757 = L_Mnfld: 14.68894 + L_NonMnfld: 13.17780 + L_Nrml: 0.00000 + L_Eknl: 15.67728 + L_Div: 0.00000 + L_Morse: 6.21354
+Epoch: 0 [ 720/10000 (7%)] Unweighted L_s : L_Mnfld: 0.00210,  L_NonMnfld: 0.02196,  L_Nrml: 0.00000,  L_Eknl: 0.31355, L_Morse: 0.62135
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 730/10000 (7%)] Loss: 49.84675 = L_Mnfld: 14.75950 + L_NonMnfld: 13.45339 + L_Nrml: 0.00000 + L_Eknl: 15.56725 + L_Div: 0.00000 + L_Morse: 6.06661
+Epoch: 0 [ 730/10000 (7%)] Unweighted L_s : L_Mnfld: 0.00211,  L_NonMnfld: 0.02242,  L_Nrml: 0.00000,  L_Eknl: 0.31134, L_Morse: 0.60666
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 740/10000 (7%)] Loss: 49.57567 = L_Mnfld: 14.46149 + L_NonMnfld: 13.31306 + L_Nrml: 0.00000 + L_Eknl: 15.63306 + L_Div: 0.00000 + L_Morse: 6.16806
+Epoch: 0 [ 740/10000 (7%)] Unweighted L_s : L_Mnfld: 0.00207,  L_NonMnfld: 0.02219,  L_Nrml: 0.00000,  L_Eknl: 0.31266, L_Morse: 0.61681
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 750/10000 (8%)] Loss: 50.36084 = L_Mnfld: 15.73333 + L_NonMnfld: 12.98025 + L_Nrml: 0.00000 + L_Eknl: 15.39824 + L_Div: 0.00000 + L_Morse: 6.24901
+Epoch: 0 [ 750/10000 (8%)] Unweighted L_s : L_Mnfld: 0.00225,  L_NonMnfld: 0.02163,  L_Nrml: 0.00000,  L_Eknl: 0.30796, L_Morse: 0.62490
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 760/10000 (8%)] Loss: 51.25592 = L_Mnfld: 14.90731 + L_NonMnfld: 14.70407 + L_Nrml: 0.00000 + L_Eknl: 15.31690 + L_Div: 0.00000 + L_Morse: 6.32763
+Epoch: 0 [ 760/10000 (8%)] Unweighted L_s : L_Mnfld: 0.00213,  L_NonMnfld: 0.02451,  L_Nrml: 0.00000,  L_Eknl: 0.30634, L_Morse: 0.63276
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 770/10000 (8%)] Loss: 51.05306 = L_Mnfld: 15.62957 + L_NonMnfld: 13.27724 + L_Nrml: 0.00000 + L_Eknl: 14.92871 + L_Div: 0.00000 + L_Morse: 7.21754
+Epoch: 0 [ 770/10000 (8%)] Unweighted L_s : L_Mnfld: 0.00223,  L_NonMnfld: 0.02213,  L_Nrml: 0.00000,  L_Eknl: 0.29857, L_Morse: 0.72175
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 780/10000 (8%)] Loss: 55.01909 = L_Mnfld: 17.70782 + L_NonMnfld: 14.17678 + L_Nrml: 0.00000 + L_Eknl: 16.02455 + L_Div: 0.00000 + L_Morse: 7.10995
+Epoch: 0 [ 780/10000 (8%)] Unweighted L_s : L_Mnfld: 0.00253,  L_NonMnfld: 0.02363,  L_Nrml: 0.00000,  L_Eknl: 0.32049, L_Morse: 0.71099
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 790/10000 (8%)] Loss: 53.03769 = L_Mnfld: 16.06882 + L_NonMnfld: 14.54130 + L_Nrml: 0.00000 + L_Eknl: 15.60756 + L_Div: 0.00000 + L_Morse: 6.82000
+Epoch: 0 [ 790/10000 (8%)] Unweighted L_s : L_Mnfld: 0.00230,  L_NonMnfld: 0.02424,  L_Nrml: 0.00000,  L_Eknl: 0.31215, L_Morse: 0.68200
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 800/10000 (8%)] Loss: 51.19057 = L_Mnfld: 15.19255 + L_NonMnfld: 13.36180 + L_Nrml: 0.00000 + L_Eknl: 15.87700 + L_Div: 0.00000 + L_Morse: 6.75923
+Epoch: 0 [ 800/10000 (8%)] Unweighted L_s : L_Mnfld: 0.00217,  L_NonMnfld: 0.02227,  L_Nrml: 0.00000,  L_Eknl: 0.31754, L_Morse: 0.67592
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 810/10000 (8%)] Loss: 50.51227 = L_Mnfld: 15.05740 + L_NonMnfld: 13.77656 + L_Nrml: 0.00000 + L_Eknl: 15.14943 + L_Div: 0.00000 + L_Morse: 6.52887
+Epoch: 0 [ 810/10000 (8%)] Unweighted L_s : L_Mnfld: 0.00215,  L_NonMnfld: 0.02296,  L_Nrml: 0.00000,  L_Eknl: 0.30299, L_Morse: 0.65289
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 820/10000 (8%)] Loss: 50.74198 = L_Mnfld: 14.98805 + L_NonMnfld: 14.20955 + L_Nrml: 0.00000 + L_Eknl: 15.23492 + L_Div: 0.00000 + L_Morse: 6.30946
+Epoch: 0 [ 820/10000 (8%)] Unweighted L_s : L_Mnfld: 0.00214,  L_NonMnfld: 0.02368,  L_Nrml: 0.00000,  L_Eknl: 0.30470, L_Morse: 0.63095
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 830/10000 (8%)] Loss: 47.49697 = L_Mnfld: 14.86864 + L_NonMnfld: 11.65007 + L_Nrml: 0.00000 + L_Eknl: 14.77459 + L_Div: 0.00000 + L_Morse: 6.20367
+Epoch: 0 [ 830/10000 (8%)] Unweighted L_s : L_Mnfld: 0.00212,  L_NonMnfld: 0.01942,  L_Nrml: 0.00000,  L_Eknl: 0.29549, L_Morse: 0.62037
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 840/10000 (8%)] Loss: 50.41119 = L_Mnfld: 15.01497 + L_NonMnfld: 14.26824 + L_Nrml: 0.00000 + L_Eknl: 14.74938 + L_Div: 0.00000 + L_Morse: 6.37860
+Epoch: 0 [ 840/10000 (8%)] Unweighted L_s : L_Mnfld: 0.00214,  L_NonMnfld: 0.02378,  L_Nrml: 0.00000,  L_Eknl: 0.29499, L_Morse: 0.63786
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 850/10000 (8%)] Loss: 48.19623 = L_Mnfld: 14.04543 + L_NonMnfld: 13.05966 + L_Nrml: 0.00000 + L_Eknl: 14.77760 + L_Div: 0.00000 + L_Morse: 6.31354
+Epoch: 0 [ 850/10000 (8%)] Unweighted L_s : L_Mnfld: 0.00201,  L_NonMnfld: 0.02177,  L_Nrml: 0.00000,  L_Eknl: 0.29555, L_Morse: 0.63135
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 860/10000 (9%)] Loss: 47.86890 = L_Mnfld: 13.50979 + L_NonMnfld: 13.21640 + L_Nrml: 0.00000 + L_Eknl: 14.80356 + L_Div: 0.00000 + L_Morse: 6.33916
+Epoch: 0 [ 860/10000 (9%)] Unweighted L_s : L_Mnfld: 0.00193,  L_NonMnfld: 0.02203,  L_Nrml: 0.00000,  L_Eknl: 0.29607, L_Morse: 0.63392
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 870/10000 (9%)] Loss: 49.04731 = L_Mnfld: 14.66794 + L_NonMnfld: 13.61584 + L_Nrml: 0.00000 + L_Eknl: 14.68694 + L_Div: 0.00000 + L_Morse: 6.07659
+Epoch: 0 [ 870/10000 (9%)] Unweighted L_s : L_Mnfld: 0.00210,  L_NonMnfld: 0.02269,  L_Nrml: 0.00000,  L_Eknl: 0.29374, L_Morse: 0.60766
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 880/10000 (9%)] Loss: 49.75241 = L_Mnfld: 15.50404 + L_NonMnfld: 12.58167 + L_Nrml: 0.00000 + L_Eknl: 15.01992 + L_Div: 0.00000 + L_Morse: 6.64679
+Epoch: 0 [ 880/10000 (9%)] Unweighted L_s : L_Mnfld: 0.00221,  L_NonMnfld: 0.02097,  L_Nrml: 0.00000,  L_Eknl: 0.30040, L_Morse: 0.66468
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 890/10000 (9%)] Loss: 47.67994 = L_Mnfld: 14.04243 + L_NonMnfld: 12.97680 + L_Nrml: 0.00000 + L_Eknl: 14.60524 + L_Div: 0.00000 + L_Morse: 6.05548
+Epoch: 0 [ 890/10000 (9%)] Unweighted L_s : L_Mnfld: 0.00201,  L_NonMnfld: 0.02163,  L_Nrml: 0.00000,  L_Eknl: 0.29210, L_Morse: 0.60555
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 900/10000 (9%)] Loss: 46.65536 = L_Mnfld: 13.26490 + L_NonMnfld: 13.15362 + L_Nrml: 0.00000 + L_Eknl: 14.57971 + L_Div: 0.00000 + L_Morse: 5.65713
+Epoch: 0 [ 900/10000 (9%)] Unweighted L_s : L_Mnfld: 0.00189,  L_NonMnfld: 0.02192,  L_Nrml: 0.00000,  L_Eknl: 0.29159, L_Morse: 0.56571
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 910/10000 (9%)] Loss: 46.75622 = L_Mnfld: 14.08794 + L_NonMnfld: 12.16368 + L_Nrml: 0.00000 + L_Eknl: 14.43566 + L_Div: 0.00000 + L_Morse: 6.06894
+Epoch: 0 [ 910/10000 (9%)] Unweighted L_s : L_Mnfld: 0.00201,  L_NonMnfld: 0.02027,  L_Nrml: 0.00000,  L_Eknl: 0.28871, L_Morse: 0.60689
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 920/10000 (9%)] Loss: 47.22941 = L_Mnfld: 13.43636 + L_NonMnfld: 13.46309 + L_Nrml: 0.00000 + L_Eknl: 14.40111 + L_Div: 0.00000 + L_Morse: 5.92885
+Epoch: 0 [ 920/10000 (9%)] Unweighted L_s : L_Mnfld: 0.00192,  L_NonMnfld: 0.02244,  L_Nrml: 0.00000,  L_Eknl: 0.28802, L_Morse: 0.59288
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 930/10000 (9%)] Loss: 47.85664 = L_Mnfld: 14.38822 + L_NonMnfld: 13.27501 + L_Nrml: 0.00000 + L_Eknl: 14.22503 + L_Div: 0.00000 + L_Morse: 5.96838
+Epoch: 0 [ 930/10000 (9%)] Unweighted L_s : L_Mnfld: 0.00206,  L_NonMnfld: 0.02213,  L_Nrml: 0.00000,  L_Eknl: 0.28450, L_Morse: 0.59684
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 940/10000 (9%)] Loss: 48.09990 = L_Mnfld: 13.93600 + L_NonMnfld: 13.19615 + L_Nrml: 0.00000 + L_Eknl: 14.60532 + L_Div: 0.00000 + L_Morse: 6.36243
+Epoch: 0 [ 940/10000 (9%)] Unweighted L_s : L_Mnfld: 0.00199,  L_NonMnfld: 0.02199,  L_Nrml: 0.00000,  L_Eknl: 0.29211, L_Morse: 0.63624
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 950/10000 (10%)] Loss: 49.22501 = L_Mnfld: 14.07453 + L_NonMnfld: 14.86519 + L_Nrml: 0.00000 + L_Eknl: 14.16902 + L_Div: 0.00000 + L_Morse: 6.11628
+Epoch: 0 [ 950/10000 (10%)] Unweighted L_s : L_Mnfld: 0.00201,  L_NonMnfld: 0.02478,  L_Nrml: 0.00000,  L_Eknl: 0.28338, L_Morse: 0.61163
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 960/10000 (10%)] Loss: 46.79895 = L_Mnfld: 13.20722 + L_NonMnfld: 13.23254 + L_Nrml: 0.00000 + L_Eknl: 14.19820 + L_Div: 0.00000 + L_Morse: 6.16100
+Epoch: 0 [ 960/10000 (10%)] Unweighted L_s : L_Mnfld: 0.00189,  L_NonMnfld: 0.02205,  L_Nrml: 0.00000,  L_Eknl: 0.28396, L_Morse: 0.61610
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 970/10000 (10%)] Loss: 47.47350 = L_Mnfld: 13.98970 + L_NonMnfld: 13.32159 + L_Nrml: 0.00000 + L_Eknl: 13.90925 + L_Div: 0.00000 + L_Morse: 6.25296
+Epoch: 0 [ 970/10000 (10%)] Unweighted L_s : L_Mnfld: 0.00200,  L_NonMnfld: 0.02220,  L_Nrml: 0.00000,  L_Eknl: 0.27819, L_Morse: 0.62530
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 980/10000 (10%)] Loss: 45.85539 = L_Mnfld: 13.91442 + L_NonMnfld: 12.39509 + L_Nrml: 0.00000 + L_Eknl: 13.73514 + L_Div: 0.00000 + L_Morse: 5.81073
+Epoch: 0 [ 980/10000 (10%)] Unweighted L_s : L_Mnfld: 0.00199,  L_NonMnfld: 0.02066,  L_Nrml: 0.00000,  L_Eknl: 0.27470, L_Morse: 0.58107
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [ 990/10000 (10%)] Loss: 48.22289 = L_Mnfld: 14.41484 + L_NonMnfld: 13.11016 + L_Nrml: 0.00000 + L_Eknl: 13.96311 + L_Div: 0.00000 + L_Morse: 6.73477
+Epoch: 0 [ 990/10000 (10%)] Unweighted L_s : L_Mnfld: 0.00206,  L_NonMnfld: 0.02185,  L_Nrml: 0.00000,  L_Eknl: 0.27926, L_Morse: 0.67348
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1000/10000 (10%)] Loss: 45.79766 = L_Mnfld: 13.38380 + L_NonMnfld: 12.26832 + L_Nrml: 0.00000 + L_Eknl: 13.97166 + L_Div: 0.00000 + L_Morse: 6.17388
+Epoch: 0 [1000/10000 (10%)] Unweighted L_s : L_Mnfld: 0.00191,  L_NonMnfld: 0.02045,  L_Nrml: 0.00000,  L_Eknl: 0.27943, L_Morse: 0.61739
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1010/10000 (10%)] Loss: 46.86335 = L_Mnfld: 13.19110 + L_NonMnfld: 13.44798 + L_Nrml: 0.00000 + L_Eknl: 14.05036 + L_Div: 0.00000 + L_Morse: 6.17390
+Epoch: 0 [1010/10000 (10%)] Unweighted L_s : L_Mnfld: 0.00188,  L_NonMnfld: 0.02241,  L_Nrml: 0.00000,  L_Eknl: 0.28101, L_Morse: 0.61739
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1020/10000 (10%)] Loss: 46.66064 = L_Mnfld: 13.32064 + L_NonMnfld: 13.02221 + L_Nrml: 0.00000 + L_Eknl: 13.97723 + L_Div: 0.00000 + L_Morse: 6.34058
+Epoch: 0 [1020/10000 (10%)] Unweighted L_s : L_Mnfld: 0.00190,  L_NonMnfld: 0.02170,  L_Nrml: 0.00000,  L_Eknl: 0.27954, L_Morse: 0.63406
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1030/10000 (10%)] Loss: 47.42517 = L_Mnfld: 14.66477 + L_NonMnfld: 12.34310 + L_Nrml: 0.00000 + L_Eknl: 13.83161 + L_Div: 0.00000 + L_Morse: 6.58569
+Epoch: 0 [1030/10000 (10%)] Unweighted L_s : L_Mnfld: 0.00209,  L_NonMnfld: 0.02057,  L_Nrml: 0.00000,  L_Eknl: 0.27663, L_Morse: 0.65857
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1040/10000 (10%)] Loss: 52.88445 = L_Mnfld: 16.46921 + L_NonMnfld: 14.80141 + L_Nrml: 0.00000 + L_Eknl: 14.68287 + L_Div: 0.00000 + L_Morse: 6.93096
+Epoch: 0 [1040/10000 (10%)] Unweighted L_s : L_Mnfld: 0.00235,  L_NonMnfld: 0.02467,  L_Nrml: 0.00000,  L_Eknl: 0.29366, L_Morse: 0.69310
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1050/10000 (10%)] Loss: 52.85802 = L_Mnfld: 17.15404 + L_NonMnfld: 13.31099 + L_Nrml: 0.00000 + L_Eknl: 14.11050 + L_Div: 0.00000 + L_Morse: 8.28248
+Epoch: 0 [1050/10000 (10%)] Unweighted L_s : L_Mnfld: 0.00245,  L_NonMnfld: 0.02218,  L_Nrml: 0.00000,  L_Eknl: 0.28221, L_Morse: 0.82825
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1060/10000 (11%)] Loss: 58.23684 = L_Mnfld: 20.84461 + L_NonMnfld: 13.48147 + L_Nrml: 0.00000 + L_Eknl: 14.72988 + L_Div: 0.00000 + L_Morse: 9.18087
+Epoch: 0 [1060/10000 (11%)] Unweighted L_s : L_Mnfld: 0.00298,  L_NonMnfld: 0.02247,  L_Nrml: 0.00000,  L_Eknl: 0.29460, L_Morse: 0.91809
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1070/10000 (11%)] Loss: 56.54840 = L_Mnfld: 19.83990 + L_NonMnfld: 12.88998 + L_Nrml: 0.00000 + L_Eknl: 14.49226 + L_Div: 0.00000 + L_Morse: 9.32627
+Epoch: 0 [1070/10000 (11%)] Unweighted L_s : L_Mnfld: 0.00283,  L_NonMnfld: 0.02148,  L_Nrml: 0.00000,  L_Eknl: 0.28985, L_Morse: 0.93263
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1080/10000 (11%)] Loss: 55.23759 = L_Mnfld: 18.90296 + L_NonMnfld: 13.33188 + L_Nrml: 0.00000 + L_Eknl: 14.58115 + L_Div: 0.00000 + L_Morse: 8.42161
+Epoch: 0 [1080/10000 (11%)] Unweighted L_s : L_Mnfld: 0.00270,  L_NonMnfld: 0.02222,  L_Nrml: 0.00000,  L_Eknl: 0.29162, L_Morse: 0.84216
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1090/10000 (11%)] Loss: 54.69110 = L_Mnfld: 17.54689 + L_NonMnfld: 14.31740 + L_Nrml: 0.00000 + L_Eknl: 15.33474 + L_Div: 0.00000 + L_Morse: 7.49207
+Epoch: 0 [1090/10000 (11%)] Unweighted L_s : L_Mnfld: 0.00251,  L_NonMnfld: 0.02386,  L_Nrml: 0.00000,  L_Eknl: 0.30669, L_Morse: 0.74921
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1100/10000 (11%)] Loss: 52.94687 = L_Mnfld: 18.71632 + L_NonMnfld: 12.30170 + L_Nrml: 0.00000 + L_Eknl: 14.71460 + L_Div: 0.00000 + L_Morse: 7.21425
+Epoch: 0 [1100/10000 (11%)] Unweighted L_s : L_Mnfld: 0.00267,  L_NonMnfld: 0.02050,  L_Nrml: 0.00000,  L_Eknl: 0.29429, L_Morse: 0.72143
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1110/10000 (11%)] Loss: 49.91885 = L_Mnfld: 15.45933 + L_NonMnfld: 13.41101 + L_Nrml: 0.00000 + L_Eknl: 14.72334 + L_Div: 0.00000 + L_Morse: 6.32516
+Epoch: 0 [1110/10000 (11%)] Unweighted L_s : L_Mnfld: 0.00221,  L_NonMnfld: 0.02235,  L_Nrml: 0.00000,  L_Eknl: 0.29447, L_Morse: 0.63252
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1120/10000 (11%)] Loss: 50.31896 = L_Mnfld: 14.96468 + L_NonMnfld: 14.24071 + L_Nrml: 0.00000 + L_Eknl: 14.58867 + L_Div: 0.00000 + L_Morse: 6.52491
+Epoch: 0 [1120/10000 (11%)] Unweighted L_s : L_Mnfld: 0.00214,  L_NonMnfld: 0.02373,  L_Nrml: 0.00000,  L_Eknl: 0.29177, L_Morse: 0.65249
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1130/10000 (11%)] Loss: 49.68906 = L_Mnfld: 15.20039 + L_NonMnfld: 13.18268 + L_Nrml: 0.00000 + L_Eknl: 14.67896 + L_Div: 0.00000 + L_Morse: 6.62703
+Epoch: 0 [1130/10000 (11%)] Unweighted L_s : L_Mnfld: 0.00217,  L_NonMnfld: 0.02197,  L_Nrml: 0.00000,  L_Eknl: 0.29358, L_Morse: 0.66270
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1140/10000 (11%)] Loss: 49.32312 = L_Mnfld: 14.59121 + L_NonMnfld: 14.11512 + L_Nrml: 0.00000 + L_Eknl: 14.49021 + L_Div: 0.00000 + L_Morse: 6.12657
+Epoch: 0 [1140/10000 (11%)] Unweighted L_s : L_Mnfld: 0.00208,  L_NonMnfld: 0.02353,  L_Nrml: 0.00000,  L_Eknl: 0.28980, L_Morse: 0.61266
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1150/10000 (12%)] Loss: 53.90145 = L_Mnfld: 18.52668 + L_NonMnfld: 13.96731 + L_Nrml: 0.00000 + L_Eknl: 14.49175 + L_Div: 0.00000 + L_Morse: 6.91571
+Epoch: 0 [1150/10000 (12%)] Unweighted L_s : L_Mnfld: 0.00265,  L_NonMnfld: 0.02328,  L_Nrml: 0.00000,  L_Eknl: 0.28983, L_Morse: 0.69157
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1160/10000 (12%)] Loss: 52.12124 = L_Mnfld: 16.90310 + L_NonMnfld: 13.81531 + L_Nrml: 0.00000 + L_Eknl: 14.28452 + L_Div: 0.00000 + L_Morse: 7.11832
+Epoch: 0 [1160/10000 (12%)] Unweighted L_s : L_Mnfld: 0.00241,  L_NonMnfld: 0.02303,  L_Nrml: 0.00000,  L_Eknl: 0.28569, L_Morse: 0.71183
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1170/10000 (12%)] Loss: 49.84838 = L_Mnfld: 16.07420 + L_NonMnfld: 13.10816 + L_Nrml: 0.00000 + L_Eknl: 13.63105 + L_Div: 0.00000 + L_Morse: 7.03498
+Epoch: 0 [1170/10000 (12%)] Unweighted L_s : L_Mnfld: 0.00230,  L_NonMnfld: 0.02185,  L_Nrml: 0.00000,  L_Eknl: 0.27262, L_Morse: 0.70350
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1180/10000 (12%)] Loss: 50.11098 = L_Mnfld: 15.79474 + L_NonMnfld: 13.11641 + L_Nrml: 0.00000 + L_Eknl: 14.64033 + L_Div: 0.00000 + L_Morse: 6.55950
+Epoch: 0 [1180/10000 (12%)] Unweighted L_s : L_Mnfld: 0.00226,  L_NonMnfld: 0.02186,  L_Nrml: 0.00000,  L_Eknl: 0.29281, L_Morse: 0.65595
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1190/10000 (12%)] Loss: 51.07684 = L_Mnfld: 15.53426 + L_NonMnfld: 14.59202 + L_Nrml: 0.00000 + L_Eknl: 14.52417 + L_Div: 0.00000 + L_Morse: 6.42639
+Epoch: 0 [1190/10000 (12%)] Unweighted L_s : L_Mnfld: 0.00222,  L_NonMnfld: 0.02432,  L_Nrml: 0.00000,  L_Eknl: 0.29048, L_Morse: 0.64264
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1200/10000 (12%)] Loss: 49.14246 = L_Mnfld: 14.75034 + L_NonMnfld: 14.15580 + L_Nrml: 0.00000 + L_Eknl: 14.08622 + L_Div: 0.00000 + L_Morse: 6.15010
+Epoch: 0 [1200/10000 (12%)] Unweighted L_s : L_Mnfld: 0.00211,  L_NonMnfld: 0.02359,  L_Nrml: 0.00000,  L_Eknl: 0.28172, L_Morse: 0.61501
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1210/10000 (12%)] Loss: 47.15393 = L_Mnfld: 14.94629 + L_NonMnfld: 13.00220 + L_Nrml: 0.00000 + L_Eknl: 13.26069 + L_Div: 0.00000 + L_Morse: 5.94475
+Epoch: 0 [1210/10000 (12%)] Unweighted L_s : L_Mnfld: 0.00214,  L_NonMnfld: 0.02167,  L_Nrml: 0.00000,  L_Eknl: 0.26521, L_Morse: 0.59447
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1220/10000 (12%)] Loss: 45.43920 = L_Mnfld: 13.61430 + L_NonMnfld: 12.97772 + L_Nrml: 0.00000 + L_Eknl: 13.51177 + L_Div: 0.00000 + L_Morse: 5.33542
+Epoch: 0 [1220/10000 (12%)] Unweighted L_s : L_Mnfld: 0.00194,  L_NonMnfld: 0.02163,  L_Nrml: 0.00000,  L_Eknl: 0.27024, L_Morse: 0.53354
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1230/10000 (12%)] Loss: 46.14856 = L_Mnfld: 13.32118 + L_NonMnfld: 13.87128 + L_Nrml: 0.00000 + L_Eknl: 13.43456 + L_Div: 0.00000 + L_Morse: 5.52154
+Epoch: 0 [1230/10000 (12%)] Unweighted L_s : L_Mnfld: 0.00190,  L_NonMnfld: 0.02312,  L_Nrml: 0.00000,  L_Eknl: 0.26869, L_Morse: 0.55215
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1240/10000 (12%)] Loss: 43.86274 = L_Mnfld: 12.29352 + L_NonMnfld: 13.11477 + L_Nrml: 0.00000 + L_Eknl: 13.14202 + L_Div: 0.00000 + L_Morse: 5.31244
+Epoch: 0 [1240/10000 (12%)] Unweighted L_s : L_Mnfld: 0.00176,  L_NonMnfld: 0.02186,  L_Nrml: 0.00000,  L_Eknl: 0.26284, L_Morse: 0.53124
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1250/10000 (12%)] Loss: 43.50076 = L_Mnfld: 12.57369 + L_NonMnfld: 12.93380 + L_Nrml: 0.00000 + L_Eknl: 13.01703 + L_Div: 0.00000 + L_Morse: 4.97625
+Epoch: 0 [1250/10000 (12%)] Unweighted L_s : L_Mnfld: 0.00180,  L_NonMnfld: 0.02156,  L_Nrml: 0.00000,  L_Eknl: 0.26034, L_Morse: 0.49762
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1260/10000 (13%)] Loss: 43.50536 = L_Mnfld: 12.14404 + L_NonMnfld: 13.23986 + L_Nrml: 0.00000 + L_Eknl: 12.98991 + L_Div: 0.00000 + L_Morse: 5.13155
+Epoch: 0 [1260/10000 (13%)] Unweighted L_s : L_Mnfld: 0.00173,  L_NonMnfld: 0.02207,  L_Nrml: 0.00000,  L_Eknl: 0.25980, L_Morse: 0.51315
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1270/10000 (13%)] Loss: 45.62851 = L_Mnfld: 12.96317 + L_NonMnfld: 14.43949 + L_Nrml: 0.00000 + L_Eknl: 12.86999 + L_Div: 0.00000 + L_Morse: 5.35585
+Epoch: 0 [1270/10000 (13%)] Unweighted L_s : L_Mnfld: 0.00185,  L_NonMnfld: 0.02407,  L_Nrml: 0.00000,  L_Eknl: 0.25740, L_Morse: 0.53558
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1280/10000 (13%)] Loss: 43.46430 = L_Mnfld: 12.30659 + L_NonMnfld: 12.83175 + L_Nrml: 0.00000 + L_Eknl: 13.26026 + L_Div: 0.00000 + L_Morse: 5.06568
+Epoch: 0 [1280/10000 (13%)] Unweighted L_s : L_Mnfld: 0.00176,  L_NonMnfld: 0.02139,  L_Nrml: 0.00000,  L_Eknl: 0.26521, L_Morse: 0.50657
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1290/10000 (13%)] Loss: 43.03194 = L_Mnfld: 12.53385 + L_NonMnfld: 12.67861 + L_Nrml: 0.00000 + L_Eknl: 12.72798 + L_Div: 0.00000 + L_Morse: 5.09150
+Epoch: 0 [1290/10000 (13%)] Unweighted L_s : L_Mnfld: 0.00179,  L_NonMnfld: 0.02113,  L_Nrml: 0.00000,  L_Eknl: 0.25456, L_Morse: 0.50915
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1300/10000 (13%)] Loss: 43.40103 = L_Mnfld: 12.64703 + L_NonMnfld: 12.96042 + L_Nrml: 0.00000 + L_Eknl: 12.78875 + L_Div: 0.00000 + L_Morse: 5.00484
+Epoch: 0 [1300/10000 (13%)] Unweighted L_s : L_Mnfld: 0.00181,  L_NonMnfld: 0.02160,  L_Nrml: 0.00000,  L_Eknl: 0.25577, L_Morse: 0.50048
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1310/10000 (13%)] Loss: 43.17712 = L_Mnfld: 12.26113 + L_NonMnfld: 12.90291 + L_Nrml: 0.00000 + L_Eknl: 12.73390 + L_Div: 0.00000 + L_Morse: 5.27917
+Epoch: 0 [1310/10000 (13%)] Unweighted L_s : L_Mnfld: 0.00175,  L_NonMnfld: 0.02150,  L_Nrml: 0.00000,  L_Eknl: 0.25468, L_Morse: 0.52792
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1320/10000 (13%)] Loss: 44.07186 = L_Mnfld: 12.59923 + L_NonMnfld: 13.05839 + L_Nrml: 0.00000 + L_Eknl: 12.76413 + L_Div: 0.00000 + L_Morse: 5.65011
+Epoch: 0 [1320/10000 (13%)] Unweighted L_s : L_Mnfld: 0.00180,  L_NonMnfld: 0.02176,  L_Nrml: 0.00000,  L_Eknl: 0.25528, L_Morse: 0.56501
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1330/10000 (13%)] Loss: 43.42368 = L_Mnfld: 13.50066 + L_NonMnfld: 12.08228 + L_Nrml: 0.00000 + L_Eknl: 12.31562 + L_Div: 0.00000 + L_Morse: 5.52512
+Epoch: 0 [1330/10000 (13%)] Unweighted L_s : L_Mnfld: 0.00193,  L_NonMnfld: 0.02014,  L_Nrml: 0.00000,  L_Eknl: 0.24631, L_Morse: 0.55251
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1340/10000 (13%)] Loss: 42.21075 = L_Mnfld: 12.37764 + L_NonMnfld: 11.79081 + L_Nrml: 0.00000 + L_Eknl: 12.65903 + L_Div: 0.00000 + L_Morse: 5.38328
+Epoch: 0 [1340/10000 (13%)] Unweighted L_s : L_Mnfld: 0.00177,  L_NonMnfld: 0.01965,  L_Nrml: 0.00000,  L_Eknl: 0.25318, L_Morse: 0.53833
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1350/10000 (14%)] Loss: 45.80776 = L_Mnfld: 13.08096 + L_NonMnfld: 14.66453 + L_Nrml: 0.00000 + L_Eknl: 12.45720 + L_Div: 0.00000 + L_Morse: 5.60507
+Epoch: 0 [1350/10000 (14%)] Unweighted L_s : L_Mnfld: 0.00187,  L_NonMnfld: 0.02444,  L_Nrml: 0.00000,  L_Eknl: 0.24914, L_Morse: 0.56051
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1360/10000 (14%)] Loss: 41.91131 = L_Mnfld: 11.69410 + L_NonMnfld: 12.32002 + L_Nrml: 0.00000 + L_Eknl: 12.60860 + L_Div: 0.00000 + L_Morse: 5.28858
+Epoch: 0 [1360/10000 (14%)] Unweighted L_s : L_Mnfld: 0.00167,  L_NonMnfld: 0.02053,  L_Nrml: 0.00000,  L_Eknl: 0.25217, L_Morse: 0.52886
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1370/10000 (14%)] Loss: 42.60878 = L_Mnfld: 12.35796 + L_NonMnfld: 12.50910 + L_Nrml: 0.00000 + L_Eknl: 12.47813 + L_Div: 0.00000 + L_Morse: 5.26358
+Epoch: 0 [1370/10000 (14%)] Unweighted L_s : L_Mnfld: 0.00177,  L_NonMnfld: 0.02085,  L_Nrml: 0.00000,  L_Eknl: 0.24956, L_Morse: 0.52636
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1380/10000 (14%)] Loss: 43.02416 = L_Mnfld: 11.73728 + L_NonMnfld: 13.37494 + L_Nrml: 0.00000 + L_Eknl: 12.60163 + L_Div: 0.00000 + L_Morse: 5.31030
+Epoch: 0 [1380/10000 (14%)] Unweighted L_s : L_Mnfld: 0.00168,  L_NonMnfld: 0.02229,  L_Nrml: 0.00000,  L_Eknl: 0.25203, L_Morse: 0.53103
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1390/10000 (14%)] Loss: 44.20761 = L_Mnfld: 12.97261 + L_NonMnfld: 13.13152 + L_Nrml: 0.00000 + L_Eknl: 12.43969 + L_Div: 0.00000 + L_Morse: 5.66380
+Epoch: 0 [1390/10000 (14%)] Unweighted L_s : L_Mnfld: 0.00185,  L_NonMnfld: 0.02189,  L_Nrml: 0.00000,  L_Eknl: 0.24879, L_Morse: 0.56638
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1400/10000 (14%)] Loss: 44.77469 = L_Mnfld: 12.51420 + L_NonMnfld: 14.02436 + L_Nrml: 0.00000 + L_Eknl: 12.69328 + L_Div: 0.00000 + L_Morse: 5.54286
+Epoch: 0 [1400/10000 (14%)] Unweighted L_s : L_Mnfld: 0.00179,  L_NonMnfld: 0.02337,  L_Nrml: 0.00000,  L_Eknl: 0.25387, L_Morse: 0.55429
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1410/10000 (14%)] Loss: 42.48699 = L_Mnfld: 11.72520 + L_NonMnfld: 13.13956 + L_Nrml: 0.00000 + L_Eknl: 12.45200 + L_Div: 0.00000 + L_Morse: 5.17023
+Epoch: 0 [1410/10000 (14%)] Unweighted L_s : L_Mnfld: 0.00168,  L_NonMnfld: 0.02190,  L_Nrml: 0.00000,  L_Eknl: 0.24904, L_Morse: 0.51702
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1420/10000 (14%)] Loss: 43.25412 = L_Mnfld: 12.08702 + L_NonMnfld: 13.34645 + L_Nrml: 0.00000 + L_Eknl: 12.42309 + L_Div: 0.00000 + L_Morse: 5.39757
+Epoch: 0 [1420/10000 (14%)] Unweighted L_s : L_Mnfld: 0.00173,  L_NonMnfld: 0.02224,  L_Nrml: 0.00000,  L_Eknl: 0.24846, L_Morse: 0.53976
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1430/10000 (14%)] Loss: 42.89627 = L_Mnfld: 12.56854 + L_NonMnfld: 12.34047 + L_Nrml: 0.00000 + L_Eknl: 12.39229 + L_Div: 0.00000 + L_Morse: 5.59497
+Epoch: 0 [1430/10000 (14%)] Unweighted L_s : L_Mnfld: 0.00180,  L_NonMnfld: 0.02057,  L_Nrml: 0.00000,  L_Eknl: 0.24785, L_Morse: 0.55950
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1440/10000 (14%)] Loss: 43.23914 = L_Mnfld: 12.10055 + L_NonMnfld: 12.99054 + L_Nrml: 0.00000 + L_Eknl: 12.56651 + L_Div: 0.00000 + L_Morse: 5.58154
+Epoch: 0 [1440/10000 (14%)] Unweighted L_s : L_Mnfld: 0.00173,  L_NonMnfld: 0.02165,  L_Nrml: 0.00000,  L_Eknl: 0.25133, L_Morse: 0.55815
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1450/10000 (14%)] Loss: 43.90504 = L_Mnfld: 12.33655 + L_NonMnfld: 13.52886 + L_Nrml: 0.00000 + L_Eknl: 12.53854 + L_Div: 0.00000 + L_Morse: 5.50110
+Epoch: 0 [1450/10000 (14%)] Unweighted L_s : L_Mnfld: 0.00176,  L_NonMnfld: 0.02255,  L_Nrml: 0.00000,  L_Eknl: 0.25077, L_Morse: 0.55011
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1460/10000 (15%)] Loss: 44.04975 = L_Mnfld: 13.04665 + L_NonMnfld: 12.88426 + L_Nrml: 0.00000 + L_Eknl: 12.27909 + L_Div: 0.00000 + L_Morse: 5.83974
+Epoch: 0 [1460/10000 (15%)] Unweighted L_s : L_Mnfld: 0.00186,  L_NonMnfld: 0.02147,  L_Nrml: 0.00000,  L_Eknl: 0.24558, L_Morse: 0.58397
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1470/10000 (15%)] Loss: 43.83178 = L_Mnfld: 12.59592 + L_NonMnfld: 12.92668 + L_Nrml: 0.00000 + L_Eknl: 12.45611 + L_Div: 0.00000 + L_Morse: 5.85308
+Epoch: 0 [1470/10000 (15%)] Unweighted L_s : L_Mnfld: 0.00180,  L_NonMnfld: 0.02154,  L_Nrml: 0.00000,  L_Eknl: 0.24912, L_Morse: 0.58531
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1480/10000 (15%)] Loss: 43.76229 = L_Mnfld: 12.46828 + L_NonMnfld: 13.08851 + L_Nrml: 0.00000 + L_Eknl: 12.60594 + L_Div: 0.00000 + L_Morse: 5.59956
+Epoch: 0 [1480/10000 (15%)] Unweighted L_s : L_Mnfld: 0.00178,  L_NonMnfld: 0.02181,  L_Nrml: 0.00000,  L_Eknl: 0.25212, L_Morse: 0.55996
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1490/10000 (15%)] Loss: 43.20407 = L_Mnfld: 11.94031 + L_NonMnfld: 13.35776 + L_Nrml: 0.00000 + L_Eknl: 12.29364 + L_Div: 0.00000 + L_Morse: 5.61236
+Epoch: 0 [1490/10000 (15%)] Unweighted L_s : L_Mnfld: 0.00171,  L_NonMnfld: 0.02226,  L_Nrml: 0.00000,  L_Eknl: 0.24587, L_Morse: 0.56124
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1500/10000 (15%)] Loss: 42.51696 = L_Mnfld: 11.60296 + L_NonMnfld: 13.22911 + L_Nrml: 0.00000 + L_Eknl: 12.45653 + L_Div: 0.00000 + L_Morse: 5.22835
+Epoch: 0 [1500/10000 (15%)] Unweighted L_s : L_Mnfld: 0.00166,  L_NonMnfld: 0.02205,  L_Nrml: 0.00000,  L_Eknl: 0.24913, L_Morse: 0.52284
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1510/10000 (15%)] Loss: 43.56714 = L_Mnfld: 12.19188 + L_NonMnfld: 13.35667 + L_Nrml: 0.00000 + L_Eknl: 12.33559 + L_Div: 0.00000 + L_Morse: 5.68300
+Epoch: 0 [1510/10000 (15%)] Unweighted L_s : L_Mnfld: 0.00174,  L_NonMnfld: 0.02226,  L_Nrml: 0.00000,  L_Eknl: 0.24671, L_Morse: 0.56830
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1520/10000 (15%)] Loss: 42.85756 = L_Mnfld: 11.55937 + L_NonMnfld: 13.85820 + L_Nrml: 0.00000 + L_Eknl: 12.31118 + L_Div: 0.00000 + L_Morse: 5.12881
+Epoch: 0 [1520/10000 (15%)] Unweighted L_s : L_Mnfld: 0.00165,  L_NonMnfld: 0.02310,  L_Nrml: 0.00000,  L_Eknl: 0.24622, L_Morse: 0.51288
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1530/10000 (15%)] Loss: 42.80489 = L_Mnfld: 12.72368 + L_NonMnfld: 12.43829 + L_Nrml: 0.00000 + L_Eknl: 12.13017 + L_Div: 0.00000 + L_Morse: 5.51276
+Epoch: 0 [1530/10000 (15%)] Unweighted L_s : L_Mnfld: 0.00182,  L_NonMnfld: 0.02073,  L_Nrml: 0.00000,  L_Eknl: 0.24260, L_Morse: 0.55128
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1540/10000 (15%)] Loss: 44.20975 = L_Mnfld: 12.62435 + L_NonMnfld: 13.85429 + L_Nrml: 0.00000 + L_Eknl: 12.54130 + L_Div: 0.00000 + L_Morse: 5.18982
+Epoch: 0 [1540/10000 (15%)] Unweighted L_s : L_Mnfld: 0.00180,  L_NonMnfld: 0.02309,  L_Nrml: 0.00000,  L_Eknl: 0.25083, L_Morse: 0.51898
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1550/10000 (16%)] Loss: 42.19007 = L_Mnfld: 12.04492 + L_NonMnfld: 12.64834 + L_Nrml: 0.00000 + L_Eknl: 12.16614 + L_Div: 0.00000 + L_Morse: 5.33068
+Epoch: 0 [1550/10000 (16%)] Unweighted L_s : L_Mnfld: 0.00172,  L_NonMnfld: 0.02108,  L_Nrml: 0.00000,  L_Eknl: 0.24332, L_Morse: 0.53307
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1560/10000 (16%)] Loss: 43.00148 = L_Mnfld: 11.73047 + L_NonMnfld: 13.25638 + L_Nrml: 0.00000 + L_Eknl: 12.60659 + L_Div: 0.00000 + L_Morse: 5.40803
+Epoch: 0 [1560/10000 (16%)] Unweighted L_s : L_Mnfld: 0.00168,  L_NonMnfld: 0.02209,  L_Nrml: 0.00000,  L_Eknl: 0.25213, L_Morse: 0.54080
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1570/10000 (16%)] Loss: 42.51749 = L_Mnfld: 12.18107 + L_NonMnfld: 12.46112 + L_Nrml: 0.00000 + L_Eknl: 12.20609 + L_Div: 0.00000 + L_Morse: 5.66922
+Epoch: 0 [1570/10000 (16%)] Unweighted L_s : L_Mnfld: 0.00174,  L_NonMnfld: 0.02077,  L_Nrml: 0.00000,  L_Eknl: 0.24412, L_Morse: 0.56692
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1580/10000 (16%)] Loss: 42.24444 = L_Mnfld: 11.80799 + L_NonMnfld: 12.97633 + L_Nrml: 0.00000 + L_Eknl: 12.09550 + L_Div: 0.00000 + L_Morse: 5.36461
+Epoch: 0 [1580/10000 (16%)] Unweighted L_s : L_Mnfld: 0.00169,  L_NonMnfld: 0.02163,  L_Nrml: 0.00000,  L_Eknl: 0.24191, L_Morse: 0.53646
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1590/10000 (16%)] Loss: 43.24471 = L_Mnfld: 12.86848 + L_NonMnfld: 12.70658 + L_Nrml: 0.00000 + L_Eknl: 11.91256 + L_Div: 0.00000 + L_Morse: 5.75709
+Epoch: 0 [1590/10000 (16%)] Unweighted L_s : L_Mnfld: 0.00184,  L_NonMnfld: 0.02118,  L_Nrml: 0.00000,  L_Eknl: 0.23825, L_Morse: 0.57571
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1600/10000 (16%)] Loss: 43.05168 = L_Mnfld: 12.21023 + L_NonMnfld: 13.14088 + L_Nrml: 0.00000 + L_Eknl: 12.14904 + L_Div: 0.00000 + L_Morse: 5.55153
+Epoch: 0 [1600/10000 (16%)] Unweighted L_s : L_Mnfld: 0.00174,  L_NonMnfld: 0.02190,  L_Nrml: 0.00000,  L_Eknl: 0.24298, L_Morse: 0.55515
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1610/10000 (16%)] Loss: 44.05089 = L_Mnfld: 13.67365 + L_NonMnfld: 12.93156 + L_Nrml: 0.00000 + L_Eknl: 11.89603 + L_Div: 0.00000 + L_Morse: 5.54965
+Epoch: 0 [1610/10000 (16%)] Unweighted L_s : L_Mnfld: 0.00195,  L_NonMnfld: 0.02155,  L_Nrml: 0.00000,  L_Eknl: 0.23792, L_Morse: 0.55497
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1620/10000 (16%)] Loss: 45.61451 = L_Mnfld: 13.30054 + L_NonMnfld: 13.78853 + L_Nrml: 0.00000 + L_Eknl: 12.42763 + L_Div: 0.00000 + L_Morse: 6.09781
+Epoch: 0 [1620/10000 (16%)] Unweighted L_s : L_Mnfld: 0.00190,  L_NonMnfld: 0.02298,  L_Nrml: 0.00000,  L_Eknl: 0.24855, L_Morse: 0.60978
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1630/10000 (16%)] Loss: 45.39153 = L_Mnfld: 13.23467 + L_NonMnfld: 13.01742 + L_Nrml: 0.00000 + L_Eknl: 12.61404 + L_Div: 0.00000 + L_Morse: 6.52541
+Epoch: 0 [1630/10000 (16%)] Unweighted L_s : L_Mnfld: 0.00189,  L_NonMnfld: 0.02170,  L_Nrml: 0.00000,  L_Eknl: 0.25228, L_Morse: 0.65254
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1640/10000 (16%)] Loss: 44.09592 = L_Mnfld: 13.07054 + L_NonMnfld: 13.17950 + L_Nrml: 0.00000 + L_Eknl: 12.16846 + L_Div: 0.00000 + L_Morse: 5.67741
+Epoch: 0 [1640/10000 (16%)] Unweighted L_s : L_Mnfld: 0.00187,  L_NonMnfld: 0.02197,  L_Nrml: 0.00000,  L_Eknl: 0.24337, L_Morse: 0.56774
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1650/10000 (16%)] Loss: 42.98564 = L_Mnfld: 12.86870 + L_NonMnfld: 12.43952 + L_Nrml: 0.00000 + L_Eknl: 11.97873 + L_Div: 0.00000 + L_Morse: 5.69870
+Epoch: 0 [1650/10000 (16%)] Unweighted L_s : L_Mnfld: 0.00184,  L_NonMnfld: 0.02073,  L_Nrml: 0.00000,  L_Eknl: 0.23957, L_Morse: 0.56987
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1660/10000 (17%)] Loss: 44.54828 = L_Mnfld: 13.15128 + L_NonMnfld: 13.23453 + L_Nrml: 0.00000 + L_Eknl: 12.13048 + L_Div: 0.00000 + L_Morse: 6.03200
+Epoch: 0 [1660/10000 (17%)] Unweighted L_s : L_Mnfld: 0.00188,  L_NonMnfld: 0.02206,  L_Nrml: 0.00000,  L_Eknl: 0.24261, L_Morse: 0.60320
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1670/10000 (17%)] Loss: 42.15393 = L_Mnfld: 12.94341 + L_NonMnfld: 11.62919 + L_Nrml: 0.00000 + L_Eknl: 11.89407 + L_Div: 0.00000 + L_Morse: 5.68726
+Epoch: 0 [1670/10000 (17%)] Unweighted L_s : L_Mnfld: 0.00185,  L_NonMnfld: 0.01938,  L_Nrml: 0.00000,  L_Eknl: 0.23788, L_Morse: 0.56873
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1680/10000 (17%)] Loss: 42.26447 = L_Mnfld: 12.06910 + L_NonMnfld: 12.58234 + L_Nrml: 0.00000 + L_Eknl: 12.22353 + L_Div: 0.00000 + L_Morse: 5.38949
+Epoch: 0 [1680/10000 (17%)] Unweighted L_s : L_Mnfld: 0.00172,  L_NonMnfld: 0.02097,  L_Nrml: 0.00000,  L_Eknl: 0.24447, L_Morse: 0.53895
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1690/10000 (17%)] Loss: 40.91511 = L_Mnfld: 11.58286 + L_NonMnfld: 12.17502 + L_Nrml: 0.00000 + L_Eknl: 11.94114 + L_Div: 0.00000 + L_Morse: 5.21609
+Epoch: 0 [1690/10000 (17%)] Unweighted L_s : L_Mnfld: 0.00165,  L_NonMnfld: 0.02029,  L_Nrml: 0.00000,  L_Eknl: 0.23882, L_Morse: 0.52161
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1700/10000 (17%)] Loss: 42.94402 = L_Mnfld: 12.07872 + L_NonMnfld: 13.02627 + L_Nrml: 0.00000 + L_Eknl: 12.42830 + L_Div: 0.00000 + L_Morse: 5.41073
+Epoch: 0 [1700/10000 (17%)] Unweighted L_s : L_Mnfld: 0.00173,  L_NonMnfld: 0.02171,  L_Nrml: 0.00000,  L_Eknl: 0.24857, L_Morse: 0.54107
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1710/10000 (17%)] Loss: 42.83970 = L_Mnfld: 12.49620 + L_NonMnfld: 13.26486 + L_Nrml: 0.00000 + L_Eknl: 11.80444 + L_Div: 0.00000 + L_Morse: 5.27419
+Epoch: 0 [1710/10000 (17%)] Unweighted L_s : L_Mnfld: 0.00179,  L_NonMnfld: 0.02211,  L_Nrml: 0.00000,  L_Eknl: 0.23609, L_Morse: 0.52742
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1720/10000 (17%)] Loss: 42.05687 = L_Mnfld: 11.90547 + L_NonMnfld: 13.14886 + L_Nrml: 0.00000 + L_Eknl: 11.77742 + L_Div: 0.00000 + L_Morse: 5.22512
+Epoch: 0 [1720/10000 (17%)] Unweighted L_s : L_Mnfld: 0.00170,  L_NonMnfld: 0.02191,  L_Nrml: 0.00000,  L_Eknl: 0.23555, L_Morse: 0.52251
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1730/10000 (17%)] Loss: 41.66397 = L_Mnfld: 11.99633 + L_NonMnfld: 12.65198 + L_Nrml: 0.00000 + L_Eknl: 11.92514 + L_Div: 0.00000 + L_Morse: 5.09051
+Epoch: 0 [1730/10000 (17%)] Unweighted L_s : L_Mnfld: 0.00171,  L_NonMnfld: 0.02109,  L_Nrml: 0.00000,  L_Eknl: 0.23850, L_Morse: 0.50905
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1740/10000 (17%)] Loss: 43.93288 = L_Mnfld: 13.35647 + L_NonMnfld: 12.80058 + L_Nrml: 0.00000 + L_Eknl: 12.11631 + L_Div: 0.00000 + L_Morse: 5.65951
+Epoch: 0 [1740/10000 (17%)] Unweighted L_s : L_Mnfld: 0.00191,  L_NonMnfld: 0.02133,  L_Nrml: 0.00000,  L_Eknl: 0.24233, L_Morse: 0.56595
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1750/10000 (18%)] Loss: 42.63216 = L_Mnfld: 13.38942 + L_NonMnfld: 11.88243 + L_Nrml: 0.00000 + L_Eknl: 11.61507 + L_Div: 0.00000 + L_Morse: 5.74524
+Epoch: 0 [1750/10000 (18%)] Unweighted L_s : L_Mnfld: 0.00191,  L_NonMnfld: 0.01980,  L_Nrml: 0.00000,  L_Eknl: 0.23230, L_Morse: 0.57452
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1760/10000 (18%)] Loss: 43.79916 = L_Mnfld: 13.21283 + L_NonMnfld: 13.12738 + L_Nrml: 0.00000 + L_Eknl: 11.92325 + L_Div: 0.00000 + L_Morse: 5.53570
+Epoch: 0 [1760/10000 (18%)] Unweighted L_s : L_Mnfld: 0.00189,  L_NonMnfld: 0.02188,  L_Nrml: 0.00000,  L_Eknl: 0.23846, L_Morse: 0.55357
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1770/10000 (18%)] Loss: 42.96377 = L_Mnfld: 13.05433 + L_NonMnfld: 12.48346 + L_Nrml: 0.00000 + L_Eknl: 11.60693 + L_Div: 0.00000 + L_Morse: 5.81905
+Epoch: 0 [1770/10000 (18%)] Unweighted L_s : L_Mnfld: 0.00186,  L_NonMnfld: 0.02081,  L_Nrml: 0.00000,  L_Eknl: 0.23214, L_Morse: 0.58191
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1780/10000 (18%)] Loss: 44.15557 = L_Mnfld: 12.60229 + L_NonMnfld: 13.64728 + L_Nrml: 0.00000 + L_Eknl: 12.16237 + L_Div: 0.00000 + L_Morse: 5.74363
+Epoch: 0 [1780/10000 (18%)] Unweighted L_s : L_Mnfld: 0.00180,  L_NonMnfld: 0.02275,  L_Nrml: 0.00000,  L_Eknl: 0.24325, L_Morse: 0.57436
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1790/10000 (18%)] Loss: 41.70585 = L_Mnfld: 12.18279 + L_NonMnfld: 12.27327 + L_Nrml: 0.00000 + L_Eknl: 11.73603 + L_Div: 0.00000 + L_Morse: 5.51376
+Epoch: 0 [1790/10000 (18%)] Unweighted L_s : L_Mnfld: 0.00174,  L_NonMnfld: 0.02046,  L_Nrml: 0.00000,  L_Eknl: 0.23472, L_Morse: 0.55138
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1800/10000 (18%)] Loss: 41.35858 = L_Mnfld: 12.36866 + L_NonMnfld: 11.54143 + L_Nrml: 0.00000 + L_Eknl: 11.79139 + L_Div: 0.00000 + L_Morse: 5.65710
+Epoch: 0 [1800/10000 (18%)] Unweighted L_s : L_Mnfld: 0.00177,  L_NonMnfld: 0.01924,  L_Nrml: 0.00000,  L_Eknl: 0.23583, L_Morse: 0.56571
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1810/10000 (18%)] Loss: 41.99431 = L_Mnfld: 12.68354 + L_NonMnfld: 11.99468 + L_Nrml: 0.00000 + L_Eknl: 11.67552 + L_Div: 0.00000 + L_Morse: 5.64056
+Epoch: 0 [1810/10000 (18%)] Unweighted L_s : L_Mnfld: 0.00181,  L_NonMnfld: 0.01999,  L_Nrml: 0.00000,  L_Eknl: 0.23351, L_Morse: 0.56406
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1820/10000 (18%)] Loss: 42.54288 = L_Mnfld: 11.93548 + L_NonMnfld: 13.25129 + L_Nrml: 0.00000 + L_Eknl: 11.98321 + L_Div: 0.00000 + L_Morse: 5.37289
+Epoch: 0 [1820/10000 (18%)] Unweighted L_s : L_Mnfld: 0.00171,  L_NonMnfld: 0.02209,  L_Nrml: 0.00000,  L_Eknl: 0.23966, L_Morse: 0.53729
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1830/10000 (18%)] Loss: 40.79043 = L_Mnfld: 12.38846 + L_NonMnfld: 11.57442 + L_Nrml: 0.00000 + L_Eknl: 11.22470 + L_Div: 0.00000 + L_Morse: 5.60285
+Epoch: 0 [1830/10000 (18%)] Unweighted L_s : L_Mnfld: 0.00177,  L_NonMnfld: 0.01929,  L_Nrml: 0.00000,  L_Eknl: 0.22449, L_Morse: 0.56028
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1840/10000 (18%)] Loss: 41.55842 = L_Mnfld: 11.82571 + L_NonMnfld: 12.48798 + L_Nrml: 0.00000 + L_Eknl: 11.74631 + L_Div: 0.00000 + L_Morse: 5.49841
+Epoch: 0 [1840/10000 (18%)] Unweighted L_s : L_Mnfld: 0.00169,  L_NonMnfld: 0.02081,  L_Nrml: 0.00000,  L_Eknl: 0.23493, L_Morse: 0.54984
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1850/10000 (18%)] Loss: 42.66452 = L_Mnfld: 12.66005 + L_NonMnfld: 13.02278 + L_Nrml: 0.00000 + L_Eknl: 11.49981 + L_Div: 0.00000 + L_Morse: 5.48188
+Epoch: 0 [1850/10000 (18%)] Unweighted L_s : L_Mnfld: 0.00181,  L_NonMnfld: 0.02170,  L_Nrml: 0.00000,  L_Eknl: 0.23000, L_Morse: 0.54819
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1860/10000 (19%)] Loss: 41.54925 = L_Mnfld: 12.27813 + L_NonMnfld: 12.08879 + L_Nrml: 0.00000 + L_Eknl: 11.56172 + L_Div: 0.00000 + L_Morse: 5.62061
+Epoch: 0 [1860/10000 (19%)] Unweighted L_s : L_Mnfld: 0.00175,  L_NonMnfld: 0.02015,  L_Nrml: 0.00000,  L_Eknl: 0.23123, L_Morse: 0.56206
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1870/10000 (19%)] Loss: 43.12750 = L_Mnfld: 12.29385 + L_NonMnfld: 13.91796 + L_Nrml: 0.00000 + L_Eknl: 11.36798 + L_Div: 0.00000 + L_Morse: 5.54772
+Epoch: 0 [1870/10000 (19%)] Unweighted L_s : L_Mnfld: 0.00176,  L_NonMnfld: 0.02320,  L_Nrml: 0.00000,  L_Eknl: 0.22736, L_Morse: 0.55477
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1880/10000 (19%)] Loss: 43.18471 = L_Mnfld: 12.83829 + L_NonMnfld: 13.09734 + L_Nrml: 0.00000 + L_Eknl: 11.53752 + L_Div: 0.00000 + L_Morse: 5.71155
+Epoch: 0 [1880/10000 (19%)] Unweighted L_s : L_Mnfld: 0.00183,  L_NonMnfld: 0.02183,  L_Nrml: 0.00000,  L_Eknl: 0.23075, L_Morse: 0.57115
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1890/10000 (19%)] Loss: 45.05193 = L_Mnfld: 14.59351 + L_NonMnfld: 12.43564 + L_Nrml: 0.00000 + L_Eknl: 11.77077 + L_Div: 0.00000 + L_Morse: 6.25202
+Epoch: 0 [1890/10000 (19%)] Unweighted L_s : L_Mnfld: 0.00208,  L_NonMnfld: 0.02073,  L_Nrml: 0.00000,  L_Eknl: 0.23542, L_Morse: 0.62520
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1900/10000 (19%)] Loss: 47.00175 = L_Mnfld: 15.42648 + L_NonMnfld: 12.97942 + L_Nrml: 0.00000 + L_Eknl: 11.82836 + L_Div: 0.00000 + L_Morse: 6.76749
+Epoch: 0 [1900/10000 (19%)] Unweighted L_s : L_Mnfld: 0.00220,  L_NonMnfld: 0.02163,  L_Nrml: 0.00000,  L_Eknl: 0.23657, L_Morse: 0.67675
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1910/10000 (19%)] Loss: 44.97741 = L_Mnfld: 13.64884 + L_NonMnfld: 12.86503 + L_Nrml: 0.00000 + L_Eknl: 11.65024 + L_Div: 0.00000 + L_Morse: 6.81330
+Epoch: 0 [1910/10000 (19%)] Unweighted L_s : L_Mnfld: 0.00195,  L_NonMnfld: 0.02144,  L_Nrml: 0.00000,  L_Eknl: 0.23300, L_Morse: 0.68133
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1920/10000 (19%)] Loss: 50.31441 = L_Mnfld: 16.59648 + L_NonMnfld: 13.20642 + L_Nrml: 0.00000 + L_Eknl: 12.10121 + L_Div: 0.00000 + L_Morse: 8.41030
+Epoch: 0 [1920/10000 (19%)] Unweighted L_s : L_Mnfld: 0.00237,  L_NonMnfld: 0.02201,  L_Nrml: 0.00000,  L_Eknl: 0.24202, L_Morse: 0.84103
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1930/10000 (19%)] Loss: 47.25126 = L_Mnfld: 15.81891 + L_NonMnfld: 12.80907 + L_Nrml: 0.00000 + L_Eknl: 11.96677 + L_Div: 0.00000 + L_Morse: 6.65650
+Epoch: 0 [1930/10000 (19%)] Unweighted L_s : L_Mnfld: 0.00226,  L_NonMnfld: 0.02135,  L_Nrml: 0.00000,  L_Eknl: 0.23934, L_Morse: 0.66565
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1940/10000 (19%)] Loss: 49.30555 = L_Mnfld: 15.42925 + L_NonMnfld: 13.58713 + L_Nrml: 0.00000 + L_Eknl: 13.08544 + L_Div: 0.00000 + L_Morse: 7.20373
+Epoch: 0 [1940/10000 (19%)] Unweighted L_s : L_Mnfld: 0.00220,  L_NonMnfld: 0.02265,  L_Nrml: 0.00000,  L_Eknl: 0.26171, L_Morse: 0.72037
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1950/10000 (20%)] Loss: 44.92558 = L_Mnfld: 14.11796 + L_NonMnfld: 12.88466 + L_Nrml: 0.00000 + L_Eknl: 11.87624 + L_Div: 0.00000 + L_Morse: 6.04671
+Epoch: 0 [1950/10000 (20%)] Unweighted L_s : L_Mnfld: 0.00202,  L_NonMnfld: 0.02147,  L_Nrml: 0.00000,  L_Eknl: 0.23752, L_Morse: 0.60467
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1960/10000 (20%)] Loss: 44.21566 = L_Mnfld: 13.56441 + L_NonMnfld: 13.08642 + L_Nrml: 0.00000 + L_Eknl: 12.03627 + L_Div: 0.00000 + L_Morse: 5.52857
+Epoch: 0 [1960/10000 (20%)] Unweighted L_s : L_Mnfld: 0.00194,  L_NonMnfld: 0.02181,  L_Nrml: 0.00000,  L_Eknl: 0.24073, L_Morse: 0.55286
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1970/10000 (20%)] Loss: 45.42619 = L_Mnfld: 15.08313 + L_NonMnfld: 12.59260 + L_Nrml: 0.00000 + L_Eknl: 11.58879 + L_Div: 0.00000 + L_Morse: 6.16168
+Epoch: 0 [1970/10000 (20%)] Unweighted L_s : L_Mnfld: 0.00215,  L_NonMnfld: 0.02099,  L_Nrml: 0.00000,  L_Eknl: 0.23178, L_Morse: 0.61617
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1980/10000 (20%)] Loss: 42.96849 = L_Mnfld: 13.51693 + L_NonMnfld: 12.25221 + L_Nrml: 0.00000 + L_Eknl: 11.64071 + L_Div: 0.00000 + L_Morse: 5.55865
+Epoch: 0 [1980/10000 (20%)] Unweighted L_s : L_Mnfld: 0.00193,  L_NonMnfld: 0.02042,  L_Nrml: 0.00000,  L_Eknl: 0.23281, L_Morse: 0.55587
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [1990/10000 (20%)] Loss: 42.50137 = L_Mnfld: 13.49930 + L_NonMnfld: 12.37963 + L_Nrml: 0.00000 + L_Eknl: 11.04413 + L_Div: 0.00000 + L_Morse: 5.57831
+Epoch: 0 [1990/10000 (20%)] Unweighted L_s : L_Mnfld: 0.00193,  L_NonMnfld: 0.02063,  L_Nrml: 0.00000,  L_Eknl: 0.22088, L_Morse: 0.55783
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 10.0], lr=5.000e-05
+Epoch: 0 [2000/10000 (20%)] Loss: 41.89393 = L_Mnfld: 11.40422 + L_NonMnfld: 13.80727 + L_Nrml: 0.00000 + L_Eknl: 11.45693 + L_Div: 0.00000 + L_Morse: 5.22552
+Epoch: 0 [2000/10000 (20%)] Unweighted L_s : L_Mnfld: 0.00163,  L_NonMnfld: 0.02301,  L_Nrml: 0.00000,  L_Eknl: 0.22914, L_Morse: 0.52255
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 9.970003], lr=5.000e-05
+Epoch: 0 [2010/10000 (20%)] Loss: 40.97727 = L_Mnfld: 11.98436 + L_NonMnfld: 12.90868 + L_Nrml: 0.00000 + L_Eknl: 11.13198 + L_Div: 0.00000 + L_Morse: 4.95225
+Epoch: 0 [2010/10000 (20%)] Unweighted L_s : L_Mnfld: 0.00171,  L_NonMnfld: 0.02151,  L_Nrml: 0.00000,  L_Eknl: 0.22264, L_Morse: 0.49672
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 9.936673], lr=5.000e-05
+Epoch: 0 [2020/10000 (20%)] Loss: 40.74180 = L_Mnfld: 11.81382 + L_NonMnfld: 12.61005 + L_Nrml: 0.00000 + L_Eknl: 11.49848 + L_Div: 0.00000 + L_Morse: 4.81945
+Epoch: 0 [2020/10000 (20%)] Unweighted L_s : L_Mnfld: 0.00169,  L_NonMnfld: 0.02102,  L_Nrml: 0.00000,  L_Eknl: 0.22997, L_Morse: 0.48502
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 9.903343], lr=5.000e-05
+Epoch: 0 [2030/10000 (20%)] Loss: 40.98094 = L_Mnfld: 11.84714 + L_NonMnfld: 13.01409 + L_Nrml: 0.00000 + L_Eknl: 11.21582 + L_Div: 0.00000 + L_Morse: 4.90389
+Epoch: 0 [2030/10000 (20%)] Unweighted L_s : L_Mnfld: 0.00169,  L_NonMnfld: 0.02169,  L_Nrml: 0.00000,  L_Eknl: 0.22432, L_Morse: 0.49518
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 9.870013], lr=5.000e-05
+Epoch: 0 [2040/10000 (20%)] Loss: 41.56260 = L_Mnfld: 12.07716 + L_NonMnfld: 12.69474 + L_Nrml: 0.00000 + L_Eknl: 11.50192 + L_Div: 0.00000 + L_Morse: 5.28878
+Epoch: 0 [2040/10000 (20%)] Unweighted L_s : L_Mnfld: 0.00173,  L_NonMnfld: 0.02116,  L_Nrml: 0.00000,  L_Eknl: 0.23004, L_Morse: 0.53584
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 9.836683], lr=5.000e-05
+Epoch: 0 [2050/10000 (20%)] Loss: 40.40475 = L_Mnfld: 12.22843 + L_NonMnfld: 12.10649 + L_Nrml: 0.00000 + L_Eknl: 11.04946 + L_Div: 0.00000 + L_Morse: 5.02037
+Epoch: 0 [2050/10000 (20%)] Unweighted L_s : L_Mnfld: 0.00175,  L_NonMnfld: 0.02018,  L_Nrml: 0.00000,  L_Eknl: 0.22099, L_Morse: 0.51037
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 9.803353], lr=5.000e-05
+Epoch: 0 [2060/10000 (21%)] Loss: 40.88306 = L_Mnfld: 11.87764 + L_NonMnfld: 13.01005 + L_Nrml: 0.00000 + L_Eknl: 11.20437 + L_Div: 0.00000 + L_Morse: 4.79100
+Epoch: 0 [2060/10000 (21%)] Unweighted L_s : L_Mnfld: 0.00170,  L_NonMnfld: 0.02168,  L_Nrml: 0.00000,  L_Eknl: 0.22409, L_Morse: 0.48871
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 9.770023], lr=5.000e-05
+Epoch: 0 [2070/10000 (21%)] Loss: 40.63878 = L_Mnfld: 12.39307 + L_NonMnfld: 11.48427 + L_Nrml: 0.00000 + L_Eknl: 11.30678 + L_Div: 0.00000 + L_Morse: 5.45466
+Epoch: 0 [2070/10000 (21%)] Unweighted L_s : L_Mnfld: 0.00177,  L_NonMnfld: 0.01914,  L_Nrml: 0.00000,  L_Eknl: 0.22614, L_Morse: 0.55831
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 9.736693], lr=5.000e-05
+Epoch: 0 [2080/10000 (21%)] Loss: 40.80573 = L_Mnfld: 11.41493 + L_NonMnfld: 13.44265 + L_Nrml: 0.00000 + L_Eknl: 11.26178 + L_Div: 0.00000 + L_Morse: 4.68637
+Epoch: 0 [2080/10000 (21%)] Unweighted L_s : L_Mnfld: 0.00163,  L_NonMnfld: 0.02240,  L_Nrml: 0.00000,  L_Eknl: 0.22524, L_Morse: 0.48131
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 9.703363], lr=5.000e-05
+Epoch: 0 [2090/10000 (21%)] Loss: 38.92944 = L_Mnfld: 11.31791 + L_NonMnfld: 12.09992 + L_Nrml: 0.00000 + L_Eknl: 10.78407 + L_Div: 0.00000 + L_Morse: 4.72753
+Epoch: 0 [2090/10000 (21%)] Unweighted L_s : L_Mnfld: 0.00162,  L_NonMnfld: 0.02017,  L_Nrml: 0.00000,  L_Eknl: 0.21568, L_Morse: 0.48721
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 9.670033], lr=5.000e-05
+Epoch: 0 [2100/10000 (21%)] Loss: 39.69444 = L_Mnfld: 11.09599 + L_NonMnfld: 13.25076 + L_Nrml: 0.00000 + L_Eknl: 10.78357 + L_Div: 0.00000 + L_Morse: 4.56412
+Epoch: 0 [2100/10000 (21%)] Unweighted L_s : L_Mnfld: 0.00159,  L_NonMnfld: 0.02208,  L_Nrml: 0.00000,  L_Eknl: 0.21567, L_Morse: 0.47199
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 9.636703], lr=5.000e-05
+Epoch: 0 [2110/10000 (21%)] Loss: 38.43641 = L_Mnfld: 11.58408 + L_NonMnfld: 11.51936 + L_Nrml: 0.00000 + L_Eknl: 10.67506 + L_Div: 0.00000 + L_Morse: 4.65790
+Epoch: 0 [2110/10000 (21%)] Unweighted L_s : L_Mnfld: 0.00165,  L_NonMnfld: 0.01920,  L_Nrml: 0.00000,  L_Eknl: 0.21350, L_Morse: 0.48335
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 9.603373], lr=5.000e-05
+Epoch: 0 [2120/10000 (21%)] Loss: 39.16452 = L_Mnfld: 11.95960 + L_NonMnfld: 11.60896 + L_Nrml: 0.00000 + L_Eknl: 10.69919 + L_Div: 0.00000 + L_Morse: 4.89677
+Epoch: 0 [2120/10000 (21%)] Unweighted L_s : L_Mnfld: 0.00171,  L_NonMnfld: 0.01935,  L_Nrml: 0.00000,  L_Eknl: 0.21398, L_Morse: 0.50990
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 9.570043], lr=5.000e-05
+Epoch: 0 [2130/10000 (21%)] Loss: 40.49216 = L_Mnfld: 12.09144 + L_NonMnfld: 12.36165 + L_Nrml: 0.00000 + L_Eknl: 10.80381 + L_Div: 0.00000 + L_Morse: 5.23526
+Epoch: 0 [2130/10000 (21%)] Unweighted L_s : L_Mnfld: 0.00173,  L_NonMnfld: 0.02060,  L_Nrml: 0.00000,  L_Eknl: 0.21608, L_Morse: 0.54705
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 9.536713], lr=5.000e-05
+Epoch: 0 [2140/10000 (21%)] Loss: 39.20338 = L_Mnfld: 11.21061 + L_NonMnfld: 12.46824 + L_Nrml: 0.00000 + L_Eknl: 10.84165 + L_Div: 0.00000 + L_Morse: 4.68289
+Epoch: 0 [2140/10000 (21%)] Unweighted L_s : L_Mnfld: 0.00160,  L_NonMnfld: 0.02078,  L_Nrml: 0.00000,  L_Eknl: 0.21683, L_Morse: 0.49104
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 9.503383], lr=5.000e-05
+Epoch: 0 [2150/10000 (22%)] Loss: 40.66930 = L_Mnfld: 12.29808 + L_NonMnfld: 12.70506 + L_Nrml: 0.00000 + L_Eknl: 10.69043 + L_Div: 0.00000 + L_Morse: 4.97573
+Epoch: 0 [2150/10000 (22%)] Unweighted L_s : L_Mnfld: 0.00176,  L_NonMnfld: 0.02118,  L_Nrml: 0.00000,  L_Eknl: 0.21381, L_Morse: 0.52357
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 9.470053], lr=5.000e-05
+Epoch: 0 [2160/10000 (22%)] Loss: 40.13706 = L_Mnfld: 11.74235 + L_NonMnfld: 12.74812 + L_Nrml: 0.00000 + L_Eknl: 10.92640 + L_Div: 0.00000 + L_Morse: 4.72019
+Epoch: 0 [2160/10000 (22%)] Unweighted L_s : L_Mnfld: 0.00168,  L_NonMnfld: 0.02125,  L_Nrml: 0.00000,  L_Eknl: 0.21853, L_Morse: 0.49843
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 9.436723], lr=5.000e-05
+Epoch: 0 [2170/10000 (22%)] Loss: 39.68279 = L_Mnfld: 11.88534 + L_NonMnfld: 12.23525 + L_Nrml: 0.00000 + L_Eknl: 10.80466 + L_Div: 0.00000 + L_Morse: 4.75754
+Epoch: 0 [2170/10000 (22%)] Unweighted L_s : L_Mnfld: 0.00170,  L_NonMnfld: 0.02039,  L_Nrml: 0.00000,  L_Eknl: 0.21609, L_Morse: 0.50415
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 9.403393], lr=5.000e-05
+Epoch: 0 [2180/10000 (22%)] Loss: 41.36667 = L_Mnfld: 12.49786 + L_NonMnfld: 13.09016 + L_Nrml: 0.00000 + L_Eknl: 10.97277 + L_Div: 0.00000 + L_Morse: 4.80589
+Epoch: 0 [2180/10000 (22%)] Unweighted L_s : L_Mnfld: 0.00179,  L_NonMnfld: 0.02182,  L_Nrml: 0.00000,  L_Eknl: 0.21946, L_Morse: 0.51108
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 9.370063], lr=5.000e-05
+Epoch: 0 [2190/10000 (22%)] Loss: 43.27958 = L_Mnfld: 13.05607 + L_NonMnfld: 13.37194 + L_Nrml: 0.00000 + L_Eknl: 11.18317 + L_Div: 0.00000 + L_Morse: 5.66840
+Epoch: 0 [2190/10000 (22%)] Unweighted L_s : L_Mnfld: 0.00187,  L_NonMnfld: 0.02229,  L_Nrml: 0.00000,  L_Eknl: 0.22366, L_Morse: 0.60495
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 9.336733], lr=5.000e-05
+Epoch: 0 [2200/10000 (22%)] Loss: 43.51495 = L_Mnfld: 14.00674 + L_NonMnfld: 12.28605 + L_Nrml: 0.00000 + L_Eknl: 10.81904 + L_Div: 0.00000 + L_Morse: 6.40313
+Epoch: 0 [2200/10000 (22%)] Unweighted L_s : L_Mnfld: 0.00200,  L_NonMnfld: 0.02048,  L_Nrml: 0.00000,  L_Eknl: 0.21638, L_Morse: 0.68580
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 9.303403], lr=5.000e-05
+Epoch: 0 [2210/10000 (22%)] Loss: 46.72253 = L_Mnfld: 15.36154 + L_NonMnfld: 12.75754 + L_Nrml: 0.00000 + L_Eknl: 11.40186 + L_Div: 0.00000 + L_Morse: 7.20158
+Epoch: 0 [2210/10000 (22%)] Unweighted L_s : L_Mnfld: 0.00219,  L_NonMnfld: 0.02126,  L_Nrml: 0.00000,  L_Eknl: 0.22804, L_Morse: 0.77408
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 9.270073], lr=5.000e-05
+Epoch: 0 [2220/10000 (22%)] Loss: 46.23960 = L_Mnfld: 14.29607 + L_NonMnfld: 13.21549 + L_Nrml: 0.00000 + L_Eknl: 11.77452 + L_Div: 0.00000 + L_Morse: 6.95352
+Epoch: 0 [2220/10000 (22%)] Unweighted L_s : L_Mnfld: 0.00204,  L_NonMnfld: 0.02203,  L_Nrml: 0.00000,  L_Eknl: 0.23549, L_Morse: 0.75010
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 9.236743], lr=5.000e-05
+Epoch: 0 [2230/10000 (22%)] Loss: 44.93894 = L_Mnfld: 14.92270 + L_NonMnfld: 12.54088 + L_Nrml: 0.00000 + L_Eknl: 11.33848 + L_Div: 0.00000 + L_Morse: 6.13687
+Epoch: 0 [2230/10000 (22%)] Unweighted L_s : L_Mnfld: 0.00213,  L_NonMnfld: 0.02090,  L_Nrml: 0.00000,  L_Eknl: 0.22677, L_Morse: 0.66440
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 9.203413000000001], lr=5.000e-05
+Epoch: 0 [2240/10000 (22%)] Loss: 46.18818 = L_Mnfld: 15.13589 + L_NonMnfld: 12.81724 + L_Nrml: 0.00000 + L_Eknl: 11.82066 + L_Div: 0.00000 + L_Morse: 6.41439
+Epoch: 0 [2240/10000 (22%)] Unweighted L_s : L_Mnfld: 0.00216,  L_NonMnfld: 0.02136,  L_Nrml: 0.00000,  L_Eknl: 0.23641, L_Morse: 0.69696
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 9.170083], lr=5.000e-05
+Epoch: 0 [2250/10000 (22%)] Loss: 46.74297 = L_Mnfld: 15.53798 + L_NonMnfld: 13.08015 + L_Nrml: 0.00000 + L_Eknl: 11.50426 + L_Div: 0.00000 + L_Morse: 6.62058
+Epoch: 0 [2250/10000 (22%)] Unweighted L_s : L_Mnfld: 0.00222,  L_NonMnfld: 0.02180,  L_Nrml: 0.00000,  L_Eknl: 0.23009, L_Morse: 0.72198
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 9.136753], lr=5.000e-05
+Epoch: 0 [2260/10000 (23%)] Loss: 46.22289 = L_Mnfld: 15.95641 + L_NonMnfld: 12.48348 + L_Nrml: 0.00000 + L_Eknl: 11.58082 + L_Div: 0.00000 + L_Morse: 6.20218
+Epoch: 0 [2260/10000 (23%)] Unweighted L_s : L_Mnfld: 0.00228,  L_NonMnfld: 0.02081,  L_Nrml: 0.00000,  L_Eknl: 0.23162, L_Morse: 0.67882
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 9.103423000000001], lr=5.000e-05
+Epoch: 0 [2270/10000 (23%)] Loss: 43.09708 = L_Mnfld: 13.59510 + L_NonMnfld: 12.95376 + L_Nrml: 0.00000 + L_Eknl: 11.27959 + L_Div: 0.00000 + L_Morse: 5.26864
+Epoch: 0 [2270/10000 (23%)] Unweighted L_s : L_Mnfld: 0.00194,  L_NonMnfld: 0.02159,  L_Nrml: 0.00000,  L_Eknl: 0.22559, L_Morse: 0.57875
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 9.070093], lr=5.000e-05
+Epoch: 0 [2280/10000 (23%)] Loss: 40.99947 = L_Mnfld: 12.20607 + L_NonMnfld: 12.09157 + L_Nrml: 0.00000 + L_Eknl: 11.49164 + L_Div: 0.00000 + L_Morse: 5.21019
+Epoch: 0 [2280/10000 (23%)] Unweighted L_s : L_Mnfld: 0.00174,  L_NonMnfld: 0.02015,  L_Nrml: 0.00000,  L_Eknl: 0.22983, L_Morse: 0.57444
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 9.036763], lr=5.000e-05
+Epoch: 0 [2290/10000 (23%)] Loss: 43.04284 = L_Mnfld: 14.42954 + L_NonMnfld: 12.68578 + L_Nrml: 0.00000 + L_Eknl: 11.14803 + L_Div: 0.00000 + L_Morse: 4.77949
+Epoch: 0 [2290/10000 (23%)] Unweighted L_s : L_Mnfld: 0.00206,  L_NonMnfld: 0.02114,  L_Nrml: 0.00000,  L_Eknl: 0.22296, L_Morse: 0.52889
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 9.003433000000001], lr=5.000e-05
+Epoch: 0 [2300/10000 (23%)] Loss: 40.66638 = L_Mnfld: 12.95780 + L_NonMnfld: 12.27726 + L_Nrml: 0.00000 + L_Eknl: 10.74075 + L_Div: 0.00000 + L_Morse: 4.69056
+Epoch: 0 [2300/10000 (23%)] Unweighted L_s : L_Mnfld: 0.00185,  L_NonMnfld: 0.02046,  L_Nrml: 0.00000,  L_Eknl: 0.21482, L_Morse: 0.52097
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 8.970103], lr=5.000e-05
+Epoch: 0 [2310/10000 (23%)] Loss: 43.67006 = L_Mnfld: 14.32588 + L_NonMnfld: 13.12227 + L_Nrml: 0.00000 + L_Eknl: 10.87454 + L_Div: 0.00000 + L_Morse: 5.34737
+Epoch: 0 [2310/10000 (23%)] Unweighted L_s : L_Mnfld: 0.00205,  L_NonMnfld: 0.02187,  L_Nrml: 0.00000,  L_Eknl: 0.21749, L_Morse: 0.59613
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 8.936773], lr=5.000e-05
+Epoch: 0 [2320/10000 (23%)] Loss: 47.39544 = L_Mnfld: 16.27373 + L_NonMnfld: 14.10085 + L_Nrml: 0.00000 + L_Eknl: 11.45628 + L_Div: 0.00000 + L_Morse: 5.56458
+Epoch: 0 [2320/10000 (23%)] Unweighted L_s : L_Mnfld: 0.00232,  L_NonMnfld: 0.02350,  L_Nrml: 0.00000,  L_Eknl: 0.22913, L_Morse: 0.62266
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 8.903443000000001], lr=5.000e-05
+Epoch: 0 [2330/10000 (23%)] Loss: 43.61016 = L_Mnfld: 14.22333 + L_NonMnfld: 12.98844 + L_Nrml: 0.00000 + L_Eknl: 11.26030 + L_Div: 0.00000 + L_Morse: 5.13809
+Epoch: 0 [2330/10000 (23%)] Unweighted L_s : L_Mnfld: 0.00203,  L_NonMnfld: 0.02165,  L_Nrml: 0.00000,  L_Eknl: 0.22521, L_Morse: 0.57709
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 8.870113], lr=5.000e-05
+Epoch: 0 [2340/10000 (23%)] Loss: 41.60209 = L_Mnfld: 12.80816 + L_NonMnfld: 12.92188 + L_Nrml: 0.00000 + L_Eknl: 10.96857 + L_Div: 0.00000 + L_Morse: 4.90348
+Epoch: 0 [2340/10000 (23%)] Unweighted L_s : L_Mnfld: 0.00183,  L_NonMnfld: 0.02154,  L_Nrml: 0.00000,  L_Eknl: 0.21937, L_Morse: 0.55281
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 8.836783], lr=5.000e-05
+Epoch: 0 [2350/10000 (24%)] Loss: 46.62589 = L_Mnfld: 16.70457 + L_NonMnfld: 13.17802 + L_Nrml: 0.00000 + L_Eknl: 11.03719 + L_Div: 0.00000 + L_Morse: 5.70611
+Epoch: 0 [2350/10000 (24%)] Unweighted L_s : L_Mnfld: 0.00239,  L_NonMnfld: 0.02196,  L_Nrml: 0.00000,  L_Eknl: 0.22074, L_Morse: 0.64572
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 8.803453000000001], lr=5.000e-05
+Epoch: 0 [2360/10000 (24%)] Loss: 43.03706 = L_Mnfld: 13.56079 + L_NonMnfld: 12.85356 + L_Nrml: 0.00000 + L_Eknl: 11.43987 + L_Div: 0.00000 + L_Morse: 5.18284
+Epoch: 0 [2360/10000 (24%)] Unweighted L_s : L_Mnfld: 0.00194,  L_NonMnfld: 0.02142,  L_Nrml: 0.00000,  L_Eknl: 0.22880, L_Morse: 0.58873
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 8.770123], lr=5.000e-05
+Epoch: 0 [2370/10000 (24%)] Loss: 44.32914 = L_Mnfld: 13.83811 + L_NonMnfld: 13.59993 + L_Nrml: 0.00000 + L_Eknl: 11.31000 + L_Div: 0.00000 + L_Morse: 5.58109
+Epoch: 0 [2370/10000 (24%)] Unweighted L_s : L_Mnfld: 0.00198,  L_NonMnfld: 0.02267,  L_Nrml: 0.00000,  L_Eknl: 0.22620, L_Morse: 0.63638
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 8.736793], lr=5.000e-05
+Epoch: 0 [2380/10000 (24%)] Loss: 45.37611 = L_Mnfld: 16.04489 + L_NonMnfld: 12.79644 + L_Nrml: 0.00000 + L_Eknl: 10.82524 + L_Div: 0.00000 + L_Morse: 5.70953
+Epoch: 0 [2380/10000 (24%)] Unweighted L_s : L_Mnfld: 0.00229,  L_NonMnfld: 0.02133,  L_Nrml: 0.00000,  L_Eknl: 0.21650, L_Morse: 0.65350
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 8.703463], lr=5.000e-05
+Epoch: 0 [2390/10000 (24%)] Loss: 44.79205 = L_Mnfld: 15.90904 + L_NonMnfld: 12.68464 + L_Nrml: 0.00000 + L_Eknl: 10.72692 + L_Div: 0.00000 + L_Morse: 5.47144
+Epoch: 0 [2390/10000 (24%)] Unweighted L_s : L_Mnfld: 0.00227,  L_NonMnfld: 0.02114,  L_Nrml: 0.00000,  L_Eknl: 0.21454, L_Morse: 0.62865
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 8.670133], lr=5.000e-05
+Epoch: 0 [2400/10000 (24%)] Loss: 44.59766 = L_Mnfld: 15.90153 + L_NonMnfld: 11.85221 + L_Nrml: 0.00000 + L_Eknl: 10.71945 + L_Div: 0.00000 + L_Morse: 6.12447
+Epoch: 0 [2400/10000 (24%)] Unweighted L_s : L_Mnfld: 0.00227,  L_NonMnfld: 0.01975,  L_Nrml: 0.00000,  L_Eknl: 0.21439, L_Morse: 0.70639
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 8.636803], lr=5.000e-05
+Epoch: 0 [2410/10000 (24%)] Loss: 43.46468 = L_Mnfld: 14.81710 + L_NonMnfld: 12.17197 + L_Nrml: 0.00000 + L_Eknl: 10.96833 + L_Div: 0.00000 + L_Morse: 5.50728
+Epoch: 0 [2410/10000 (24%)] Unweighted L_s : L_Mnfld: 0.00212,  L_NonMnfld: 0.02029,  L_Nrml: 0.00000,  L_Eknl: 0.21937, L_Morse: 0.63765
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 8.603473000000001], lr=5.000e-05
+Epoch: 0 [2420/10000 (24%)] Loss: 43.50822 = L_Mnfld: 15.19843 + L_NonMnfld: 12.08839 + L_Nrml: 0.00000 + L_Eknl: 11.10097 + L_Div: 0.00000 + L_Morse: 5.12043
+Epoch: 0 [2420/10000 (24%)] Unweighted L_s : L_Mnfld: 0.00217,  L_NonMnfld: 0.02015,  L_Nrml: 0.00000,  L_Eknl: 0.22202, L_Morse: 0.59516
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 8.570143], lr=5.000e-05
+Epoch: 0 [2430/10000 (24%)] Loss: 45.74940 = L_Mnfld: 16.03500 + L_NonMnfld: 13.49161 + L_Nrml: 0.00000 + L_Eknl: 10.73456 + L_Div: 0.00000 + L_Morse: 5.48822
+Epoch: 0 [2430/10000 (24%)] Unweighted L_s : L_Mnfld: 0.00229,  L_NonMnfld: 0.02249,  L_Nrml: 0.00000,  L_Eknl: 0.21469, L_Morse: 0.64039
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 8.536813], lr=5.000e-05
+Epoch: 0 [2440/10000 (24%)] Loss: 42.04398 = L_Mnfld: 13.56575 + L_NonMnfld: 12.89052 + L_Nrml: 0.00000 + L_Eknl: 10.39600 + L_Div: 0.00000 + L_Morse: 5.19171
+Epoch: 0 [2440/10000 (24%)] Unweighted L_s : L_Mnfld: 0.00194,  L_NonMnfld: 0.02148,  L_Nrml: 0.00000,  L_Eknl: 0.20792, L_Morse: 0.60816
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 8.503483], lr=5.000e-05
+Epoch: 0 [2450/10000 (24%)] Loss: 44.59438 = L_Mnfld: 16.35189 + L_NonMnfld: 12.15691 + L_Nrml: 0.00000 + L_Eknl: 10.75004 + L_Div: 0.00000 + L_Morse: 5.33554
+Epoch: 0 [2450/10000 (24%)] Unweighted L_s : L_Mnfld: 0.00234,  L_NonMnfld: 0.02026,  L_Nrml: 0.00000,  L_Eknl: 0.21500, L_Morse: 0.62745
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 8.470153], lr=5.000e-05
+Epoch: 0 [2460/10000 (25%)] Loss: 43.79531 = L_Mnfld: 13.59752 + L_NonMnfld: 14.25873 + L_Nrml: 0.00000 + L_Eknl: 10.55508 + L_Div: 0.00000 + L_Morse: 5.38398
+Epoch: 0 [2460/10000 (25%)] Unweighted L_s : L_Mnfld: 0.00194,  L_NonMnfld: 0.02376,  L_Nrml: 0.00000,  L_Eknl: 0.21110, L_Morse: 0.63564
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 8.436823], lr=5.000e-05
+Epoch: 0 [2470/10000 (25%)] Loss: 40.26159 = L_Mnfld: 12.52692 + L_NonMnfld: 12.06486 + L_Nrml: 0.00000 + L_Eknl: 11.02410 + L_Div: 0.00000 + L_Morse: 4.64571
+Epoch: 0 [2470/10000 (25%)] Unweighted L_s : L_Mnfld: 0.00179,  L_NonMnfld: 0.02011,  L_Nrml: 0.00000,  L_Eknl: 0.22048, L_Morse: 0.55065
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 8.403493], lr=5.000e-05
+Epoch: 0 [2480/10000 (25%)] Loss: 40.26622 = L_Mnfld: 13.38463 + L_NonMnfld: 12.11756 + L_Nrml: 0.00000 + L_Eknl: 10.39281 + L_Div: 0.00000 + L_Morse: 4.37122
+Epoch: 0 [2480/10000 (25%)] Unweighted L_s : L_Mnfld: 0.00191,  L_NonMnfld: 0.02020,  L_Nrml: 0.00000,  L_Eknl: 0.20786, L_Morse: 0.52017
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 8.370163], lr=5.000e-05
+Epoch: 0 [2490/10000 (25%)] Loss: 38.46991 = L_Mnfld: 11.82269 + L_NonMnfld: 12.07175 + L_Nrml: 0.00000 + L_Eknl: 10.47525 + L_Div: 0.00000 + L_Morse: 4.10021
+Epoch: 0 [2490/10000 (25%)] Unweighted L_s : L_Mnfld: 0.00169,  L_NonMnfld: 0.02012,  L_Nrml: 0.00000,  L_Eknl: 0.20951, L_Morse: 0.48986
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 8.336833], lr=5.000e-05
+Epoch: 0 [2500/10000 (25%)] Loss: 38.45884 = L_Mnfld: 12.24251 + L_NonMnfld: 12.09553 + L_Nrml: 0.00000 + L_Eknl: 10.02594 + L_Div: 0.00000 + L_Morse: 4.09487
+Epoch: 0 [2500/10000 (25%)] Unweighted L_s : L_Mnfld: 0.00175,  L_NonMnfld: 0.02016,  L_Nrml: 0.00000,  L_Eknl: 0.20052, L_Morse: 0.49118
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 8.303503], lr=5.000e-05
+Epoch: 0 [2510/10000 (25%)] Loss: 38.17100 = L_Mnfld: 11.13998 + L_NonMnfld: 12.66502 + L_Nrml: 0.00000 + L_Eknl: 10.24943 + L_Div: 0.00000 + L_Morse: 4.11656
+Epoch: 0 [2510/10000 (25%)] Unweighted L_s : L_Mnfld: 0.00159,  L_NonMnfld: 0.02111,  L_Nrml: 0.00000,  L_Eknl: 0.20499, L_Morse: 0.49576
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 8.270173], lr=5.000e-05
+Epoch: 0 [2520/10000 (25%)] Loss: 38.15038 = L_Mnfld: 11.62919 + L_NonMnfld: 12.47276 + L_Nrml: 0.00000 + L_Eknl: 10.06614 + L_Div: 0.00000 + L_Morse: 3.98229
+Epoch: 0 [2520/10000 (25%)] Unweighted L_s : L_Mnfld: 0.00166,  L_NonMnfld: 0.02079,  L_Nrml: 0.00000,  L_Eknl: 0.20132, L_Morse: 0.48152
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 8.236843], lr=5.000e-05
+Epoch: 0 [2530/10000 (25%)] Loss: 36.04998 = L_Mnfld: 10.91020 + L_NonMnfld: 11.53905 + L_Nrml: 0.00000 + L_Eknl: 9.94504 + L_Div: 0.00000 + L_Morse: 3.65569
+Epoch: 0 [2530/10000 (25%)] Unweighted L_s : L_Mnfld: 0.00156,  L_NonMnfld: 0.01923,  L_Nrml: 0.00000,  L_Eknl: 0.19890, L_Morse: 0.44382
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 8.203513], lr=5.000e-05
+Epoch: 0 [2540/10000 (25%)] Loss: 37.00389 = L_Mnfld: 11.42832 + L_NonMnfld: 11.87186 + L_Nrml: 0.00000 + L_Eknl: 9.88454 + L_Div: 0.00000 + L_Morse: 3.81917
+Epoch: 0 [2540/10000 (25%)] Unweighted L_s : L_Mnfld: 0.00163,  L_NonMnfld: 0.01979,  L_Nrml: 0.00000,  L_Eknl: 0.19769, L_Morse: 0.46555
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 8.170183], lr=5.000e-05
+Epoch: 0 [2550/10000 (26%)] Loss: 37.02190 = L_Mnfld: 10.72624 + L_NonMnfld: 12.61904 + L_Nrml: 0.00000 + L_Eknl: 9.76847 + L_Div: 0.00000 + L_Morse: 3.90815
+Epoch: 0 [2550/10000 (26%)] Unweighted L_s : L_Mnfld: 0.00153,  L_NonMnfld: 0.02103,  L_Nrml: 0.00000,  L_Eknl: 0.19537, L_Morse: 0.47834
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 8.136853], lr=5.000e-05
+Epoch: 0 [2560/10000 (26%)] Loss: 37.28312 = L_Mnfld: 11.23848 + L_NonMnfld: 12.03903 + L_Nrml: 0.00000 + L_Eknl: 9.84044 + L_Div: 0.00000 + L_Morse: 4.16517
+Epoch: 0 [2560/10000 (26%)] Unweighted L_s : L_Mnfld: 0.00161,  L_NonMnfld: 0.02007,  L_Nrml: 0.00000,  L_Eknl: 0.19681, L_Morse: 0.51189
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 8.103523], lr=5.000e-05
+Epoch: 0 [2570/10000 (26%)] Loss: 36.16335 = L_Mnfld: 10.57095 + L_NonMnfld: 11.70396 + L_Nrml: 0.00000 + L_Eknl: 10.03219 + L_Div: 0.00000 + L_Morse: 3.85625
+Epoch: 0 [2570/10000 (26%)] Unweighted L_s : L_Mnfld: 0.00151,  L_NonMnfld: 0.01951,  L_Nrml: 0.00000,  L_Eknl: 0.20064, L_Morse: 0.47587
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 8.070193], lr=5.000e-05
+Epoch: 0 [2580/10000 (26%)] Loss: 37.32582 = L_Mnfld: 10.95931 + L_NonMnfld: 12.50332 + L_Nrml: 0.00000 + L_Eknl: 10.05900 + L_Div: 0.00000 + L_Morse: 3.80419
+Epoch: 0 [2580/10000 (26%)] Unweighted L_s : L_Mnfld: 0.00157,  L_NonMnfld: 0.02084,  L_Nrml: 0.00000,  L_Eknl: 0.20118, L_Morse: 0.47139
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 8.036863], lr=5.000e-05
+Epoch: 0 [2590/10000 (26%)] Loss: 35.67036 = L_Mnfld: 10.25014 + L_NonMnfld: 11.94908 + L_Nrml: 0.00000 + L_Eknl: 9.70736 + L_Div: 0.00000 + L_Morse: 3.76377
+Epoch: 0 [2590/10000 (26%)] Unweighted L_s : L_Mnfld: 0.00146,  L_NonMnfld: 0.01992,  L_Nrml: 0.00000,  L_Eknl: 0.19415, L_Morse: 0.46831
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 8.003533], lr=5.000e-05
+Epoch: 0 [2600/10000 (26%)] Loss: 34.81976 = L_Mnfld: 10.66131 + L_NonMnfld: 10.59793 + L_Nrml: 0.00000 + L_Eknl: 9.85950 + L_Div: 0.00000 + L_Morse: 3.70102
+Epoch: 0 [2600/10000 (26%)] Unweighted L_s : L_Mnfld: 0.00152,  L_NonMnfld: 0.01766,  L_Nrml: 0.00000,  L_Eknl: 0.19719, L_Morse: 0.46242
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 7.970203], lr=5.000e-05
+Epoch: 0 [2610/10000 (26%)] Loss: 36.62952 = L_Mnfld: 10.87912 + L_NonMnfld: 11.98168 + L_Nrml: 0.00000 + L_Eknl: 9.93908 + L_Div: 0.00000 + L_Morse: 3.82964
+Epoch: 0 [2610/10000 (26%)] Unweighted L_s : L_Mnfld: 0.00155,  L_NonMnfld: 0.01997,  L_Nrml: 0.00000,  L_Eknl: 0.19878, L_Morse: 0.48049
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 7.936872999999999], lr=5.000e-05
+Epoch: 0 [2620/10000 (26%)] Loss: 36.37831 = L_Mnfld: 10.91893 + L_NonMnfld: 11.45055 + L_Nrml: 0.00000 + L_Eknl: 9.75654 + L_Div: 0.00000 + L_Morse: 4.25230
+Epoch: 0 [2620/10000 (26%)] Unweighted L_s : L_Mnfld: 0.00156,  L_NonMnfld: 0.01908,  L_Nrml: 0.00000,  L_Eknl: 0.19513, L_Morse: 0.53576
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 7.903542999999999], lr=5.000e-05
+Epoch: 0 [2630/10000 (26%)] Loss: 35.91421 = L_Mnfld: 10.34276 + L_NonMnfld: 11.76396 + L_Nrml: 0.00000 + L_Eknl: 9.93758 + L_Div: 0.00000 + L_Morse: 3.86991
+Epoch: 0 [2630/10000 (26%)] Unweighted L_s : L_Mnfld: 0.00148,  L_NonMnfld: 0.01961,  L_Nrml: 0.00000,  L_Eknl: 0.19875, L_Morse: 0.48964
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 7.870213], lr=5.000e-05
+Epoch: 0 [2640/10000 (26%)] Loss: 34.77212 = L_Mnfld: 10.37208 + L_NonMnfld: 11.04742 + L_Nrml: 0.00000 + L_Eknl: 9.55057 + L_Div: 0.00000 + L_Morse: 3.80204
+Epoch: 0 [2640/10000 (26%)] Unweighted L_s : L_Mnfld: 0.00148,  L_NonMnfld: 0.01841,  L_Nrml: 0.00000,  L_Eknl: 0.19101, L_Morse: 0.48309
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 7.836882999999999], lr=5.000e-05
+Epoch: 0 [2650/10000 (26%)] Loss: 35.28051 = L_Mnfld: 10.62115 + L_NonMnfld: 11.37578 + L_Nrml: 0.00000 + L_Eknl: 9.71016 + L_Div: 0.00000 + L_Morse: 3.57341
+Epoch: 0 [2650/10000 (26%)] Unweighted L_s : L_Mnfld: 0.00152,  L_NonMnfld: 0.01896,  L_Nrml: 0.00000,  L_Eknl: 0.19420, L_Morse: 0.45597
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 7.803552999999999], lr=5.000e-05
+Epoch: 0 [2660/10000 (27%)] Loss: 38.37695 = L_Mnfld: 12.39448 + L_NonMnfld: 12.44364 + L_Nrml: 0.00000 + L_Eknl: 9.59965 + L_Div: 0.00000 + L_Morse: 3.93917
+Epoch: 0 [2660/10000 (27%)] Unweighted L_s : L_Mnfld: 0.00177,  L_NonMnfld: 0.02074,  L_Nrml: 0.00000,  L_Eknl: 0.19199, L_Morse: 0.50479
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 7.770223], lr=5.000e-05
+Epoch: 0 [2670/10000 (27%)] Loss: 39.17336 = L_Mnfld: 11.81937 + L_NonMnfld: 13.36558 + L_Nrml: 0.00000 + L_Eknl: 9.79689 + L_Div: 0.00000 + L_Morse: 4.19152
+Epoch: 0 [2670/10000 (27%)] Unweighted L_s : L_Mnfld: 0.00169,  L_NonMnfld: 0.02228,  L_Nrml: 0.00000,  L_Eknl: 0.19594, L_Morse: 0.53943
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 7.736892999999999], lr=5.000e-05
+Epoch: 0 [2680/10000 (27%)] Loss: 36.91195 = L_Mnfld: 11.34613 + L_NonMnfld: 11.67265 + L_Nrml: 0.00000 + L_Eknl: 9.67129 + L_Div: 0.00000 + L_Morse: 4.22187
+Epoch: 0 [2680/10000 (27%)] Unweighted L_s : L_Mnfld: 0.00162,  L_NonMnfld: 0.01945,  L_Nrml: 0.00000,  L_Eknl: 0.19343, L_Morse: 0.54568
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 7.703563000000001], lr=5.000e-05
+Epoch: 0 [2690/10000 (27%)] Loss: 37.42250 = L_Mnfld: 11.99131 + L_NonMnfld: 11.86725 + L_Nrml: 0.00000 + L_Eknl: 9.67772 + L_Div: 0.00000 + L_Morse: 3.88621
+Epoch: 0 [2690/10000 (27%)] Unweighted L_s : L_Mnfld: 0.00171,  L_NonMnfld: 0.01978,  L_Nrml: 0.00000,  L_Eknl: 0.19355, L_Morse: 0.50447
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 7.670233000000001], lr=5.000e-05
+Epoch: 0 [2700/10000 (27%)] Loss: 36.87295 = L_Mnfld: 11.06801 + L_NonMnfld: 12.52252 + L_Nrml: 0.00000 + L_Eknl: 9.39196 + L_Div: 0.00000 + L_Morse: 3.89046
+Epoch: 0 [2700/10000 (27%)] Unweighted L_s : L_Mnfld: 0.00158,  L_NonMnfld: 0.02087,  L_Nrml: 0.00000,  L_Eknl: 0.18784, L_Morse: 0.50722
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 7.636903000000001], lr=5.000e-05
+Epoch: 0 [2710/10000 (27%)] Loss: 36.58980 = L_Mnfld: 11.17152 + L_NonMnfld: 11.80460 + L_Nrml: 0.00000 + L_Eknl: 9.64969 + L_Div: 0.00000 + L_Morse: 3.96400
+Epoch: 0 [2710/10000 (27%)] Unweighted L_s : L_Mnfld: 0.00160,  L_NonMnfld: 0.01967,  L_Nrml: 0.00000,  L_Eknl: 0.19299, L_Morse: 0.51906
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 7.603573000000001], lr=5.000e-05
+Epoch: 0 [2720/10000 (27%)] Loss: 36.16748 = L_Mnfld: 10.99549 + L_NonMnfld: 11.68865 + L_Nrml: 0.00000 + L_Eknl: 9.37818 + L_Div: 0.00000 + L_Morse: 4.10515
+Epoch: 0 [2720/10000 (27%)] Unweighted L_s : L_Mnfld: 0.00157,  L_NonMnfld: 0.01948,  L_Nrml: 0.00000,  L_Eknl: 0.18756, L_Morse: 0.53990
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 7.570243000000001], lr=5.000e-05
+Epoch: 0 [2730/10000 (27%)] Loss: 37.68130 = L_Mnfld: 11.06915 + L_NonMnfld: 13.08864 + L_Nrml: 0.00000 + L_Eknl: 9.66078 + L_Div: 0.00000 + L_Morse: 3.86273
+Epoch: 0 [2730/10000 (27%)] Unweighted L_s : L_Mnfld: 0.00158,  L_NonMnfld: 0.02181,  L_Nrml: 0.00000,  L_Eknl: 0.19322, L_Morse: 0.51025
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 7.536913000000001], lr=5.000e-05
+Epoch: 0 [2740/10000 (27%)] Loss: 35.98281 = L_Mnfld: 11.24192 + L_NonMnfld: 11.38952 + L_Nrml: 0.00000 + L_Eknl: 9.43299 + L_Div: 0.00000 + L_Morse: 3.91837
+Epoch: 0 [2740/10000 (27%)] Unweighted L_s : L_Mnfld: 0.00161,  L_NonMnfld: 0.01898,  L_Nrml: 0.00000,  L_Eknl: 0.18866, L_Morse: 0.51989
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 7.503583000000001], lr=5.000e-05
+Epoch: 0 [2750/10000 (28%)] Loss: 35.01583 = L_Mnfld: 10.52788 + L_NonMnfld: 11.49178 + L_Nrml: 0.00000 + L_Eknl: 9.49272 + L_Div: 0.00000 + L_Morse: 3.50345
+Epoch: 0 [2750/10000 (28%)] Unweighted L_s : L_Mnfld: 0.00150,  L_NonMnfld: 0.01915,  L_Nrml: 0.00000,  L_Eknl: 0.18985, L_Morse: 0.46690
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 7.4702530000000005], lr=5.000e-05
+Epoch: 0 [2760/10000 (28%)] Loss: 36.64055 = L_Mnfld: 11.00813 + L_NonMnfld: 12.48095 + L_Nrml: 0.00000 + L_Eknl: 9.64843 + L_Div: 0.00000 + L_Morse: 3.50304
+Epoch: 0 [2760/10000 (28%)] Unweighted L_s : L_Mnfld: 0.00157,  L_NonMnfld: 0.02080,  L_Nrml: 0.00000,  L_Eknl: 0.19297, L_Morse: 0.46893
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 7.436923], lr=5.000e-05
+Epoch: 0 [2770/10000 (28%)] Loss: 34.65602 = L_Mnfld: 10.27000 + L_NonMnfld: 11.23871 + L_Nrml: 0.00000 + L_Eknl: 9.44984 + L_Div: 0.00000 + L_Morse: 3.69747
+Epoch: 0 [2770/10000 (28%)] Unweighted L_s : L_Mnfld: 0.00147,  L_NonMnfld: 0.01873,  L_Nrml: 0.00000,  L_Eknl: 0.18900, L_Morse: 0.49718
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 7.403593000000001], lr=5.000e-05
+Epoch: 0 [2780/10000 (28%)] Loss: 35.34603 = L_Mnfld: 10.50527 + L_NonMnfld: 12.01805 + L_Nrml: 0.00000 + L_Eknl: 9.19766 + L_Div: 0.00000 + L_Morse: 3.62506
+Epoch: 0 [2780/10000 (28%)] Unweighted L_s : L_Mnfld: 0.00150,  L_NonMnfld: 0.02003,  L_Nrml: 0.00000,  L_Eknl: 0.18395, L_Morse: 0.48964
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 7.370263000000001], lr=5.000e-05
+Epoch: 0 [2790/10000 (28%)] Loss: 35.41839 = L_Mnfld: 10.45640 + L_NonMnfld: 12.25884 + L_Nrml: 0.00000 + L_Eknl: 9.22871 + L_Div: 0.00000 + L_Morse: 3.47444
+Epoch: 0 [2790/10000 (28%)] Unweighted L_s : L_Mnfld: 0.00149,  L_NonMnfld: 0.02043,  L_Nrml: 0.00000,  L_Eknl: 0.18457, L_Morse: 0.47141
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 7.336933], lr=5.000e-05
+Epoch: 0 [2800/10000 (28%)] Loss: 35.88006 = L_Mnfld: 10.70085 + L_NonMnfld: 11.98194 + L_Nrml: 0.00000 + L_Eknl: 9.32010 + L_Div: 0.00000 + L_Morse: 3.87716
+Epoch: 0 [2800/10000 (28%)] Unweighted L_s : L_Mnfld: 0.00153,  L_NonMnfld: 0.01997,  L_Nrml: 0.00000,  L_Eknl: 0.18640, L_Morse: 0.52844
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 7.303603000000001], lr=5.000e-05
+Epoch: 0 [2810/10000 (28%)] Loss: 34.93430 = L_Mnfld: 10.63075 + L_NonMnfld: 11.11470 + L_Nrml: 0.00000 + L_Eknl: 9.38582 + L_Div: 0.00000 + L_Morse: 3.80302
+Epoch: 0 [2810/10000 (28%)] Unweighted L_s : L_Mnfld: 0.00152,  L_NonMnfld: 0.01852,  L_Nrml: 0.00000,  L_Eknl: 0.18772, L_Morse: 0.52070
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 7.270273000000001], lr=5.000e-05
+Epoch: 0 [2820/10000 (28%)] Loss: 35.83923 = L_Mnfld: 10.61038 + L_NonMnfld: 12.24347 + L_Nrml: 0.00000 + L_Eknl: 9.23795 + L_Div: 0.00000 + L_Morse: 3.74743
+Epoch: 0 [2820/10000 (28%)] Unweighted L_s : L_Mnfld: 0.00152,  L_NonMnfld: 0.02041,  L_Nrml: 0.00000,  L_Eknl: 0.18476, L_Morse: 0.51545
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 7.236943], lr=5.000e-05
+Epoch: 0 [2830/10000 (28%)] Loss: 36.14577 = L_Mnfld: 10.78511 + L_NonMnfld: 12.01147 + L_Nrml: 0.00000 + L_Eknl: 9.54060 + L_Div: 0.00000 + L_Morse: 3.80858
+Epoch: 0 [2830/10000 (28%)] Unweighted L_s : L_Mnfld: 0.00154,  L_NonMnfld: 0.02002,  L_Nrml: 0.00000,  L_Eknl: 0.19081, L_Morse: 0.52627
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 7.203613000000001], lr=5.000e-05
+Epoch: 0 [2840/10000 (28%)] Loss: 36.79433 = L_Mnfld: 11.23821 + L_NonMnfld: 12.46036 + L_Nrml: 0.00000 + L_Eknl: 9.26799 + L_Div: 0.00000 + L_Morse: 3.82778
+Epoch: 0 [2840/10000 (28%)] Unweighted L_s : L_Mnfld: 0.00161,  L_NonMnfld: 0.02077,  L_Nrml: 0.00000,  L_Eknl: 0.18536, L_Morse: 0.53137
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 7.170283], lr=5.000e-05
+Epoch: 0 [2850/10000 (28%)] Loss: 36.62905 = L_Mnfld: 10.88089 + L_NonMnfld: 12.23995 + L_Nrml: 0.00000 + L_Eknl: 9.46824 + L_Div: 0.00000 + L_Morse: 4.03997
+Epoch: 0 [2850/10000 (28%)] Unweighted L_s : L_Mnfld: 0.00155,  L_NonMnfld: 0.02040,  L_Nrml: 0.00000,  L_Eknl: 0.18936, L_Morse: 0.56343
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 7.136953], lr=5.000e-05
+Epoch: 0 [2860/10000 (29%)] Loss: 36.04678 = L_Mnfld: 11.53041 + L_NonMnfld: 11.44266 + L_Nrml: 0.00000 + L_Eknl: 9.09686 + L_Div: 0.00000 + L_Morse: 3.97685
+Epoch: 0 [2860/10000 (29%)] Unweighted L_s : L_Mnfld: 0.00165,  L_NonMnfld: 0.01907,  L_Nrml: 0.00000,  L_Eknl: 0.18194, L_Morse: 0.55722
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 7.103623000000001], lr=5.000e-05
+Epoch: 0 [2870/10000 (29%)] Loss: 36.04456 = L_Mnfld: 11.00719 + L_NonMnfld: 11.75998 + L_Nrml: 0.00000 + L_Eknl: 9.47669 + L_Div: 0.00000 + L_Morse: 3.80069
+Epoch: 0 [2870/10000 (29%)] Unweighted L_s : L_Mnfld: 0.00157,  L_NonMnfld: 0.01960,  L_Nrml: 0.00000,  L_Eknl: 0.18953, L_Morse: 0.53504
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 7.070293], lr=5.000e-05
+Epoch: 0 [2880/10000 (29%)] Loss: 35.64191 = L_Mnfld: 10.59229 + L_NonMnfld: 11.87193 + L_Nrml: 0.00000 + L_Eknl: 9.40039 + L_Div: 0.00000 + L_Morse: 3.77730
+Epoch: 0 [2880/10000 (29%)] Unweighted L_s : L_Mnfld: 0.00151,  L_NonMnfld: 0.01979,  L_Nrml: 0.00000,  L_Eknl: 0.18801, L_Morse: 0.53425
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 7.036963], lr=5.000e-05
+Epoch: 0 [2890/10000 (29%)] Loss: 35.34578 = L_Mnfld: 11.15079 + L_NonMnfld: 11.23935 + L_Nrml: 0.00000 + L_Eknl: 9.31189 + L_Div: 0.00000 + L_Morse: 3.64375
+Epoch: 0 [2890/10000 (29%)] Unweighted L_s : L_Mnfld: 0.00159,  L_NonMnfld: 0.01873,  L_Nrml: 0.00000,  L_Eknl: 0.18624, L_Morse: 0.51780
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 7.003633000000001], lr=5.000e-05
+Epoch: 0 [2900/10000 (29%)] Loss: 35.72099 = L_Mnfld: 10.60812 + L_NonMnfld: 12.04580 + L_Nrml: 0.00000 + L_Eknl: 9.33122 + L_Div: 0.00000 + L_Morse: 3.73584
+Epoch: 0 [2900/10000 (29%)] Unweighted L_s : L_Mnfld: 0.00152,  L_NonMnfld: 0.02008,  L_Nrml: 0.00000,  L_Eknl: 0.18662, L_Morse: 0.53341
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 6.970303], lr=5.000e-05
+Epoch: 0 [2910/10000 (29%)] Loss: 35.25444 = L_Mnfld: 10.46158 + L_NonMnfld: 11.88270 + L_Nrml: 0.00000 + L_Eknl: 9.31820 + L_Div: 0.00000 + L_Morse: 3.59196
+Epoch: 0 [2910/10000 (29%)] Unweighted L_s : L_Mnfld: 0.00149,  L_NonMnfld: 0.01980,  L_Nrml: 0.00000,  L_Eknl: 0.18636, L_Morse: 0.51532
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 6.936973], lr=5.000e-05
+Epoch: 0 [2920/10000 (29%)] Loss: 33.49044 = L_Mnfld: 10.72759 + L_NonMnfld: 9.74185 + L_Nrml: 0.00000 + L_Eknl: 9.22073 + L_Div: 0.00000 + L_Morse: 3.80027
+Epoch: 0 [2920/10000 (29%)] Unweighted L_s : L_Mnfld: 0.00153,  L_NonMnfld: 0.01624,  L_Nrml: 0.00000,  L_Eknl: 0.18441, L_Morse: 0.54783
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 6.903643000000001], lr=5.000e-05
+Epoch: 0 [2930/10000 (29%)] Loss: 35.09374 = L_Mnfld: 10.54868 + L_NonMnfld: 11.71484 + L_Nrml: 0.00000 + L_Eknl: 9.16869 + L_Div: 0.00000 + L_Morse: 3.66153
+Epoch: 0 [2930/10000 (29%)] Unweighted L_s : L_Mnfld: 0.00151,  L_NonMnfld: 0.01952,  L_Nrml: 0.00000,  L_Eknl: 0.18337, L_Morse: 0.53038
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 6.870313], lr=5.000e-05
+Epoch: 0 [2940/10000 (29%)] Loss: 34.92980 = L_Mnfld: 10.94684 + L_NonMnfld: 11.21257 + L_Nrml: 0.00000 + L_Eknl: 9.05082 + L_Div: 0.00000 + L_Morse: 3.71957
+Epoch: 0 [2940/10000 (29%)] Unweighted L_s : L_Mnfld: 0.00156,  L_NonMnfld: 0.01869,  L_Nrml: 0.00000,  L_Eknl: 0.18102, L_Morse: 0.54140
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 6.836983], lr=5.000e-05
+Epoch: 0 [2950/10000 (30%)] Loss: 36.41294 = L_Mnfld: 11.32942 + L_NonMnfld: 12.05497 + L_Nrml: 0.00000 + L_Eknl: 9.28492 + L_Div: 0.00000 + L_Morse: 3.74362
+Epoch: 0 [2950/10000 (30%)] Unweighted L_s : L_Mnfld: 0.00162,  L_NonMnfld: 0.02009,  L_Nrml: 0.00000,  L_Eknl: 0.18570, L_Morse: 0.54755
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 6.803653000000001], lr=5.000e-05
+Epoch: 0 [2960/10000 (30%)] Loss: 34.31281 = L_Mnfld: 10.85936 + L_NonMnfld: 10.82570 + L_Nrml: 0.00000 + L_Eknl: 9.06660 + L_Div: 0.00000 + L_Morse: 3.56114
+Epoch: 0 [2960/10000 (30%)] Unweighted L_s : L_Mnfld: 0.00155,  L_NonMnfld: 0.01804,  L_Nrml: 0.00000,  L_Eknl: 0.18133, L_Morse: 0.52342
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 6.770323], lr=5.000e-05
+Epoch: 0 [2970/10000 (30%)] Loss: 34.90294 = L_Mnfld: 10.85977 + L_NonMnfld: 10.96204 + L_Nrml: 0.00000 + L_Eknl: 9.41816 + L_Div: 0.00000 + L_Morse: 3.66297
+Epoch: 0 [2970/10000 (30%)] Unweighted L_s : L_Mnfld: 0.00155,  L_NonMnfld: 0.01827,  L_Nrml: 0.00000,  L_Eknl: 0.18836, L_Morse: 0.54103
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 6.736993], lr=5.000e-05
+Epoch: 0 [2980/10000 (30%)] Loss: 36.96693 = L_Mnfld: 11.19498 + L_NonMnfld: 12.95029 + L_Nrml: 0.00000 + L_Eknl: 9.12961 + L_Div: 0.00000 + L_Morse: 3.69206
+Epoch: 0 [2980/10000 (30%)] Unweighted L_s : L_Mnfld: 0.00160,  L_NonMnfld: 0.02158,  L_Nrml: 0.00000,  L_Eknl: 0.18259, L_Morse: 0.54803
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 6.703663000000001], lr=5.000e-05
+Epoch: 0 [2990/10000 (30%)] Loss: 35.70334 = L_Mnfld: 11.18424 + L_NonMnfld: 12.00370 + L_Nrml: 0.00000 + L_Eknl: 9.13594 + L_Div: 0.00000 + L_Morse: 3.37946
+Epoch: 0 [2990/10000 (30%)] Unweighted L_s : L_Mnfld: 0.00160,  L_NonMnfld: 0.02001,  L_Nrml: 0.00000,  L_Eknl: 0.18272, L_Morse: 0.50412
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 6.670332999999999], lr=5.000e-05
+Epoch: 0 [3000/10000 (30%)] Loss: 35.47953 = L_Mnfld: 11.20001 + L_NonMnfld: 11.76384 + L_Nrml: 0.00000 + L_Eknl: 8.93673 + L_Div: 0.00000 + L_Morse: 3.57894
+Epoch: 0 [3000/10000 (30%)] Unweighted L_s : L_Mnfld: 0.00160,  L_NonMnfld: 0.01961,  L_Nrml: 0.00000,  L_Eknl: 0.17873, L_Morse: 0.53655
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 6.637003], lr=5.000e-05
+Epoch: 0 [3010/10000 (30%)] Loss: 34.57710 = L_Mnfld: 10.51087 + L_NonMnfld: 11.47609 + L_Nrml: 0.00000 + L_Eknl: 9.06298 + L_Div: 0.00000 + L_Morse: 3.52716
+Epoch: 0 [3010/10000 (30%)] Unweighted L_s : L_Mnfld: 0.00150,  L_NonMnfld: 0.01913,  L_Nrml: 0.00000,  L_Eknl: 0.18126, L_Morse: 0.53144
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 6.603673000000001], lr=5.000e-05
+Epoch: 0 [3020/10000 (30%)] Loss: 35.80415 = L_Mnfld: 10.55173 + L_NonMnfld: 12.06991 + L_Nrml: 0.00000 + L_Eknl: 9.26448 + L_Div: 0.00000 + L_Morse: 3.91803
+Epoch: 0 [3020/10000 (30%)] Unweighted L_s : L_Mnfld: 0.00151,  L_NonMnfld: 0.02012,  L_Nrml: 0.00000,  L_Eknl: 0.18529, L_Morse: 0.59331
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 6.570342999999999], lr=5.000e-05
+Epoch: 0 [3030/10000 (30%)] Loss: 35.80750 = L_Mnfld: 10.37135 + L_NonMnfld: 12.52831 + L_Nrml: 0.00000 + L_Eknl: 9.20991 + L_Div: 0.00000 + L_Morse: 3.69794
+Epoch: 0 [3030/10000 (30%)] Unweighted L_s : L_Mnfld: 0.00148,  L_NonMnfld: 0.02088,  L_Nrml: 0.00000,  L_Eknl: 0.18420, L_Morse: 0.56282
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 6.537013], lr=5.000e-05
+Epoch: 0 [3040/10000 (30%)] Loss: 35.77733 = L_Mnfld: 11.06041 + L_NonMnfld: 11.85302 + L_Nrml: 0.00000 + L_Eknl: 9.15112 + L_Div: 0.00000 + L_Morse: 3.71278
+Epoch: 0 [3040/10000 (30%)] Unweighted L_s : L_Mnfld: 0.00158,  L_NonMnfld: 0.01976,  L_Nrml: 0.00000,  L_Eknl: 0.18302, L_Morse: 0.56796
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 6.5036830000000005], lr=5.000e-05
+Epoch: 0 [3050/10000 (30%)] Loss: 35.05691 = L_Mnfld: 10.71955 + L_NonMnfld: 11.19579 + L_Nrml: 0.00000 + L_Eknl: 9.26400 + L_Div: 0.00000 + L_Morse: 3.87757
+Epoch: 0 [3050/10000 (30%)] Unweighted L_s : L_Mnfld: 0.00153,  L_NonMnfld: 0.01866,  L_Nrml: 0.00000,  L_Eknl: 0.18528, L_Morse: 0.59621
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 6.470352999999999], lr=5.000e-05
+Epoch: 0 [3060/10000 (31%)] Loss: 35.45686 = L_Mnfld: 11.27880 + L_NonMnfld: 11.97346 + L_Nrml: 0.00000 + L_Eknl: 8.68918 + L_Div: 0.00000 + L_Morse: 3.51541
+Epoch: 0 [3060/10000 (31%)] Unweighted L_s : L_Mnfld: 0.00161,  L_NonMnfld: 0.01996,  L_Nrml: 0.00000,  L_Eknl: 0.17378, L_Morse: 0.54331
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 6.437023], lr=5.000e-05
+Epoch: 0 [3070/10000 (31%)] Loss: 34.68739 = L_Mnfld: 10.72134 + L_NonMnfld: 11.25980 + L_Nrml: 0.00000 + L_Eknl: 8.96992 + L_Div: 0.00000 + L_Morse: 3.73633
+Epoch: 0 [3070/10000 (31%)] Unweighted L_s : L_Mnfld: 0.00153,  L_NonMnfld: 0.01877,  L_Nrml: 0.00000,  L_Eknl: 0.17940, L_Morse: 0.58044
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 6.403693], lr=5.000e-05
+Epoch: 0 [3080/10000 (31%)] Loss: 36.19029 = L_Mnfld: 11.34413 + L_NonMnfld: 11.80320 + L_Nrml: 0.00000 + L_Eknl: 9.04399 + L_Div: 0.00000 + L_Morse: 3.99898
+Epoch: 0 [3080/10000 (31%)] Unweighted L_s : L_Mnfld: 0.00162,  L_NonMnfld: 0.01967,  L_Nrml: 0.00000,  L_Eknl: 0.18088, L_Morse: 0.62448
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 6.370362999999999], lr=5.000e-05
+Epoch: 0 [3090/10000 (31%)] Loss: 35.47889 = L_Mnfld: 10.72473 + L_NonMnfld: 12.34703 + L_Nrml: 0.00000 + L_Eknl: 8.86701 + L_Div: 0.00000 + L_Morse: 3.54012
+Epoch: 0 [3090/10000 (31%)] Unweighted L_s : L_Mnfld: 0.00153,  L_NonMnfld: 0.02058,  L_Nrml: 0.00000,  L_Eknl: 0.17734, L_Morse: 0.55572
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 6.337033], lr=5.000e-05
+Epoch: 0 [3100/10000 (31%)] Loss: 34.82698 = L_Mnfld: 10.63577 + L_NonMnfld: 12.08494 + L_Nrml: 0.00000 + L_Eknl: 8.44125 + L_Div: 0.00000 + L_Morse: 3.66503
+Epoch: 0 [3100/10000 (31%)] Unweighted L_s : L_Mnfld: 0.00152,  L_NonMnfld: 0.02014,  L_Nrml: 0.00000,  L_Eknl: 0.16882, L_Morse: 0.57835
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 6.303703], lr=5.000e-05
+Epoch: 0 [3110/10000 (31%)] Loss: 34.67175 = L_Mnfld: 10.59172 + L_NonMnfld: 11.53516 + L_Nrml: 0.00000 + L_Eknl: 8.93639 + L_Div: 0.00000 + L_Morse: 3.60848
+Epoch: 0 [3110/10000 (31%)] Unweighted L_s : L_Mnfld: 0.00151,  L_NonMnfld: 0.01923,  L_Nrml: 0.00000,  L_Eknl: 0.17873, L_Morse: 0.57244
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 6.270372999999999], lr=5.000e-05
+Epoch: 0 [3120/10000 (31%)] Loss: 34.67905 = L_Mnfld: 10.70405 + L_NonMnfld: 11.51456 + L_Nrml: 0.00000 + L_Eknl: 8.75093 + L_Div: 0.00000 + L_Morse: 3.70951
+Epoch: 0 [3120/10000 (31%)] Unweighted L_s : L_Mnfld: 0.00153,  L_NonMnfld: 0.01919,  L_Nrml: 0.00000,  L_Eknl: 0.17502, L_Morse: 0.59159
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 6.237043], lr=5.000e-05
+Epoch: 0 [3130/10000 (31%)] Loss: 34.37878 = L_Mnfld: 10.30252 + L_NonMnfld: 11.63260 + L_Nrml: 0.00000 + L_Eknl: 8.91764 + L_Div: 0.00000 + L_Morse: 3.52603
+Epoch: 0 [3130/10000 (31%)] Unweighted L_s : L_Mnfld: 0.00147,  L_NonMnfld: 0.01939,  L_Nrml: 0.00000,  L_Eknl: 0.17835, L_Morse: 0.56534
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 6.203713], lr=5.000e-05
+Epoch: 0 [3140/10000 (31%)] Loss: 34.78835 = L_Mnfld: 10.29347 + L_NonMnfld: 12.25845 + L_Nrml: 0.00000 + L_Eknl: 8.86407 + L_Div: 0.00000 + L_Morse: 3.37235
+Epoch: 0 [3140/10000 (31%)] Unweighted L_s : L_Mnfld: 0.00147,  L_NonMnfld: 0.02043,  L_Nrml: 0.00000,  L_Eknl: 0.17728, L_Morse: 0.54360
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 6.170382999999999], lr=5.000e-05
+Epoch: 0 [3150/10000 (32%)] Loss: 35.19850 = L_Mnfld: 10.88188 + L_NonMnfld: 11.84431 + L_Nrml: 0.00000 + L_Eknl: 8.94026 + L_Div: 0.00000 + L_Morse: 3.53205
+Epoch: 0 [3150/10000 (32%)] Unweighted L_s : L_Mnfld: 0.00155,  L_NonMnfld: 0.01974,  L_Nrml: 0.00000,  L_Eknl: 0.17881, L_Morse: 0.57242
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 6.137053], lr=5.000e-05
+Epoch: 0 [3160/10000 (32%)] Loss: 35.17807 = L_Mnfld: 11.35905 + L_NonMnfld: 11.54793 + L_Nrml: 0.00000 + L_Eknl: 8.70854 + L_Div: 0.00000 + L_Morse: 3.56255
+Epoch: 0 [3160/10000 (32%)] Unweighted L_s : L_Mnfld: 0.00162,  L_NonMnfld: 0.01925,  L_Nrml: 0.00000,  L_Eknl: 0.17417, L_Morse: 0.58050
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 6.103722999999999], lr=5.000e-05
+Epoch: 0 [3170/10000 (32%)] Loss: 34.39111 = L_Mnfld: 10.43765 + L_NonMnfld: 11.60879 + L_Nrml: 0.00000 + L_Eknl: 8.74076 + L_Div: 0.00000 + L_Morse: 3.60391
+Epoch: 0 [3170/10000 (32%)] Unweighted L_s : L_Mnfld: 0.00149,  L_NonMnfld: 0.01935,  L_Nrml: 0.00000,  L_Eknl: 0.17482, L_Morse: 0.59044
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 6.070392999999999], lr=5.000e-05
+Epoch: 0 [3180/10000 (32%)] Loss: 34.20131 = L_Mnfld: 10.42590 + L_NonMnfld: 11.36721 + L_Nrml: 0.00000 + L_Eknl: 8.79364 + L_Div: 0.00000 + L_Morse: 3.61455
+Epoch: 0 [3180/10000 (32%)] Unweighted L_s : L_Mnfld: 0.00149,  L_NonMnfld: 0.01895,  L_Nrml: 0.00000,  L_Eknl: 0.17587, L_Morse: 0.59544
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 6.037063], lr=5.000e-05
+Epoch: 0 [3190/10000 (32%)] Loss: 33.78492 = L_Mnfld: 10.30045 + L_NonMnfld: 11.02026 + L_Nrml: 0.00000 + L_Eknl: 8.76519 + L_Div: 0.00000 + L_Morse: 3.69902
+Epoch: 0 [3190/10000 (32%)] Unweighted L_s : L_Mnfld: 0.00147,  L_NonMnfld: 0.01837,  L_Nrml: 0.00000,  L_Eknl: 0.17530, L_Morse: 0.61272
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 6.003732999999999], lr=5.000e-05
+Epoch: 0 [3200/10000 (32%)] Loss: 33.60174 = L_Mnfld: 10.66377 + L_NonMnfld: 10.59966 + L_Nrml: 0.00000 + L_Eknl: 8.67244 + L_Div: 0.00000 + L_Morse: 3.66586
+Epoch: 0 [3200/10000 (32%)] Unweighted L_s : L_Mnfld: 0.00152,  L_NonMnfld: 0.01767,  L_Nrml: 0.00000,  L_Eknl: 0.17345, L_Morse: 0.61060
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 5.970402999999999], lr=5.000e-05
+Epoch: 0 [3210/10000 (32%)] Loss: 35.09654 = L_Mnfld: 10.77428 + L_NonMnfld: 11.59184 + L_Nrml: 0.00000 + L_Eknl: 8.96108 + L_Div: 0.00000 + L_Morse: 3.76934
+Epoch: 0 [3210/10000 (32%)] Unweighted L_s : L_Mnfld: 0.00154,  L_NonMnfld: 0.01932,  L_Nrml: 0.00000,  L_Eknl: 0.17922, L_Morse: 0.63134
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 5.937072999999999], lr=5.000e-05
+Epoch: 0 [3220/10000 (32%)] Loss: 34.80100 = L_Mnfld: 10.48353 + L_NonMnfld: 12.10844 + L_Nrml: 0.00000 + L_Eknl: 8.72138 + L_Div: 0.00000 + L_Morse: 3.48765
+Epoch: 0 [3220/10000 (32%)] Unweighted L_s : L_Mnfld: 0.00150,  L_NonMnfld: 0.02018,  L_Nrml: 0.00000,  L_Eknl: 0.17443, L_Morse: 0.58744
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 5.9037429999999995], lr=5.000e-05
+Epoch: 0 [3230/10000 (32%)] Loss: 34.51689 = L_Mnfld: 10.24395 + L_NonMnfld: 12.20984 + L_Nrml: 0.00000 + L_Eknl: 8.57588 + L_Div: 0.00000 + L_Morse: 3.48723
+Epoch: 0 [3230/10000 (32%)] Unweighted L_s : L_Mnfld: 0.00146,  L_NonMnfld: 0.02035,  L_Nrml: 0.00000,  L_Eknl: 0.17152, L_Morse: 0.59068
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 5.870412999999999], lr=5.000e-05
+Epoch: 0 [3240/10000 (32%)] Loss: 34.53679 = L_Mnfld: 10.58502 + L_NonMnfld: 11.87759 + L_Nrml: 0.00000 + L_Eknl: 8.50718 + L_Div: 0.00000 + L_Morse: 3.56700
+Epoch: 0 [3240/10000 (32%)] Unweighted L_s : L_Mnfld: 0.00151,  L_NonMnfld: 0.01980,  L_Nrml: 0.00000,  L_Eknl: 0.17014, L_Morse: 0.60762
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 5.837082999999999], lr=5.000e-05
+Epoch: 0 [3250/10000 (32%)] Loss: 36.31756 = L_Mnfld: 10.82046 + L_NonMnfld: 13.03329 + L_Nrml: 0.00000 + L_Eknl: 8.83430 + L_Div: 0.00000 + L_Morse: 3.62951
+Epoch: 0 [3250/10000 (32%)] Unweighted L_s : L_Mnfld: 0.00155,  L_NonMnfld: 0.02172,  L_Nrml: 0.00000,  L_Eknl: 0.17669, L_Morse: 0.62180
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 5.8037529999999995], lr=5.000e-05
+Epoch: 0 [3260/10000 (33%)] Loss: 33.85311 = L_Mnfld: 10.74071 + L_NonMnfld: 10.84010 + L_Nrml: 0.00000 + L_Eknl: 8.74702 + L_Div: 0.00000 + L_Morse: 3.52528
+Epoch: 0 [3260/10000 (33%)] Unweighted L_s : L_Mnfld: 0.00153,  L_NonMnfld: 0.01807,  L_Nrml: 0.00000,  L_Eknl: 0.17494, L_Morse: 0.60741
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 5.770422999999999], lr=5.000e-05
+Epoch: 0 [3270/10000 (33%)] Loss: 36.60912 = L_Mnfld: 11.15308 + L_NonMnfld: 12.93817 + L_Nrml: 0.00000 + L_Eknl: 8.90458 + L_Div: 0.00000 + L_Morse: 3.61328
+Epoch: 0 [3270/10000 (33%)] Unweighted L_s : L_Mnfld: 0.00159,  L_NonMnfld: 0.02156,  L_Nrml: 0.00000,  L_Eknl: 0.17809, L_Morse: 0.62617
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 5.737092999999999], lr=5.000e-05
+Epoch: 0 [3280/10000 (33%)] Loss: 35.29260 = L_Mnfld: 11.14290 + L_NonMnfld: 11.60620 + L_Nrml: 0.00000 + L_Eknl: 8.73136 + L_Div: 0.00000 + L_Morse: 3.81214
+Epoch: 0 [3280/10000 (33%)] Unweighted L_s : L_Mnfld: 0.00159,  L_NonMnfld: 0.01934,  L_Nrml: 0.00000,  L_Eknl: 0.17463, L_Morse: 0.66447
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 5.7037629999999995], lr=5.000e-05
+Epoch: 0 [3290/10000 (33%)] Loss: 35.32841 = L_Mnfld: 10.63704 + L_NonMnfld: 12.49448 + L_Nrml: 0.00000 + L_Eknl: 8.63441 + L_Div: 0.00000 + L_Morse: 3.56247
+Epoch: 0 [3290/10000 (33%)] Unweighted L_s : L_Mnfld: 0.00152,  L_NonMnfld: 0.02082,  L_Nrml: 0.00000,  L_Eknl: 0.17269, L_Morse: 0.62458
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 5.670432999999999], lr=5.000e-05
+Epoch: 0 [3300/10000 (33%)] Loss: 34.24126 = L_Mnfld: 10.46032 + L_NonMnfld: 11.74229 + L_Nrml: 0.00000 + L_Eknl: 8.65531 + L_Div: 0.00000 + L_Morse: 3.38334
+Epoch: 0 [3300/10000 (33%)] Unweighted L_s : L_Mnfld: 0.00149,  L_NonMnfld: 0.01957,  L_Nrml: 0.00000,  L_Eknl: 0.17311, L_Morse: 0.59666
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 5.637102999999999], lr=5.000e-05
+Epoch: 0 [3310/10000 (33%)] Loss: 33.21621 = L_Mnfld: 10.06941 + L_NonMnfld: 11.12510 + L_Nrml: 0.00000 + L_Eknl: 8.61284 + L_Div: 0.00000 + L_Morse: 3.40884
+Epoch: 0 [3310/10000 (33%)] Unweighted L_s : L_Mnfld: 0.00144,  L_NonMnfld: 0.01854,  L_Nrml: 0.00000,  L_Eknl: 0.17226, L_Morse: 0.60472
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 5.603773], lr=5.000e-05
+Epoch: 0 [3320/10000 (33%)] Loss: 34.02865 = L_Mnfld: 10.88115 + L_NonMnfld: 10.97133 + L_Nrml: 0.00000 + L_Eknl: 8.52989 + L_Div: 0.00000 + L_Morse: 3.64628
+Epoch: 0 [3320/10000 (33%)] Unweighted L_s : L_Mnfld: 0.00155,  L_NonMnfld: 0.01829,  L_Nrml: 0.00000,  L_Eknl: 0.17060, L_Morse: 0.65068
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 5.570443000000001], lr=5.000e-05
+Epoch: 0 [3330/10000 (33%)] Loss: 33.39623 = L_Mnfld: 10.34539 + L_NonMnfld: 11.08606 + L_Nrml: 0.00000 + L_Eknl: 8.46850 + L_Div: 0.00000 + L_Morse: 3.49628
+Epoch: 0 [3330/10000 (33%)] Unweighted L_s : L_Mnfld: 0.00148,  L_NonMnfld: 0.01848,  L_Nrml: 0.00000,  L_Eknl: 0.16937, L_Morse: 0.62765
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 5.537113000000001], lr=5.000e-05
+Epoch: 0 [3340/10000 (33%)] Loss: 34.73436 = L_Mnfld: 10.46799 + L_NonMnfld: 12.19927 + L_Nrml: 0.00000 + L_Eknl: 8.57124 + L_Div: 0.00000 + L_Morse: 3.49586
+Epoch: 0 [3340/10000 (33%)] Unweighted L_s : L_Mnfld: 0.00150,  L_NonMnfld: 0.02033,  L_Nrml: 0.00000,  L_Eknl: 0.17142, L_Morse: 0.63135
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 5.503783], lr=5.000e-05
+Epoch: 0 [3350/10000 (34%)] Loss: 34.77245 = L_Mnfld: 11.07739 + L_NonMnfld: 11.66119 + L_Nrml: 0.00000 + L_Eknl: 8.56156 + L_Div: 0.00000 + L_Morse: 3.47231
+Epoch: 0 [3350/10000 (34%)] Unweighted L_s : L_Mnfld: 0.00158,  L_NonMnfld: 0.01944,  L_Nrml: 0.00000,  L_Eknl: 0.17123, L_Morse: 0.63089
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 5.470453000000001], lr=5.000e-05
+Epoch: 0 [3360/10000 (34%)] Loss: 34.88151 = L_Mnfld: 11.43814 + L_NonMnfld: 11.09183 + L_Nrml: 0.00000 + L_Eknl: 8.64089 + L_Div: 0.00000 + L_Morse: 3.71064
+Epoch: 0 [3360/10000 (34%)] Unweighted L_s : L_Mnfld: 0.00163,  L_NonMnfld: 0.01849,  L_Nrml: 0.00000,  L_Eknl: 0.17282, L_Morse: 0.67831
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 5.437123000000001], lr=5.000e-05
+Epoch: 0 [3370/10000 (34%)] Loss: 33.90584 = L_Mnfld: 10.23449 + L_NonMnfld: 11.81202 + L_Nrml: 0.00000 + L_Eknl: 8.61792 + L_Div: 0.00000 + L_Morse: 3.24142
+Epoch: 0 [3370/10000 (34%)] Unweighted L_s : L_Mnfld: 0.00146,  L_NonMnfld: 0.01969,  L_Nrml: 0.00000,  L_Eknl: 0.17236, L_Morse: 0.59616
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 5.403793000000001], lr=5.000e-05
+Epoch: 0 [3380/10000 (34%)] Loss: 32.84075 = L_Mnfld: 10.62579 + L_NonMnfld: 10.20680 + L_Nrml: 0.00000 + L_Eknl: 8.41866 + L_Div: 0.00000 + L_Morse: 3.58950
+Epoch: 0 [3380/10000 (34%)] Unweighted L_s : L_Mnfld: 0.00152,  L_NonMnfld: 0.01701,  L_Nrml: 0.00000,  L_Eknl: 0.16837, L_Morse: 0.66425
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 5.370463000000001], lr=5.000e-05
+Epoch: 0 [3390/10000 (34%)] Loss: 35.64027 = L_Mnfld: 10.80467 + L_NonMnfld: 12.73461 + L_Nrml: 0.00000 + L_Eknl: 8.65857 + L_Div: 0.00000 + L_Morse: 3.44242
+Epoch: 0 [3390/10000 (34%)] Unweighted L_s : L_Mnfld: 0.00154,  L_NonMnfld: 0.02122,  L_Nrml: 0.00000,  L_Eknl: 0.17317, L_Morse: 0.64099
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 5.337133000000001], lr=5.000e-05
+Epoch: 0 [3400/10000 (34%)] Loss: 34.68636 = L_Mnfld: 11.01770 + L_NonMnfld: 11.46455 + L_Nrml: 0.00000 + L_Eknl: 8.24235 + L_Div: 0.00000 + L_Morse: 3.96176
+Epoch: 0 [3400/10000 (34%)] Unweighted L_s : L_Mnfld: 0.00157,  L_NonMnfld: 0.01911,  L_Nrml: 0.00000,  L_Eknl: 0.16485, L_Morse: 0.74230
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 5.303803000000001], lr=5.000e-05
+Epoch: 0 [3410/10000 (34%)] Loss: 34.00837 = L_Mnfld: 10.72335 + L_NonMnfld: 11.45622 + L_Nrml: 0.00000 + L_Eknl: 8.42433 + L_Div: 0.00000 + L_Morse: 3.40447
+Epoch: 0 [3410/10000 (34%)] Unweighted L_s : L_Mnfld: 0.00153,  L_NonMnfld: 0.01909,  L_Nrml: 0.00000,  L_Eknl: 0.16849, L_Morse: 0.64189
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 5.270473000000001], lr=5.000e-05
+Epoch: 0 [3420/10000 (34%)] Loss: 33.84708 = L_Mnfld: 10.78276 + L_NonMnfld: 11.06732 + L_Nrml: 0.00000 + L_Eknl: 8.45915 + L_Div: 0.00000 + L_Morse: 3.53785
+Epoch: 0 [3420/10000 (34%)] Unweighted L_s : L_Mnfld: 0.00154,  L_NonMnfld: 0.01845,  L_Nrml: 0.00000,  L_Eknl: 0.16918, L_Morse: 0.67126
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 5.2371430000000005], lr=5.000e-05
+Epoch: 0 [3430/10000 (34%)] Loss: 35.16800 = L_Mnfld: 11.09790 + L_NonMnfld: 12.09397 + L_Nrml: 0.00000 + L_Eknl: 8.58285 + L_Div: 0.00000 + L_Morse: 3.39328
+Epoch: 0 [3430/10000 (34%)] Unweighted L_s : L_Mnfld: 0.00159,  L_NonMnfld: 0.02016,  L_Nrml: 0.00000,  L_Eknl: 0.17166, L_Morse: 0.64793
+
+Weights: [7000.0, 600.0, 0, 50.0, 0, 5.203813], lr=5.000e-05
+Epoch: 0 [3440/10000 (34%)] Loss: 35.23081 = L_Mnfld: 11.27297 + L_NonMnfld: 12.37792 + L_Nrml: 0.00000 + L_Eknl: 8.31534 + L_Div: 0.00000 + L_Morse: 3.26458
+Epoch: 0 [3440/10000 (34%)] Unweighted L_s : L_Mnfld: 0.00161,  L_NonMnfld: 0.02063,  L_Nrml: 0.00000,  L_Eknl: 0.16631, L_Morse: 0.62734
+

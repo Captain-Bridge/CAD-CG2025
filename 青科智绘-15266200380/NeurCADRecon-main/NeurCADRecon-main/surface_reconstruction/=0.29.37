@@ -1,0 +1,4 @@
+Collecting Cython
+  Using cached Cython-3.0.12-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.6 MB)
+Installing collected packages: Cython
+Successfully installed Cython-3.0.12
