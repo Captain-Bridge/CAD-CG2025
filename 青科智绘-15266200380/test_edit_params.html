@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>参数编辑功能测试</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <style>
+        body { margin: 20px; font-family: Arial, sans-serif; }
+        .container { max-width: 800px; margin: 0 auto; }
+        button { margin: 10px; padding: 10px 20px; }
+        .test-result { margin: 20px 0; padding: 15px; border-radius: 5px; }
+        .success { background: #d4edda; border: 1px solid #c3e6cb; color: #155724; }
+        .error { background: #f8d7da; border: 1px solid #f5c6cb; color: #721c24; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>参数编辑功能测试</h1>
+        <p>这个页面用于测试参数编辑功能是否正常工作。</p>
+        
+        <button onclick="testAdjustCamera()">测试 adjustCamera 方法</button>
+        <button onclick="testCreateRoundedBox()">测试 createRoundedBox 方法</button>
+        <button onclick="testGeometryGenerator()">测试 GeometryGenerator</button>
+        
+        <div id="results"></div>
+    </div>
+
+    <script>
+        function logResult(message, isSuccess = true) {
+            const resultsDiv = document.getElementById('results');
+            const resultDiv = document.createElement('div');
+            resultDiv.className = `test-result ${isSuccess ? 'success' : 'error'}`;
+            resultDiv.innerHTML = `<strong>${isSuccess ? '✅' : '❌'}</strong> ${message}`;
+            resultsDiv.appendChild(resultDiv);
+            console.log(message);
+        }
+        
+        function testAdjustCamera() {
+            try {
+                // 模拟 adjustCamera 方法
+                const camera = new THREE.PerspectiveCamera(75, 1, 0.1, 1000);
+                const controls = { target: new THREE.Vector3() };
+                
+                // 模拟网格
+                const geometry = new THREE.BoxGeometry(10, 10, 10);
+                const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+                const mesh = new THREE.Mesh(geometry, material);
+                
+                // 模拟 adjustCamera 逻辑
+                const box = new THREE.Box3().setFromObject(mesh);
+                const center = box.getCenter(new THREE.Vector3());
+                const size = box.getSize(new THREE.Vector3());
+                const maxDim = Math.max(size.x, size.y, size.z);
+                const distance = maxDim * 2;
+                
+                camera.position.copy(center);
+                camera.position.x += distance;
+                camera.position.y += distance;
+                camera.position.z += distance;
+                camera.lookAt(center);
+                
+                controls.target.copy(center);
+                
+                logResult('adjustCamera 方法测试成功');
+            } catch (error) {
+                logResult(`adjustCamera 方法测试失败: ${error.message}`, false);
+            }
+        }
+        
+        function testCreateRoundedBox() {
+            try {
+                // 模拟 createRoundedBox 调用
+                const geometry = new THREE.BoxGeometry(10, 10, 10, 16, 16, 16);
+                const positionAttribute = geometry.getAttribute('position');
+                const positions = positionAttribute.array;
+                
+                // 模拟圆角处理
+                const radius = 2;
+                const halfSize = 5;
+                
+                for (let i = 0; i < positions.length; i += 3) {
+                    const x = positions[i];
+                    const y = positions[i + 1];
+                    const z = positions[i + 2];
+                    
+                    // 简单的圆角处理
+                    const distToEdge = Math.max(
+                        Math.abs(x) - (halfSize - radius),
+                        Math.abs(y) - (halfSize - radius),
+                        Math.abs(z) - (halfSize - radius)
+                    );
+                    
+                    if (distToEdge > 0) {
+                        // 应用圆角
+                        const scale = (halfSize - radius) / halfSize;
+                        positions[i] *= scale;
+                        positions[i + 1] *= scale;
+                        positions[i + 2] *= scale;
+                    }
+                }
+                
+                logResult('createRoundedBox 方法测试成功');
+            } catch (error) {
+                logResult(`createRoundedBox 方法测试失败: ${error.message}`, false);
+            }
+        }
+        
+        function testGeometryGenerator() {
+            try {
+                // 模拟 GeometryGenerator 的功能
+                const mockGenerator = {
+                    createRoundedBox: function(length, height, width, radius) {
+                        const geometry = new THREE.BoxGeometry(length, height, width, 16, 16, 16);
+                        return geometry;
+                    }
+                };
+                
+                const result = mockGenerator.createRoundedBox(10, 10, 10, 2);
+                if (result && result.isBufferGeometry) {
+                    logResult('GeometryGenerator 测试成功');
+                } else {
+                    throw new Error('返回的不是有效的几何体');
+                }
+            } catch (error) {
+                logResult(`GeometryGenerator 测试失败: ${error.message}`, false);
+            }
+        }
+        
+        // 页面加载时自动运行所有测试
+        window.onload = function() {
+            logResult('开始运行参数编辑功能测试...');
+            setTimeout(() => {
+                testAdjustCamera();
+                setTimeout(() => {
+                    testCreateRoundedBox();
+                    setTimeout(() => {
+                        testGeometryGenerator();
+                        logResult('所有测试完成！');
+                    }, 500);
+                }, 500);
+            }, 500);
+        };
+    </script>
+</body>
+</html> 

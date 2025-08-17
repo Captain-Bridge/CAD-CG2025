@@ -3,6 +3,7 @@
     <el-tabs v-model="activePane" tab-position="left">
       <el-tab-pane label="点云上传" name="upload"></el-tab-pane>
       <el-tab-pane label="点云重建" name="reconstruction"></el-tab-pane>
+      <el-tab-pane label="自然语言建模" name="nl-modeling"></el-tab-pane>
     </el-tabs>
     <component 
       :is="currentPane" 
@@ -16,6 +17,7 @@
 <script>
 import PointCloudUpload from "./PointCloudUpload.vue";
 import PointCloudReconstruction from "./PointCloudReconstruction.vue";
+import NaturalLanguageModeling from "./NaturalLanguageModeling.vue";
 
 export default {
   name: "PointCloudPlugins",
@@ -40,6 +42,8 @@ export default {
           return PointCloudUpload;
         case "reconstruction":
           return PointCloudReconstruction;
+        case "nl-modeling":
+          return NaturalLanguageModeling;
         default:
           return PointCloudUpload;
       }

@@ -644,7 +644,7 @@ export default {
           transparent: true,
           opacity: 0.8,
           wireframe: false
-        });
+      });
 
       const mesh = new THREE.Mesh(geometry, material);
       this.scene.add(mesh);

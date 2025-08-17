@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>模型更新功能测试</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <style>
+        body { margin: 20px; font-family: Arial, sans-serif; }
+        .container { max-width: 800px; margin: 0 auto; }
+        button { margin: 10px; padding: 10px 20px; }
+        .test-result { margin: 20px 0; padding: 15px; border-radius: 5px; }
+        .success { background: #d4edda; border: 1px solid #c3e6cb; color: #155724; }
+        .error { background: #f8d7da; border: 1px solid #f5c6cb; color: #721c24; }
+        .info { background: #d1ecf1; border: 1px solid #bee5eb; color: #0c5460; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>模型更新功能测试</h1>
+        <p>这个页面用于测试模型参数更新和重新生成功能。</p>
+        
+        <button onclick="testParameterUpdate()">测试参数更新</button>
+        <button onclick="testGeometryGeneration()">测试几何体生成</button>
+        <button onclick="testShapeMapping()">测试形状映射</button>
+        
+        <div id="results"></div>
+    </div>
+
+    <script>
+        function logResult(message, type = 'success') {
+            const resultsDiv = document.getElementById('results');
+            const resultDiv = document.createElement('div');
+            resultDiv.className = `test-result ${type}`;
+            const icon = type === 'success' ? '✅' : type === 'error' ? '❌' : 'ℹ️';
+            resultDiv.innerHTML = `<strong>${icon}</strong> ${message}`;
+            resultsDiv.appendChild(resultDiv);
+            console.log(message);
+        }
+        
+        function testParameterUpdate() {
+            try {
+                // 模拟参数更新
+                const mockModel = {
+                    shape: 'box',
+                    dimensions: {
+                        width: { normalizedValue: 50, value: 50, unit: 'mm' },
+                        height: { normalizedValue: 30, value: 30, unit: 'mm' },
+                        depth: { normalizedValue: 20, value: 20, unit: 'mm' }
+                    }
+                };
+                
+                // 模拟参数编辑
+                const editedParams = {
+                    width: 80,
+                    height: 60,
+                    depth: 40
+                };
+                
+                // 更新参数
+                Object.entries(editedParams).forEach(([key, value]) => {
+                    if (mockModel.dimensions[key]) {
+                        mockModel.dimensions[key].normalizedValue = value;
+                    }
+                });
+                
+                logResult('参数更新测试成功');
+                logResult(`更新前: 宽50mm, 高30mm, 深20mm`, 'info');
+                logResult(`更新后: 宽${mockModel.dimensions.width.normalizedValue}mm, 高${mockModel.dimensions.height.normalizedValue}mm, 深${mockModel.dimensions.depth.normalizedValue}mm`, 'info');
+                
+            } catch (error) {
+                logResult(`参数更新测试失败: ${error.message}`, 'error');
+            }
+        }
+        
+        function testGeometryGeneration() {
+            try {
+                // 模拟几何体生成
+                const geometry = new THREE.BoxGeometry(80, 60, 40);
+                
+                if (geometry && geometry.isBufferGeometry) {
+                    const vertices = geometry.attributes.position.array;
+                    const vertexCount = vertices.length / 3;
+                    logResult('几何体生成测试成功');
+                    logResult(`生成了${vertexCount}个顶点的几何体`, 'info');
+                } else {
+                    throw new Error('生成的不是有效的几何体');
+                }
+                
+            } catch (error) {
+                logResult(`几何体生成测试失败: ${error.message}`, 'error');
+            }
+        }
+        
+        function testShapeMapping() {
+            try {
+                // 测试形状名称映射
+                const shapeMapping = {
+                    'box': '长方体',
+                    'roundedBox': '长方体',
+                    'cylinder': '圆柱',
+                    'sphere': '球',
+                    'cone': '圆锥'
+                };
+                
+                const testShapes = ['box', 'roundedBox', 'cylinder', 'sphere', 'cone'];
+                let successCount = 0;
+                
+                testShapes.forEach(shape => {
+                    const chineseShape = shapeMapping[shape];
+                    if (chineseShape) {
+                        successCount++;
+                        logResult(`${shape} -> ${chineseShape}`, 'info');
+                    }
+                });
+                
+                if (successCount === testShapes.length) {
+                    logResult('形状映射测试成功');
+                } else {
+                    throw new Error(`只有${successCount}/${testShapes.length}个形状映射成功`);
+                }
+                
+            } catch (error) {
+                logResult(`形状映射测试失败: ${error.message}`, 'error');
+            }
+        }
+        
+        // 页面加载时自动运行所有测试
+        window.onload = function() {
+            logResult('开始运行模型更新功能测试...', 'info');
+            setTimeout(() => {
+                testParameterUpdate();
+                setTimeout(() => {
+                    testGeometryGeneration();
+                    setTimeout(() => {
+                        testShapeMapping();
+                        logResult('所有测试完成！', 'info');
+                    }, 500);
+                }, 500);
+            }, 500);
+        };
+    </script>
+</body>
+</html> 

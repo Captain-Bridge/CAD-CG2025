@@ -1,0 +1,23 @@
+{
+  "init_type": "siren",
+  "decoder_n_hidden_layers": 4,
+  "decoder_hidden_dim": 256,
+  "lr": 5e-05,
+  "n_samples": 10000,
+  "grid_res": 128,
+  "loss_weights": [
+    7000,
+    600,
+    0,
+    50,
+    0,
+    10
+  ],
+  "morse_type": "l1",
+  "morse_decay": "linear",
+  "bidirectional_morse": false,
+  "use_morse_nonmnfld_grad": false,
+  "use_relax_eikonal": false,
+  "input_file": "input_pld.ply",
+  "output_dir": "./reconstruction_results"
+}
