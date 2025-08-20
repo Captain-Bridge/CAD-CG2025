@@ -687,7 +687,7 @@ if __name__ == '__main__':
 
     input_root_path = args.input
     # exp_name = input_root_path.split('/')[4]
-    exp_name = 'complete_digs'
+    exp_name = ''
     # exp_name = 'Thingi10K'
     # exp_name = 'Roomx'
     # exp_name = 'Large'
@@ -754,4 +754,5 @@ if __name__ == '__main__':
     # 保存为 CSV 文件
     print(data)
     print(out_file_class)
+
     data.to_csv(out_file_class, index=False)  # 禁止保存索引
